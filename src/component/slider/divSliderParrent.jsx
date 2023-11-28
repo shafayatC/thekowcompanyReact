@@ -57,8 +57,8 @@ const DivSliderParrent = () => {
         setCurrentPosition((pos) => pos - 1);
     }
     return (
-        <div className='relative pt-10 pb-7'>
-            {console.log(currentPosition)}
+        <div className=' pt-10 pb-7'>
+        <div className='relative'>
             <div className='flex gap-4 absolute w-full top-1/2 left-0 z-40 justify-between -translate-y-1/2'>
                 <button
                     //  disabled={currentPosition === -((sliderList.length - 1))}
@@ -150,6 +150,23 @@ const DivSliderParrent = () => {
                     </>
                 </DivSlider>
             </div>
+
+        </div>
+        <div>
+                    <div className='flex justify-center gap-10 my-10'>
+                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                        <h1 className='text-[40px] -mb-4 font-bold'>IMAGES</h1>
+                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                    </div>
+                    <p className='text-xs md:text-sm px-[54px]'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordi-
+nary, transforming each product shot into a magnetic narrative that accentuates every exceptional detail.`}</p>
+                    <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your prod-
+ucts radiate brilliance, whether on a website, social media, or in print.`}</p>
+                    
+                   <div className='flex justify-center '>
+                   <button className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</button>
+                   </div>
+                </div>
         </div>
     );
 };

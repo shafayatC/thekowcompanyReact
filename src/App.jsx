@@ -13,21 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeContainer />} />
       </Routes>
-      {/* <Navbar />
-      <div className="bg-[#DEE2E2] py-3 flex flex-col">
-        <ProductVideo />
-        <WelcomePage />
-        <DivSliderParrent />
-        <Record />
-        <Retouched />
-        <Integration />
-        <TheSquad />
-        <BluePrint />
-        <IndustryTrends />
-        <GetUpdate />
-      </div>
-      <Footer /> */}
-
     </>
   )
 }
