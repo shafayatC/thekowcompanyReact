@@ -21,22 +21,20 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-
-      <ProductVideo/>
-      <WelcomePage/>
-      <Record/>
-      <Retouched/>
-      <Integration/>
-      <TheSquad/>
-      <BluePrint/>
-      <IndustryTrends/>
-      <GetUpdate/>
-      <Footer/>
-
+      <Navbar />
       <div className="bg-[#DEE2E2] py-3 flex flex-col">
+        <ProductVideo />
+        <WelcomePage />
         <DivSliderParrent />
+        <Record />
+        <Retouched />
+        <Integration />
+        <TheSquad />
+        <BluePrint />
+        <IndustryTrends />
+        <GetUpdate />
       </div>
+      <Footer />
 
     </>
   )
