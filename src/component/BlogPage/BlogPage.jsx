@@ -1,11 +1,10 @@
-import Image from 'next/image';
-import React from 'react';
+
+
 import blog1 from "../../images/blog1.png"
 import blog2 from "../../images/blog2.png"
 import blog3 from "../../images/blog3.png"
-import blog4 from "../../images/blog4.png"
-// import blog5 from "../../images/blog3.png"
-// import blog6 from "../../images/blog3.png"
+import BlogPageDetails from "./BlogPageDetails";
+
 
 const BlogPage = () => {
     return (
@@ -22,14 +21,14 @@ const BlogPage = () => {
 
                     <div className='flex flex-col md:flex-row justify-center items-center gap-3 pt-3'>
                         <div className=''>
-                            <Image src={blog1}
+                            <img src={blog1}
                                 width={350}
                                 alt='trends photo'
                             />
                             <h1 className='text-center pt-3 font-semibold'>INDUSTRY TRENDS ON 2D</h1>
                         </div>
                         <div className=''>
-                            <Image src={blog2}
+                            <img src={blog2}
                                 width={350}
                                 alt='trends photo'
                             />
@@ -37,7 +36,7 @@ const BlogPage = () => {
 
                         </div>
                         <div className=''>
-                            <Image src={blog3}
+                            <img src={blog3}
                                 width={350}
                                 alt='trends photo'
                             />
@@ -49,6 +48,7 @@ const BlogPage = () => {
 
                
             </div>
+            <BlogPageDetails/>
         </div>
     );
 };
