@@ -9,8 +9,12 @@ import Retouched from './component/Retouched/Retouched'
 import TheSquad from './component/TheSquad/TheSquad'
 import Footer from './component/footer/footer'
 import Navbar from './component/navber/navbar'
+
 import Record from './component/record/record'
 import WelcomePage from './component/welcomePage/welcomePage'
+
+import DivSliderParrent from './component/slider/divSliderParrent'
+
 
 function App() {
 
@@ -18,6 +22,7 @@ function App() {
   return (
     <>
       <Navbar/>
+
       <ProductVideo/>
       <WelcomePage/>
       <Record/>
@@ -28,6 +33,11 @@ function App() {
       <IndustryTrends/>
       <GetUpdate/>
       <Footer/>
+
+      <div className="bg-[#DEE2E2] py-3 flex flex-col">
+        <DivSliderParrent />
+      </div>
+
     </>
   )
 }
