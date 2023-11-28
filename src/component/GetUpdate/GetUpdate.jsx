@@ -3,13 +3,13 @@
 const GetUpdate = () => {
     return (
         <div>
-            <div className="container mx-auto">
+            <div className="container mx-auto"> 
                 <div className="py-36">
                     <div className='flex justify-center gap-10 my-6'>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                         <h1 className=' text-[40px] -mb-4 font-bold'>GET UPDATES</h1>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                    </div>
+                    </div> 
                     <p className=" text-center text-sm">Sign up for our mailing list and we will let you know when we </p>
                     <p className=" text-center text-sm mb-6">release new features or updates.</p>
                     <div className=" mb-3 p-2 w-80 shadow-md bg-white absolute left-[50%] rounded-3xl border-gray-800 border-1" style={{ transform: 'translateX(-50%)' }}>
