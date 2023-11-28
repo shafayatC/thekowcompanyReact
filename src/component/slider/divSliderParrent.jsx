@@ -146,7 +146,7 @@ const DivSliderParrent = () => {
                                 </div>
                                 <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
                             </div>
-                        ))}
+                        ))} 
                     </>
                 </DivSlider>
             </div>

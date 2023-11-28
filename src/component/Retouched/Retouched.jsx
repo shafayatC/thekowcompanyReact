@@ -8,7 +8,7 @@ const Retouched = () => {
     return (
         <div >
             <div className="container mx-auto py-20">
-
+  
                 <div className="flex justify-center items-center gap-40">
                     <div className=" h-[670px] relative z-50 mt-5 lg:mt-0 bg-white md:w-[450px] sm:w-[450px] lg:w-[600px] xl:w-[500px] sm:ml-20 md:ml-28  ">
                         <div className="h-full overflow-hidden ">

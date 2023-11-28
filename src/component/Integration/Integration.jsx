@@ -8,7 +8,7 @@ const Integration = () => {
         <div>
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row justify-center items-center gap-2 '>
-                    <div>
+                    <div> 
                         <img src={integration1}
                         width={270}
                         alt='integration photo'

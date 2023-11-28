@@ -34,7 +34,7 @@ const Navbar = () => {
               <div className="md:hidden cursor-pointer ">
               <CgMenuGridO className="text-[32px]" />
               </div>
-            </div>
+            </div> 
 {/* -----------------------------------For Mobile--------------------------------------- */}
             <div className="block md:hidden bg-[#DEE2E2]  py-2">
               <div className="flex flex-col items-center gap-2">

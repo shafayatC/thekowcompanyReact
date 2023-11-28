@@ -12,7 +12,7 @@ const TheSquad = () => {
                         <img src={avatar1}
                         width={300}
                         alt='trends photo'
-                        />
+                        /> 
                         
                         <div className='absolute left-24 font-semibold bottom-0  text-black'>
                             <h1 className='text-xl leading-5'>NAME IS HERE</h1>

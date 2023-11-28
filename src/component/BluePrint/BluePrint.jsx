@@ -7,10 +7,10 @@ const BluePrint = () => {
               <div className='container mx-auto pt-32 pb-20'>
                 <div className='flex  justify-center items-center  '>
                     <div>
-                        <img src={tree}
+                        <img src={tree} 
                         width={950}
                         alt='integration photo'
-                      
+                       
                         />
                     </div>
                   

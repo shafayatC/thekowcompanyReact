@@ -4,7 +4,7 @@ import logowhite from "../../images/logo2.png"
 
 const WelcomePage = () => {
     return (
-        <div className=''>
+        <div className=''> 
             <div className='bg-[#7C9C30] relative '>
                 <div className="container mx-auto ">             
                         <div className="absolute bottom-0 left-0 ">

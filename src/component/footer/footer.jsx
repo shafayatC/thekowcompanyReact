@@ -11,7 +11,7 @@ import {
 
 
 const Footer = () => {
-    return (
+    return ( 
         <div>
             <div id="footer" className="bg-[#7C9C30]">
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5">

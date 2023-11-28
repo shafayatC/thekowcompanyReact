@@ -11,7 +11,7 @@ const IndustryTrends = () => {
                     <div className='relative'>
                         <img src={trends1}
                         width={500}
-                        alt='trends photo'
+                        alt='trends photo' 
                         />
                         <div className='flex justify-center mt-4'>
                             <button className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</button>
