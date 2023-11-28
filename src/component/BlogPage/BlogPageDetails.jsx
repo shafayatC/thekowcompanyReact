@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
+
 import blog4 from "../../images/blog4.png"
 import blog5 from "../../images/blog5.png"
 import blog6 from "../../images/blog6.png"
@@ -24,7 +23,7 @@ const BlogPageDetails = () => {
                                 </div>
                             </div>
                             <div>
-                                <Image src={blog4}
+                                <img src={blog4}
                                     width={1400}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
@@ -34,7 +33,7 @@ const BlogPageDetails = () => {
                         <div className='flex flex-col-reverse md:flex-row  justify-center items-end gap-12 px-2 md:px-0'>
 
                             <div>
-                                <Image src={blog5}
+                                <img src={blog5}
                                     width={1400}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
@@ -70,7 +69,7 @@ const BlogPageDetails = () => {
                                 </div>
                             </div>
                             <div>
-                                <Image src={blog6}
+                                <img src={blog6}
                                     width={1400}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
