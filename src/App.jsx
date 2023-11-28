@@ -15,21 +15,6 @@ function App() {
         <Route path="/" element={<HomeContainer />} />
         <Route path="/industry-trends" element={<BlogPage />} />
       </Routes>
-      {/* <Navbar />
-      <div className="bg-[#DEE2E2] py-3 flex flex-col">
-        <ProductVideo />
-        <WelcomePage />
-        <DivSliderParrent />
-        <Record />
-        <Retouched />
-        <Integration />
-        <TheSquad />
-        <BluePrint />
-        <IndustryTrends />
-        <GetUpdate />
-      </div>
-      <Footer /> */}
-
     </>
   )
 }
