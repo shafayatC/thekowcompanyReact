@@ -2,7 +2,7 @@
 
 const GetUpdate = () => {
     return (
-        <div>
+        <div id="subscribe">
             <div className="container mx-auto"> 
                 <div className="py-36">
                     <div className='flex justify-center gap-10 my-6'>

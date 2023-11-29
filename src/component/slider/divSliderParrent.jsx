@@ -57,7 +57,7 @@ const DivSliderParrent = () => {
         setCurrentPosition((pos) => pos - 1);
     }
     return (
-        <div className=' pt-10 pb-7'>
+        <div id='images' className='pt-10 pb-7'>
             <div className='relative'>
                 <div className='flex gap-4 absolute w-full top-1/2 left-0 z-40 justify-between -translate-y-1/2'>
                     <button
