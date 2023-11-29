@@ -6,7 +6,7 @@ import integration3 from "../../images/integration3.png"
 
 const Integration = () => {
     return (
-        <div>
+        <div id="integration">
             <div className='container mx-auto'>
                 <div className='flex flex-col md:flex-row justify-center items-center gap-2 '>
                     <div> 

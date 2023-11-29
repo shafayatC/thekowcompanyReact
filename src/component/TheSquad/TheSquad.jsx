@@ -5,7 +5,7 @@ import avatar3 from "../../images/Avatar3.png"
 import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md";
 const TheSquad = () => {
     return (
-        <div>
+        <div id="squad">
              <div className='container mx-auto '>
                 <div className='flex flex-col md:flex-row  items-center justify-center gap-12 pt-40 pb-7 relative'>
                     <div className='relative'>

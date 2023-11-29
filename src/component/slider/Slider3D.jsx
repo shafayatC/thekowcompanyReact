@@ -35,7 +35,7 @@ const Slider3D = () => {
     }
   ]
   return (
-    <div className='pb-10'>
+    <div id='3d' className='pb-10 pt-10'>
 
       <div className=' relative'>
         <Carousel uniqueId="id_1" delay={30000}

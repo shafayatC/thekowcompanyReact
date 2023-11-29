@@ -5,7 +5,7 @@ import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md"
 
 const IndustryTrends = () => {
     return (
-        <div>
+        <div id="trends">
             <div className='container mx-auto'>
                 <div className='flex md:flex-row items-center justify-center gap-3 pt-40 pb-20'>
                     <div className='relative'>
