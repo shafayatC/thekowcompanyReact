@@ -1,5 +1,5 @@
 import { GoHomeFill } from "react-icons/go";
-import logo from "../../images/logo.png"
+import logo from "../../images/logo3.png"
 import { CgMenuGridO } from "react-icons/cg";
 
 const Navbar = () => {
@@ -8,13 +8,13 @@ const Navbar = () => {
     <>
 
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
-        <div className="bg-[#DEE2E2]">
-          <div className="container mx-auto px-4">
+        <div className="bg-[#DEE2E2] sticky top-0 z-50">
+          <div className="container mx-auto px-4 py-1 ">
             <div className="flex items-center justify-between md:justify-evenly gap-3">
               <div>
                 <img src={logo}
                   width={80}
-                  height={50}
+                  height={40}
                   alt="logo" />
               </div>
 {/* --------------------------------------For Large Screen------------------------------------------ */}

@@ -6,7 +6,7 @@ import model2 from "../../images/model-BR.png"
 
 const Retouched = () => {
     return (
-        <div >
+        <div id="ai">
             <div className="container mx-auto py-20">
   
                 <div className="flex justify-center items-center gap-40">
