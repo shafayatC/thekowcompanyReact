@@ -13,12 +13,14 @@ import BluePrint from '../BluePrint/BluePrint'
 import IndustryTrends from '../IndustryTrends/IndustryTrends'
 import GetUpdate from '../GetUpdate/GetUpdate'
 import Footer from '../footer/footer'
+import Slider3D from '../slider/Slider3D'
 
 function HomeContainer() {
     return (
         <>
             <Navbar />
             <div className="bg-[#DEE2E2] py-3 flex flex-col">
+                <Slider3D/>
                 <ProductVideo />
                 <WelcomePage />
                 <DivSliderParrent />
