@@ -20,10 +20,10 @@ function HomeContainer() {
         <>
             <Navbar />
             <div className="bg-[#DEE2E2] py-3 flex flex-col">
-                <Slider3D/>
                 <ProductVideo />
                 <WelcomePage />
                 <DivSliderParrent />
+                <Slider3D/>
                 <Record />
                 <Retouched />
                 <Integration />
