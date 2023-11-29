@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import integration1 from "../../images/integration1.png"
 import integration2 from "../../images/integration2.png"
 import integration3 from "../../images/integration3.png"
@@ -43,7 +44,9 @@ AI-powered scanners, NUREG GmbH's unrivaled expertise in content production and 
                     <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`From inception to flawlessness, we're pushing boundaries, breaking limits, and crafting the future with each polygon.`}</p>
                     
                    <div className='flex justify-center '>
-                   <button className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Explore the 3D Content Production Solution</button>
+                  <Link to="/integrations">
+                  <button className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Explore the 3D Content Production Solution</button>
+                  </Link>
                    </div>
                 </div>
 
