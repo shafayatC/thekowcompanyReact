@@ -1,12 +1,12 @@
-const CircleStyle = () => {
+const CircleStyle = ({count, title}) => {
   return (
     <div className="flex flex-col items-center">
       <div>
         <div className="p-6 bg-kow-green rounded-full z-20 relative">
           <div className="rounded-full">
             <div className="shadow-2xl w-[130px] h-[130px] flex bg-[#f9f9f9] rounded-full items-center justify-center">
-              <h5 className="bg-white rounded-full text-4xl font-semibold">
-                12M
+              <h5 className="text-4xl font-semibold">
+                {count}
               </h5>
             </div>
           </div>
@@ -17,7 +17,7 @@ const CircleStyle = () => {
             <div className="bg-kow-green p-2 rounded-full"></div>
           </div>
           <div>
-            <h5 className="uppercase text-lg font-medium">2d Assets</h5>
+            <h5 className="uppercase text-lg font-medium">{title}</h5>
           </div>
         </div>
       </div>
