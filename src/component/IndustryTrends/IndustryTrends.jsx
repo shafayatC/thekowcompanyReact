@@ -1,6 +1,6 @@
 
-import trends1 from "../../images/trends1.png"
-import trends2 from "../../images/trends2.png"
+import trends1 from "../../images/2d.png"
+import trends2 from "../../images/3d.png"
 import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md";
 
 const IndustryTrends = () => {
@@ -16,6 +16,10 @@ const IndustryTrends = () => {
                         <div className='flex justify-center mt-4'>
                             <button className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</button>
                         </div>
+                        <div className="absolute flex gap-2 items-end right-0 bottom-[50px]">
+                            <h1 className="text-white text-[26px]">2D</h1>
+                            <h1 className="w-[110px]  border-b border-white mb-[10px]"></h1>
+                        </div>
                         <MdOutlineArrowBackIos className='absolute left-0 font-semibold bottom-20 text-white text-2xl'/>
                     </div>
                     <div className='relative'>
@@ -25,6 +29,10 @@ const IndustryTrends = () => {
                         />
                          <div className='flex justify-center mt-4'>
                             <button className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</button>
+                        </div>
+                        <div className="absolute flex gap-2 items-end right-0 bottom-[50px]">
+                            <h1 className="text-white text-[26px]">3D</h1>
+                            <h1 className="w-[110px]  border-b border-white mb-[12px] "></h1>
                         </div>
                         <MdOutlineArrowForwardIos className='absolute right-0 font-semibold bottom-20 text-white text-2xl' />
                     </div>
