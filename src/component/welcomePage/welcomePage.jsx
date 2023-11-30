@@ -1,5 +1,5 @@
 
-import sideArt from "../../images/sideArt-1.png"
+import sideArt from "../../images/sideArtV1.png"
 import logowhite from "../../images/logo2.png"
 
 const WelcomePage = () => {
@@ -10,12 +10,15 @@ const WelcomePage = () => {
                         <div className="absolute bottom-0 left-0 ">
                             <div className="relative">
                                 <div>
-                                    <img
+                                     <img
                                         src={sideArt}
                                         width={360} 
                                         // height={360}
                                         alt="sideArt"
-                                    />
+                                    /> 
+
+
+
 
                                 </div>
                                 <div className="absolute top-36 left-20">
