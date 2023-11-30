@@ -19,7 +19,7 @@ function HomeContainer() {
     return (
         <>
             <Navbar />
-            <div className="bg-[#DEE2E2] py-3 flex flex-col">
+            <div className="bg-[#DEE2E2] py-3 flex flex-col pt-20">
                 <ProductVideo />
                 <WelcomePage />
                 <DivSliderParrent />
