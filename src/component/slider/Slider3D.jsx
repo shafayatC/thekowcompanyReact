@@ -5,40 +5,40 @@ const Slider3D = () => {
   const sliderList = [
     {
       "image": "/img/slider_img_3d/1.jpg",
-      "label": "Shoes",
-      "link": "#"
-    },
-    {
-      "image": "/img/slider_img_3d/2.jpg",
       "label": "Furniture",
       "link": "#"
     },
     {
-      "image": "/img/slider_img_3d/3.jpg",
+      "image": "/img/slider_img_3d/2.jpg",
       "label": "Bag",
+      "link": "#"
+    },
+    {
+      "image": "/img/slider_img_3d/3.jpg",
+      "label": "Shoes",
       "link": "#"
     },
     {
       "image": "/img/slider_img_3d/1.jpg",
-      "label": "Shoes",
-      "link": "#"
-    },
-    {
-      "image": "/img/slider_img_3d/2.jpg",
       "label": "Furniture",
       "link": "#"
     },
     {
-      "image": "/img/slider_img_3d/3.jpg",
+      "image": "/img/slider_img_3d/2.jpg",
       "label": "Bag",
       "link": "#"
-    }
+    },
+    {
+      "image": "/img/slider_img_3d/3.jpg",
+      "label": "Shoes",
+      "link": "#"
+    },
   ]
   return (
     <div id='3d' className='pb-10 pt-10'>
 
       <div className=' relative'>
-        <Carousel uniqueId="id_1" delay={30000}
+        <Carousel uniqueId="id_100" delay={5000}
           item={3}
           indicators={false}>
           {sliderList.map((item, index) => (

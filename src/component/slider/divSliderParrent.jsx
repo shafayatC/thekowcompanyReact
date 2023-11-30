@@ -61,14 +61,17 @@ const DivSliderParrent = () => {
             <div className='relative'>
                 <div className='flex gap-4 absolute w-full top-1/2 left-0 z-40 justify-between -translate-y-1/2'>
                     <button
+                    
+                    disabled={currentPosition === 0}
+                    className='px-2 disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
                         //  disabled={currentPosition === -((sliderList.length - 1))}
-                        disabled={currentPosition === (sliderList.length - 1)}
-                        className='px-2 disabled:opacity-50 cursor-pointer' onClick={nextSlidFunc}>
+                        >
                         <img src={arrowImage} width={25} height={25} alt="" />
                     </button>
                     <button
-                        disabled={currentPosition === 0}
-                        className='px-2 disabled:opacity-50 cursor-pointer' onClick={prevSlidFunc}>
+                    
+                    disabled={currentPosition === (sliderList.length - 1)}
+                    className='px-2 disabled:opacity-10 cursor-pointer' onClick={nextSlidFunc}>
                         <img className='rotate-180' src={arrowImage} width={25} height={25} alt="" />
                     </button>
                 </div>
@@ -79,25 +82,25 @@ const DivSliderParrent = () => {
                             {lastOneItems.map((item, index) => (
                                 <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                     <div className='w-full h-full relative'>
-                                        <img className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
+                                        <img className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                             {sliderList.map((item, index) => (
                                 <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                     <div className='w-full h-full relative'>
-                                        <img className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
+                                        <img className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                             {firstTwoItems.map((item, index) => (
                                 <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
                                     <div className='w-full h-full relative'>
-                                        <img className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
+                                        <img className='w-auto h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
 
@@ -113,7 +116,7 @@ const DivSliderParrent = () => {
                                             rightImage={item.before}
                                         />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                             {firstOneItems.map((item, index) => (
@@ -124,7 +127,7 @@ const DivSliderParrent = () => {
                                             rightImage={item.before}
                                         />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                         </>
@@ -136,7 +139,7 @@ const DivSliderParrent = () => {
                                     <div className='w-full h-full relative'>
                                         <img className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                             {firstTwoItems.map((item, index) => (
@@ -144,7 +147,7 @@ const DivSliderParrent = () => {
                                     <div className='w-full h-full relative'>
                                         <img className='w-full h-full' src={item.after} alt="slider" fill={true} objectFit='cover' />
                                     </div>
-                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end gap-3'>{item.lebel}<span className='w-10 h-[1px] bg-black'></span></h4>
+                                    <h4 className='absolute bottom-[1px] left-[1px] text-[22px] font-medium leading-[16px] uppercase flex items-end'><span className='text-[30px] pb-[3px]'>{item.lebel.charAt(0)}</span><span>{item.lebel.substring(1, item.lebel.length)}</span><span className='ml-3 w-10 h-[1px] bg-black'></span></h4>
                                 </div>
                             ))}
                         </>

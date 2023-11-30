@@ -11,7 +11,7 @@ const Partnership = () => {
     return (
         <>
          <Navbar/>
-            <div className='partnership-background'>
+            <div className='partnership-background pt-20'>
                
                 <div className='container mx-auto'>
                 <FirstSection />

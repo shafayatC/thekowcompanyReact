@@ -9,10 +9,11 @@ const Record = () => {
                 <div className='container mx-auto'>
                     <div className='flex flex-col gap-11'>
                         <div className='grid grid-cols-4 justify-items-center -mt-24'>
-                            <CircleStyle />
-                            <CircleStyle />
-                            <CircleStyle />
-                            <CircleStyle />
+                            <CircleStyle count="12M" title="2D Assets"/>
+                            <CircleStyle count="12M" title="2D Assets"/>
+                            <CircleStyle count="12M" title="2D Assets"/>
+                            <CircleStyle count="12M" title="2D Assets"/>
+
                         </div>
                         <div className='flex justify-center gap-10 my-10'>
                             <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
