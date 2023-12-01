@@ -145,3 +145,12 @@ html,body{
   background: #000;
   opacity: 0.6;
 }
+
+.bgImage {
+	background-image: url("./circle-bg.svg");
+	background-attachment: fixed;
+	min-height: 100%;
+	background-size: 466px;
+	background-repeat: no-repeat;
+	background-position: 110% -63px;
+}

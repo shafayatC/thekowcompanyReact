@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import DivSlider from './divSlider';
 import ReactCompareImage from 'react-compare-image';
 import arrowImage from '../../images/arrow.png';
@@ -56,14 +56,24 @@ const DivSliderParrent = () => {
     const prevSlidFunc = () => {
         setCurrentPosition((pos) => pos - 1);
     }
+    useEffect(() => {
+        var containers = document.querySelectorAll('[data-testid="container"]');
+
+        // Apply the CSS styles to each selected element
+        containers.length > 0 &&  setTimeout(() => {
+            containers.forEach((container) => {
+                container.style.height = '100%';
+            });
+        }, 100);
+    }, [])
     return (
         <div id='images' className='pt-10 pb-7'>
-            <div className='relative'>
-                <div className='flex gap-4 absolute w-full top-1/2 left-0 z-40 justify-between -translate-y-1/2'>
+            <div className='relative 2xl:container 2xl:mx-auto h-[350px] '>
+                <div className=''>
                     <button
                     
                     disabled={currentPosition === 0}
-                    className='px-2 disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
+                    className='absolute top-1/2 left-0 z-40 -translate-y-1/2 px-2 disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
                         //  disabled={currentPosition === -((sliderList.length - 1))}
                         >
                         <img src={arrowImage} width={25} height={25} alt="" />
@@ -71,11 +81,11 @@ const DivSliderParrent = () => {
                     <button
                     
                     disabled={currentPosition === (sliderList.length - 1)}
-                    className='px-2 disabled:opacity-10 cursor-pointer' onClick={nextSlidFunc}>
+                    className='absolute top-1/2 right-0 z-40 -translate-y-1/2 px-2 disabled:opacity-10 cursor-pointer' onClick={nextSlidFunc}>
                         <img className='rotate-180' src={arrowImage} width={25} height={25} alt="" />
                     </button>
                 </div>
-                <div className='h-[350px] grid grid-cols-[350px_auto_350px] gap-3'>
+                <div className='2xl:container 2xl:mx-auto h-[350px] grid grid-cols-[350px_auto_350px] gap-3'>
                     <DivSlider startPos={1} width={divStyle.width} currentPos={currentPosition} childLength={sliderList.length + 3}>
                         <>
 
@@ -109,8 +119,8 @@ const DivSliderParrent = () => {
                     <DivSlider startPos={1} width={divStyle.width} currentPos={currentPosition} childLength={sliderList.length + 1}>
                         <>
                             {sliderList.map((item, index) => (
-                                <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
-                                    <div className='w-full h-full relative'>
+                                <div key={index} className='z-10 float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
+                                    <div className='compareImageParrent w-full h-full relative'>
                                         <ReactCompareImage
                                             leftImage={item.after}
                                             rightImage={item.before}
@@ -120,8 +130,8 @@ const DivSliderParrent = () => {
                                 </div>
                             ))}
                             {firstOneItems.map((item, index) => (
-                                <div key={index} className='float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
-                                    <div className='w-full h-full relative'>
+                                <div key={index} className='z-10 float-left relative h-full' style={{ width: divStyle.width + 'px', height: '100%' }}>
+                                    <div className='compareImageParrent w-full h-full relative'>
                                         <ReactCompareImage
                                             leftImage={item.after}
                                             rightImage={item.before}
@@ -161,7 +171,7 @@ const DivSliderParrent = () => {
                     <h1 className='text-[40px] -mb-4 font-bold'>IMAGES</h1>
                     <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                 </div>
-                <p className='text-xs md:text-sm px-[54px]'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordi-
+                <p className='text-xs md:text-sm px-[54px] text-center'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordi-
 nary, transforming each product shot into a magnetic narrative that accentuates every exceptional detail.`}</p>
                 <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your prod-
 ucts radiate brilliance, whether on a website, social media, or in print.`}</p>

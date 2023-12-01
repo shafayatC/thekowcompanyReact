@@ -10,16 +10,11 @@ const WelcomePage = () => {
                         <div className="absolute bottom-0 left-0 ">
                             <div className="relative">
                                 <div>
-                                     <img
+                                    <img
                                         src={sideArt}
                                         width={360} 
                                         // height={360}
-                                        alt="sideArt"
-                                    /> 
-
-
-
-
+                                        alt="sideArt"/> 
                                 </div>
                                 <div className="absolute top-36 left-20">
                                     <img
