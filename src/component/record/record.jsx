@@ -16,7 +16,7 @@ const Record = () => {
                         </div>
                         <div className='grid md:grid-cols-[100px_auto_100px] lg:grid-cols-3 justify-center gap-10 my-10'>
                             <h1 className='border-b border-[#7C9C30]'></h1>
-                            <h1 className='text-[40px] -mb-4 font-bold'>SUCCESS RECORD</h1>
+                            <h1 className='text-[40px] text-center -mb-4 font-bold'>SUCCESS RECORD</h1>
                             <h1 className='border-b border-[#7C9C30]'></h1>
                         </div>
                     </div>
