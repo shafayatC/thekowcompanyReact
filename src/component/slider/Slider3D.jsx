@@ -37,13 +37,26 @@ const Slider3D = () => {
   return (
     <div id='3d' className='pb-10 pt-10'>
 
-      <div className='relative 2xl:container 2xl:mx-auto '>
+      <div className='2xl:container 2xl:mx-auto '>
+        <div className='relative w-full '>
         <Carousel uniqueId="id_100" delay={5000}
           item={3}
-          indicators={false}>
+          indicators={false}
+          responsive={ [
+            {
+                breakPoint: 641, 
+                item: 1
+            },
+            {
+                breakPoint: 1025, 
+                item: 2, 
+            }
+        ]
+    }
+    >
           {sliderList.map((item, index) => (
             // <div className='h-full px-2'><img src={item.image}/></div>
-            <div className='mx-2 cursor-pointer'>
+            <div className='flex flex-col md:block mx-2 cursor-pointer'>
               <div className="img-container  hover:transition duration-300 ease-in-out">
                 <img className="img-bag" src={item.image} alt="" />
                 <div className="view-content">
@@ -54,6 +67,7 @@ const Slider3D = () => {
             </div>
           ))}
         </Carousel>
+        </div>
       </div>
       <div className='container mx-auto'>
         <div className='flex justify-center gap-10 my-10'>

@@ -14,7 +14,7 @@ const Footer = () => {
     return ( 
         <div>
             <div id="footer" className="bg-[#7C9C30]">
-                <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5">
+                <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
                             <img src={logoWhite}
@@ -57,7 +57,7 @@ const Footer = () => {
                         <button className="bg-white  px-6 py-2 mt-2 gap-2 rounded-3xl text-xs">Language </button>
                     </div>
 
-                    <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-start gap-1">
+                    <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-lg font-semibold text-[white] mb-2 ">HOME</span>
                         <a className="link link-hover text-xs">2D</a>
                         <a className="link link-hover text-xs">3D</a>
@@ -68,7 +68,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Blog</a>
 
                     </div>
-                    <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-start  gap-1  lg:-ml-0">
+                    <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
                         <span className="text-lg font-semibold mb-2">Learn more</span>
                         <a className="link link-hover text-xs">Magic Brush</a>
                         <a className="link link-hover text-xs">Individuals</a>
@@ -77,7 +77,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Developers</a>
                         <a className="link link-hover text-xs">Ecommerce</a>
                     </div>
-                    <div className="flex text-white lg:items-start md:items-start md:-ml-16 flex-col text-left gap-1  lg:-ml-0">
+                    <div className="flex text-white lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-lg font-semibold mb-2">Support</span>
                         <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
@@ -88,7 +88,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Sign up</a>
                     </div>
                     <div className="text-center ml-20 md:ml-0 lg:ml-0">
-                        <span className="font-bold text-white text-lg mb-4 ml-8 lg:-ml-16">
+                        <span className="font-bold text-white text-lg w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
                         <iframe

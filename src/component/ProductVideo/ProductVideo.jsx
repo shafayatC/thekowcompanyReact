@@ -51,7 +51,7 @@ const ProductVideo = () => {
                 </video>
               </div>
               :
-              <div onClick={() => setPlayBool(true)} className="cursor-pointer flex flex-col items-center justify-center relative w-[450px]" >
+              <div onClick={() => setPlayBool(true)} className="cursor-pointer flex flex-col items-center justify-center relative max-w-full md:w-[450px]" >
                 <img src={play} alt="play"
                   sizes="100vw"
                   style={{

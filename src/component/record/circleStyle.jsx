@@ -1,7 +1,7 @@
 const CircleStyle = ({count, title}) => {
   return (
     <div className="flex flex-col items-center">
-      <div>
+      <div className="flex flex-col items-center">
         <div className="p-6 bg-kow-green rounded-full z-20 relative">
           <div className="rounded-full">
             <div className="shadow-2xl w-[130px] h-[130px] flex bg-[#f9f9f9] rounded-full items-center justify-center">
