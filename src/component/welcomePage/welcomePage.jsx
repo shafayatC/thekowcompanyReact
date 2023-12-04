@@ -4,24 +4,21 @@ import logowhite from "../../images/logo2.png"
 
 const WelcomePage = () => {
     return (
-        <div className=''> 
+        <div className=''>
             <div className='bg-[#7C9C30] relative '>
-                <div className="container mx-auto ">             
-                        <div className="absolute bottom-0 left-0 ">
-                            <div className="relative">
-                                <div>
-                                     <img
+                <div className="container mx-auto ">
+                    <div className="flex flex-col lg:flex-row items-center py-9 lg:py-0">
+
+                        <div className="hidden lg:block absolute bottom-0 left-0 ">
+                            <div className="relative w-[250px] lg:w-[320px] xl:w-[360px]">
+                                <div className="">
+                                    <img
                                         src={sideArt}
-                                        width={360} 
+                                        // width={360} 
                                         // height={360}
-                                        alt="sideArt"
-                                    /> 
-
-
-
-
+                                        alt="sideArt" />
                                 </div>
-                                <div className="absolute top-36 left-20">
+                                <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                                     <img
                                         src={logowhite}
                                         width={200}
@@ -31,8 +28,15 @@ const WelcomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className=" flex justify-end h-[400px] items-center">
-                            <p className=" w-3/4 px-20 text-white text-justify">With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
+                        <div className="block lg:hidden">
+                            <img
+                                className="w-[200px] pb-8"
+                                src={logowhite}
+                                alt="logo"
+                            />
+                        </div>
+                        <div className=" flex justify-end lg:h-[400px] items-center">
+                            <p className="w-full px-3 lg:w-3/4 lg:pl-20 lg:px-0 xl:px-20 text-white text-justify">With a relentless commitment to excellence, we have etched our name as a leading player in the world of Ecommerce
                                 and Studio Image & 3D Post-Production. Our journey has been defined by creativity, precision, and an unwavering
                                 passion for transforming visual concepts into captivating realities.
                                 Our multifaceted expertise extends beyond the realms of traditional image editing. We boast a remarkable proficiency
@@ -43,7 +47,8 @@ const WelcomePage = () => {
                                 product images that exude sophistication and elegance, allowing your merchandise to shine in its full glory.
                                 At The KOW Company, we dont just meet your expectations; we surpass them. Our dedication to perfection and innovative
                                 solutions will empower your brand to rise above the competition, turning every visual into a masterpiece.</p>
-                            </div>    
+                        </div>
+                    </div>
                 </div>
             </div>
 

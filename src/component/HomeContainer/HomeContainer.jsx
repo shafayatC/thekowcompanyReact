@@ -14,12 +14,14 @@ import IndustryTrends from '../IndustryTrends/IndustryTrends'
 import GetUpdate from '../GetUpdate/GetUpdate'
 import Footer from '../footer/footer'
 import Slider3D from '../slider/Slider3D'
+import TheSquadSlide from '../TheSquad/TheSquadSlide'
 
 function HomeContainer() {
     return (
         <>
             <Navbar />
-            <div className="bg-[#DEE2E2] py-3 flex flex-col pt-20">
+            <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
+                {/* <img src='/circle-bg.svg' /> */}
                 <ProductVideo />
                 <WelcomePage />
                 <DivSliderParrent />
@@ -27,7 +29,8 @@ function HomeContainer() {
                 <Record />
                 <Retouched />
                 <Integration />
-                <TheSquad />
+                <TheSquadSlide/>
+                {/* <TheSquad /> */}
                 <BluePrint />
                 <IndustryTrends />
                 <GetUpdate />

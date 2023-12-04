@@ -37,13 +37,26 @@ const Slider3D = () => {
   return (
     <div id='3d' className='pb-10 pt-10'>
 
-      <div className=' relative'>
+      <div className='2xl:container 2xl:mx-auto '>
+        <div className='relative w-full '>
         <Carousel uniqueId="id_100" delay={5000}
           item={3}
-          indicators={false}>
+          indicators={false}
+          responsive={ [
+            {
+                breakPoint: 641, 
+                item: 1
+            },
+            {
+                breakPoint: 1025, 
+                item: 2, 
+            }
+        ]
+    }
+    >
           {sliderList.map((item, index) => (
             // <div className='h-full px-2'><img src={item.image}/></div>
-            <div className='mx-2 cursor-pointer'>
+            <div className='flex flex-col md:block mx-2 cursor-pointer'>
               <div className="img-container  hover:transition duration-300 ease-in-out">
                 <img className="img-bag" src={item.image} alt="" />
                 <div className="view-content">
@@ -54,14 +67,15 @@ const Slider3D = () => {
             </div>
           ))}
         </Carousel>
+        </div>
       </div>
-      <div>
+      <div className='container mx-auto'>
         <div className='flex justify-center gap-10 my-10'>
           <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
           <h1 className='text-[40px] -mb-4 font-bold'>3D</h1>
           <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
         </div>
-        <p className='text-xs md:text-sm px-[54px]'>{`Visualize your brand in a captivating three-dimensional spectacle, brought to life by a skilled team of 3D artists. Whether showcasing products with realism, crafting engaging ani-
+        <p className='text-xs text-center md:text-sm px-[54px]'>{`Visualize your brand in a captivating three-dimensional spectacle, brought to life by a skilled team of 3D artists. Whether showcasing products with realism, crafting engaging ani-
 mations, or building immersive virtual experiences, we've got you covered. Our meticulous digital replicas capture every nuance and detail with astonishing accuracy, breathing
 life into your products.`}</p>
         <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`From intricate design elements to functional features, our 3D models empower customers to explore from every angle before purchase. In architectural visualization, we tran-

@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import trends1 from "../../images/2d.png"
 import trends2 from "../../images/3d.png"
 import { MdOutlineArrowForwardIos,MdOutlineArrowBackIos  } from "react-icons/md";
@@ -14,7 +15,7 @@ const IndustryTrends = () => {
                         alt='trends photo' 
                         />
                         <div className='flex justify-center mt-4'>
-                            <button className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</button>
+                            <Link to="/industry-trends" className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</Link>
                         </div>
                         <div className="absolute flex gap-2 items-end right-0 bottom-[50px]">
                             <h1 className="text-white text-[26px]">2D</h1>
@@ -28,7 +29,7 @@ const IndustryTrends = () => {
                         alt='trends photo'
                         />
                          <div className='flex justify-center mt-4'>
-                            <button className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</button>
+                            <Link to="/industry-trends" className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</Link>
                         </div>
                         <div className="absolute flex gap-2 items-end right-0 bottom-[50px]">
                             <h1 className="text-white text-[26px]">3D</h1>

@@ -12,7 +12,7 @@ const GetUpdate = () => {
                     </div> 
                     <p className=" text-center text-sm">Sign up for our mailing list and we will let you know when we </p>
                     <p className=" text-center text-sm mb-6">release new features or updates.</p>
-                    <div className=" mb-3 p-2 w-80 shadow-md bg-white absolute left-[50%] rounded-3xl border-gray-800 border-1" style={{ transform: 'translateX(-50%)' }}>
+                    <div className="flex justify-between mb-3 p-2 w-80 shadow-md bg-white absolute left-[50%] rounded-3xl border-gray-800 border-1" style={{ transform: 'translateX(-50%)' }}>
                         <input
                             type="text"
                             className="border-none pl-4 focus:outline-none text-sm text-black  w-48"
