@@ -3,6 +3,7 @@
 import blog1 from "../../images/blog1.png"
 import blog2 from "../../images/blog2.png"
 import blog3 from "../../images/blog3.png"
+import ScrolTop from "../ScrolTop/ScrolTop";
 import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
 import BlogPageDetails from "./BlogPageDetails";
@@ -11,8 +12,10 @@ import "./style.css"
 
 
 const BlogPage = () => {
+
     return (
         <>
+        <ScrolTop/>
         <Navbar/>
         <div className='bg bg-white'>
             <div className='container mx-auto'>
