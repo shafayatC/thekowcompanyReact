@@ -87,7 +87,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Contact us</a>
                         <a className="link link-hover text-xs">Sign up</a>
                     </div>
-                    <div className="text-center ml-20 md:ml-0 lg:ml-0">
+                    <div className="text-center flex flex-col items-center md:flex-row md:ml-0 lg:ml-0">
                         <span className="font-bold text-white text-lg w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
