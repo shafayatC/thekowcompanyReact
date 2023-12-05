@@ -6,10 +6,12 @@ import ThirdSection from './ThirdSection';
 import FourthSection from './FourthSection';
 import FifthSection from './FifthSection';
 import Navbar from '../navber/navbar';
+import ScrolTop from '../ScrolTop/ScrolTop';
 
 const Partnership = () => {
     return (
         <>
+        <ScrolTop/>
          <Navbar/>
             <div className='partnership-background pt-20'>
                
