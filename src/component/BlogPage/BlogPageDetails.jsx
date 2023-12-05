@@ -24,7 +24,7 @@ const BlogPageDetails = () => {
                             </div>
                             <div>
                                 <img src={blog4}
-                                    width={1400}
+                                    width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
                                 />
@@ -34,7 +34,7 @@ const BlogPageDetails = () => {
 
                             <div>
                                 <img src={blog5}
-                                    width={1400}
+                                    width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
                                 />
@@ -70,7 +70,7 @@ const BlogPageDetails = () => {
                             </div>
                             <div>
                                 <img src={blog6}
-                                    width={1400}
+                                    width={1200}
                                     alt='trends photo'
                                     className='shadow-xl shadow-slate-400'
                                 />
