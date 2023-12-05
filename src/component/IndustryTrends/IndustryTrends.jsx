@@ -8,7 +8,7 @@ const IndustryTrends = () => {
     return (
         <div id="trends">
             <div className='container mx-auto'>
-                <div className='flex md:flex-row items-center justify-center gap-3 pt-40 pb-20'>
+                <div className='flex md:flex-row items-center justify-center gap-3 pt-20 pb-20'>
                     <div className='relative'>
                         <img src={trends1}
                         width={500}
@@ -39,7 +39,7 @@ const IndustryTrends = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-center gap-10 my-6'>
+                <div className='flex justify-center gap-10 mb-40'>
                         <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
                         <h1 className='text-[40px] -mb-4 font-bold'>INDUSTRY TRENDS</h1>
                         <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
