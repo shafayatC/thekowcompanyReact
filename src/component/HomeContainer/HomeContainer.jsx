@@ -15,6 +15,7 @@ import GetUpdate from '../GetUpdate/GetUpdate'
 import Footer from '../footer/footer'
 import Slider3D from '../slider/Slider3D'
 import TheSquadSlide from '../TheSquad/TheSquadSlide'
+import VirtualTour from '../VirtualTour/VirtualTour'
 
 function HomeContainer() {
     return (
@@ -33,6 +34,7 @@ function HomeContainer() {
                 {/* <TheSquad /> */}
                 <BluePrint />
                 <IndustryTrends />
+                <VirtualTour/>
                 <GetUpdate />
             </div>
             <Footer />
