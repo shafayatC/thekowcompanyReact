@@ -2,6 +2,7 @@ import Integrations from "../Apps&Integration/Apps&Integrations";
 import ChoosePlan from "../ChoosePlan/ChoosePlan";
 import LetsTalk from "../LetsTalk/LetsTalk";
 import Navbar2D from "../Navbar2D/Navbar2D";
+import OrderGuide from "../OrderGuide/OrderGuide";
 import StartPage from "../StartPage/StartPage";
 
 
@@ -14,6 +15,7 @@ const Container2D = () => {
             <Integrations/>
             <ChoosePlan/>
             <LetsTalk/>
+            <OrderGuide/>
         </div>
         </>
     );
