@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
-            <HashLink to="/#images" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">IMAGES</HashLink>
+            <HashLink to="/2d" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">IMAGES</HashLink>
             <HashLink to="/#3d" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">3D</HashLink>
             <HashLink to="/#ai" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">AI</HashLink>
             <HashLink to="/#integration" className="text-gray-800 text-xs lg:text-sm border-b-2 border-[#DEE2E2] font-semibold hover:border-b-2 hover:border-[#7C9C30]">INTEGRATIONS</HashLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
           getMenuBool &&         <div className="block md:hidden bg-[#DEE2E2] pt-2 ">
           <div className="container mx-auto">
             <div className="flex flex-col text-center gap-4">
-              <HashLink onClick={() => setMenuBool(false)} to="/#images" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">IMAGES</HashLink>
+              <HashLink onClick={() => setMenuBool(false)} to="/2d" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">IMAGES</HashLink>
               <HashLink onClick={() => setMenuBool(false)} to="/#3d" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">3D</HashLink>
               <HashLink onClick={() => setMenuBool(false)} to="/#ai" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">AI</HashLink>
               <HashLink onClick={() => setMenuBool(false)} to="/#integration" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">INTEGRATIONS</HashLink>
