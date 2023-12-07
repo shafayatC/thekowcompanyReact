@@ -11,8 +11,13 @@ export default {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxShadow: {
+        'kow-shadow': '-3px 3px 7px gray',
+      },
       colors: {
+        'kow-gray-light': '#dde1e1', 
         'kow-green': '#7c9c30',
+        'kow-green-light': '#b1cc40',
         'kow-text-black': '#333333',
       },
     },

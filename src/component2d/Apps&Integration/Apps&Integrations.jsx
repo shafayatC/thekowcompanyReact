@@ -5,7 +5,7 @@ import bigCommarce from "../../assets/bigcommerce.png";
 
 const Integrations = () => {
   return (
-    <div className="bg-[#B1CC40] py-20">
+    <div className="bg-[#B1CC40] py-20" id="apps">
       <div className="container mx-auto">
         <div className="flex justify-center items-center ">
           <div className="w-[200px] border-r py-2 px-6 border-[#B5BCA1]">

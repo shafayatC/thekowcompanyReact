@@ -3,7 +3,7 @@ import contact from "../../assets/contact-us.png";
 
 const LetsTalk = () => {
   return (
-    <div className="pb-24">
+    <div className="pb-24" id="2d-contact">
       <div className="container mx-auto ">
         <div className="flex justify-center py-12">
           <div>
