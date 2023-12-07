@@ -1,6 +1,6 @@
 const ChoosePlan = () => {
   return (
-    <div>
+    <div id="price">
       <div className="pb-20">
         <div>
           <div className="container mx-auto pt-20">
