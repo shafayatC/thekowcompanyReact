@@ -4,7 +4,7 @@ const ChoosePlan = () => {
       <div className="pb-20">
         <div>
           <div className="container mx-auto pt-20">
-            <div className="flex justify-center gap-12 items-center ">
+            <div className="flex flex-col justify-center md:flex-row  gap-12 items-center ">
               <div className=" h-[400px] w-[260px] bg-white shadow-lg border border--gradient-to-t from-white via-slate-300 to-white rounded-md ">
                 <div className="flex flex-col items-center h-[130px] bg-[#DEE2E2] pt-10">
                   <h5 className="text-2xl  font-semibold">BASIC</h5>
