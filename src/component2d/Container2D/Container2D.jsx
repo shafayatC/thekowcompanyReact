@@ -1,5 +1,6 @@
 import Integrations from "../Apps&Integration/Apps&Integrations";
 import ChoosePlan from "../ChoosePlan/ChoosePlan";
+import ImageSlider from "../ImageSlider/ImageSlider";
 import LetsTalk from "../LetsTalk/LetsTalk";
 import Navbar2D from "../Navbar2D/Navbar2D";
 
@@ -16,6 +17,7 @@ const Container2D = () => {
         <div className="bg-[#DEE2E2]">
             <StartPage/>
             <Record2d/>
+            <ImageSlider/>
             <Integrations/>
             <ChoosePlan/>
             <LetsTalk/>

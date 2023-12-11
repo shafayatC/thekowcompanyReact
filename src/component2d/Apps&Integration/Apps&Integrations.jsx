@@ -7,7 +7,7 @@ const Integrations = () => {
   return (
     <div className="bg-[#B1CC40] py-20" id="apps">
       <div className="container mx-auto">
-        <div className="flex justify-center items-center ">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-0 ">
           <div className="w-[200px] border-r py-2 px-6 border-[#B5BCA1]">
             <img src={shopify} />
           </div>

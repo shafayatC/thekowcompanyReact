@@ -154,3 +154,11 @@ html,body{
 	background-repeat: no-repeat;
 	background-position: 110% -63px;
 }
+
+
+
+/*after before image */
+
+#eccId_id_1011 {height: 100% !important;}
+#eccId_id_1011 [data-testid="container"] {height: 100% !important;}
+#id_1011 div {height: 100%;}

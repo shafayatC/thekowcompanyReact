@@ -71,7 +71,6 @@ const DivSliderParrent = () => {
             <div className='relative 2xl:container 2xl:mx-auto h-[350px] '>
                 <div className=''>
                     <button
-
                         disabled={currentPosition === 0}
                         className='bg-[#666] lg:bg-transparent py-2 lg:py-0 px-2 absolute top-1/2 left-0 z-40 -translate-y-1/2  disabled:opacity-10 cursor-pointer' onClick={prevSlidFunc}
                     //  disabled={currentPosition === -((sliderList.length - 1))}
