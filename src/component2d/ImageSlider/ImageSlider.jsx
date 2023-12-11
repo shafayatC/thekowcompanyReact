@@ -73,7 +73,7 @@ const ImageSlider = () => {
                 <div className="pt-10">
                     <div className="relative  border border-[#B1CC40]">
                         <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-4xl  font-bold text-center">
+                            <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-3xl md:text-4xl  font-bold text-center">
                                 {`IMAGES`}
                             </span>
                         </h2>

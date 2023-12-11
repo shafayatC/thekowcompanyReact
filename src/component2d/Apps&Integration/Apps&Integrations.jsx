@@ -25,7 +25,7 @@ const Integrations = () => {
       <div className="pt-28">
         <div className="relative  border border-white">
           <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span className="bg-[#B1CC40] px-12 py-1 text-4xl  font-bold">
+            <span className="bg-[#B1CC40] px-12 py-1 text-3xl md:text-4xl text-kow-text-black text-center font-bold">
               {`APPS & INTEGRATION`}
             </span>
           </h2>
