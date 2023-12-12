@@ -1,9 +1,0 @@
-.carousel-container {
-  display: flex;
-}
-
-.carousel-item {
-  flex: 0 0 33.33%; /* Set each item to take up 33.33% of the container width */
-  box-sizing: border-box;
-  padding: 10px;
-}

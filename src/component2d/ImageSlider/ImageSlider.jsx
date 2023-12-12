@@ -38,7 +38,7 @@ const ImageSlider = () => {
 
 
     return (
-        <div className='py-20'>
+        <div className='py-20' id='services'>
             <div className='2xl:container 2xl:mx-auto '>
                 <div className='relative w-full h-[400px]'>
                     <Carousel uniqueId="id_1011"
