@@ -8,6 +8,7 @@ import OrderGuide from "../OrderGuide/OrderGuide";
 
 import Record2d from "../Record/Record2d";
 import StartPage from "../StartPage/StartPage";
+import VideoSlider from "../VideoSlider/VideoSlider";
 
 
 const Container2D = () => {
@@ -18,6 +19,7 @@ const Container2D = () => {
             <StartPage/>
             <Record2d/>
             <ImageSlider/>
+            <VideoSlider/>
             <Integrations/>
             <ChoosePlan/>
             <LetsTalk/>
