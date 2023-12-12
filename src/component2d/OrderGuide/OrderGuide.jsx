@@ -111,7 +111,7 @@ const OrderGuide = () => {
       <div className="pt-12 pb-12">
         <div className="relative  border border-[#B1CC40]">
           <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span className="bg-white px-12 py-1 text-4xl  font-bold">
+            <span className="bg-white px-12 py-1 text-3xl md:text-4xl text-center text-kow-text-black font-bold">
               {`ORDER GUIDE`}
             </span>
           </h2>
