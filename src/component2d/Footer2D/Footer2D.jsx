@@ -1,6 +1,5 @@
 
-import { BiSolidDownArrow } from 'react-icons/bi';
-import logoWhite from '../../images/logo2.png'
+import logoWhite from '../../images/logo3.png'
 
 import {
     FaFacebook,
@@ -9,12 +8,13 @@ import {
     FaTwitter,
     FaYoutube,
 } from "react-icons/fa";
+import { BiSolidDownArrow } from "react-icons/bi";
 
 
-const Footer = () => {
+const Footer2D = () => {
     return ( 
         <div>
-            <div id="footer" className="bg-[#7C9C30]">
+            <div id="footer" className="bg-[#B1CC40]">
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
@@ -22,7 +22,7 @@ const Footer = () => {
                                 width={120}
                                 alt="" />
                         </figure>
-                        <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
+                        <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
                             <b>The KOW Company</b> is one of the
                             leading image and video editing
                             company for businesses all over
@@ -30,49 +30,50 @@ const Footer = () => {
                         </p>
                         <div className="flex text-[#003333] justify-center gap-1 mb-2">
                             <a href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
-                                <FaFacebook className="h-4 w-4 mr-2 text-white cursor-pointer"></FaFacebook>
+                                <FaFacebook className="h-4 w-4 mr-2 text-black cursor-pointer"></FaFacebook>
                             </a>
                             <a
                                 href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ"
                                 target="_blank" rel="noreferrer"
                             >
-                                <FaYoutube className="h-4 w-4 mr-2 text-white cursor-pointer"></FaYoutube>
+                                <FaYoutube className="h-4 w-4 mr-2 text-black cursor-pointer"></FaYoutube>
                             </a>
                             <a
                                 href="https://www.linkedin.com/company/cutoutwiz-ltd/"
                                 target="_blank" rel="noreferrer"
                             >
-                                <FaLinkedinIn className="h-4 w-4 mr-2 text-white cursor-pointer"></FaLinkedinIn>
+                                <FaLinkedinIn className="h-4 w-4 mr-2 text-black cursor-pointer"></FaLinkedinIn>
                             </a>
                             <a href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
-                                <FaTwitter className="h-4 w-4 mr-2 text-white cursor-pointer"></FaTwitter>
+                                <FaTwitter className="h-4 w-4 mr-2 text-black cursor-pointer"></FaTwitter>
                             </a>
                             <a
                                 href="https://www.instagram.com/accounts/login/"
                                 target="_blank" rel="noreferrer"
                             >
-                                <FaInstagram className="h-4 w-4 mr-2 text-white cursor-pointer"></FaInstagram>
+                                <FaInstagram className="h-4 w-4 mr-2 text-black cursor-pointer"></FaInstagram>
                             </a>
                         </div>
 
-                        <div className='flex justify-center items-center bg-white  px-6 py-2 mt-2 gap-2 font-semibold rounded-3xl text-xs'>
+                       <div className='flex justify-center items-center bg-white  px-6 py-2 mt-2 gap-2 font-semibold rounded-3xl text-xs'>
                        <button className=" ">Language </button>
                        <BiSolidDownArrow />
                        </div>
+                        
                     </div>
 
-                    <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
-                        <span className="text-lg font-semibold text-[white] mb-2 ">HOME</span>
-                        <a className="link link-hover text-xs">2D</a>
-                        <a className="link link-hover text-xs">3D</a>
-                        <a className="link link-hover text-xs">AI</a>
-                        <a className="link link-hover text-xs">Integrations</a>
-                        <a className="link link-hover text-xs">Blueprint</a>
-                        <a className="link link-hover text-xs">Industry Trends</a>
-                        <a className="link link-hover text-xs">Blog</a>
+                    <div className="flex flex-col text-black lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
+                        <span className="text-lg font-semibold text-black mb-2 ">HOME</span>
+                        <a className="link link-hover text-xs">SERVICES</a>
+                        <a className="link link-hover text-xs">APPS</a>
+                        <a className="link link-hover text-xs">PRICE</a>
+                        <a className="link link-hover text-xs">ORDER GUIDE</a>
+                        <a className="link link-hover text-xs">2D TRENDS</a>
+                        <a className="link link-hover text-xs">CONTACT US</a>
+                        <a className="link link-hover text-xs">SIGN UP</a>
 
                     </div>
-                    <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
+                    <div className="flex lg:items-start text-black md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
                         <span className="text-lg font-semibold mb-2">Learn more</span>
                         <a className="link link-hover text-xs">Magic Brush</a>
                         <a className="link link-hover text-xs">Individuals</a>
@@ -81,7 +82,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Developers</a>
                         <a className="link link-hover text-xs">Ecommerce</a>
                     </div>
-                    <div className="flex text-white lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
+                    <div className="flex text-black lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-lg font-semibold mb-2">Support</span>
                         <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
@@ -92,7 +93,7 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Sign up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
-                        <span className="font-bold text-white text-lg w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
+                        <span className="font-bold text-black text-lg w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
                         <iframe
@@ -107,10 +108,12 @@ const Footer = () => {
 
                 </footer>
 
+              
+
 
             </div>
         </div>
     )
 }
 
-export default Footer;
+export default Footer2D;
