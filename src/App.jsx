@@ -6,7 +6,8 @@ import HomeContainer from './component/HomeContainer/HomeContainer'
 import BlogPage from './component/BlogPage/BlogPage'
 import Partnership from './component/Partnership/Partnership'
 import Container2D from './component2d/Container2D/Container2D'
-// import CarouselTest2 from './component/CarouselTest/CarouselTest2'
+import CarouselTest from './component/CarouselTest/CarouselTest'
+
 
 
 
@@ -20,6 +21,9 @@ function App() {
         <Route path="/industry-trends" element={<BlogPage />} />
         <Route path="/integrations" element={<Partnership />} />
         <Route path="/2d" element={<Container2D/>} />
+        <Route path="/test" element={<CarouselTest/>} />
+    
+        
 
       </Routes>
     </>
