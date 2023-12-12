@@ -37,11 +37,11 @@ const Blog2D = () => {
       <div className='container mx-auto'>
         <div className='flex justify-center items-center gap-5 '>
           <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl -mt-16' /></button>
-          <div className='flex justify-center gap-2'>
+          <div className='flex justify-center gap-2 w-[280px] sm:w-full'>
             {getVisibleDivs() && getVisibleDivs().map((div) => (
               <div className='flex-col items-center justify-center ' key={div.id}>
                 <div>
-                  <img className='w-full' src={div.imageUrl} alt={div.text} />
+                  <img className=' w-full' src={div.imageUrl} alt={div.text} />
                 </div>
                 <div className='flex flex-col items-center gap-2 pt-5 pb-10'>
                   <div className='flex justify-center items-center gap-2 '>
