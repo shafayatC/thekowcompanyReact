@@ -9,16 +9,16 @@ const Integrations = () => {
       <div className="bg-[#B1CC40] pb-20 pt-20">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-20 md:gap-0 ">
-            <div className="w-[200px] border-r py-2 pr-6 border-[#B5BCA1]">
+            <div className="w-[220px]  py-2 pr-6 md:border-r  md:border-[#B5BCA1]">
               <img src={shopify} />
             </div>
-            <div className="w-[200px] border-r pt-5 px-6 border-[#B5BCA1]">
+            <div className="w-[220px] md:border-r  md:border-[#B5BCA1] pt-5 px-6 ">
               <img src={amazon} />
             </div>
-            <div className="w-[200px] border-r px-6 py-2 border-[#B5BCA1]">
+            <div className="w-[220px] px-6 py-2 md:border-r  md:border-[#B5BCA1]">
               <img src={cutoutwiz} />
             </div>
-            <div className="w-[200px] pl-6">
+            <div className="w-[220px] pl-6">
               <img src={bigCommarce} />
             </div>
           </div>
