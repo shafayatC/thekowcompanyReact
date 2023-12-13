@@ -9,6 +9,7 @@ import {
     FaYoutube,
 } from "react-icons/fa";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { HashLink } from 'react-router-hash-link';
 
 
 const Footer2D = () => {
@@ -64,13 +65,13 @@ const Footer2D = () => {
 
                     <div className="flex flex-col text-black lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
                         <span className="text-lg font-semibold text-black mb-2 ">HOME</span>
-                        <a className="link link-hover text-xs">SERVICES</a>
-                        <a className="link link-hover text-xs">APPS</a>
-                        <a className="link link-hover text-xs">PRICE</a>
-                        <a className="link link-hover text-xs">ORDER GUIDE</a>
-                        <a className="link link-hover text-xs">2D TRENDS</a>
-                        <a className="link link-hover text-xs">CONTACT US</a>
-                        <a className="link link-hover text-xs">SIGN UP</a>
+                        <HashLink to="/2d#services" className=" text-xs">SERVICES</HashLink>
+                        <HashLink to="/2d#apps" className=" text-xs">APPS</HashLink>
+                        <HashLink to="/2d#price" className=" text-xs">PRICE</HashLink>
+                        <HashLink to="/2d#order-guide" className=" text-xs">ORDER GUIDE</HashLink>
+                        <HashLink to="/2d#2d-trends" className=" text-xs">2D TRENDS</HashLink>
+                        <HashLink to="/2d#2d-contact" className=" text-xs">CONTACT US</HashLink>
+                        <HashLink to="" className=" text-xs">SIGN UP</HashLink>
 
                     </div>
                     <div className="flex lg:items-start text-black md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
