@@ -4,7 +4,7 @@ import video from "../../video/production.mp4";
 import BottomPart from "./BottomPart";
 
 
-const StartPage = () => {
+const StartPage_2 = () => {
   const [playBool, setPlayBool] = useState(false);
 
   const playVideo = () => {
@@ -15,8 +15,8 @@ const StartPage = () => {
   return (
     <div className="bg-[#DEE2E2] pt-2 pb-6 ">
       <div className="container mx-auto">
-        <div className="flex md:grid md:grid-cols-2 justify-center items-center gap-20 pt-[50px] md:pt-0">
-          <div className=" h-80"> 
+        <div className="flex justify-center items-center  gap-20">
+          <div className=" w-[400px] h-80"> 
             <h5 className="text-[40px] text-center md:text-left">WE DO</h5>
             <h5 className="border-b border-[#B1CC40] text-[40px] text-center md:text-left font-semibold -mt-4">IMAGE & VIDEO EDITING</h5>
             <h1 className="pt-5 text-[#959595] font-semibold">YOUR ONE-STOP CONTENT POST PRODUCTION SOLUTION</h1>
@@ -29,12 +29,11 @@ const StartPage = () => {
           </div>
           
           <div className="hidden md:flex flex-col">
-            <div className="relative h-full md:h-[515px] w-full flex justify-center">
+            <div className="relative h-full md:h-auto w-full flex justify-center">
               <div
-                className=" justify-center w-full h-full  top-0 opacity-0 transition-all duration-300 items-center"
-                style={{ opacity: playBool ? 1 : 0, display: playBool ? "flex" : "none" }}
+                className="flex justify-center w-full h-full absolute top-0 opacity-0 transition-all duration-300"
+                style={{ opacity: playBool ? 1 : 0 }}
               >
-                <div className="w-full relative  ">
                 <video
                   id="productVideo"
                   width="100%"
@@ -45,12 +44,10 @@ const StartPage = () => {
                 >
                   <source src={video} type="video/mp4" />
                 </video>
-                </div>
-
               </div>
               <div
                 onClick={playVideo}
-                style={{ opacity: playBool ? 0 : 1, display: playBool ? "none" : "flex" }}
+                style={{ opacity: playBool ? 0 : 1 }}
                 className="transition-all duration-300 cursor-pointer flex flex-col items-center justify-center relative w-[250px] md:w-[350px] lg:w-[570px]"
               >
                 <img
@@ -102,4 +99,4 @@ const StartPage = () => {
   );
 };
 
-export default StartPage;
+export default StartPage_2;

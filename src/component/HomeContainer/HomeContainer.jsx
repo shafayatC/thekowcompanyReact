@@ -16,25 +16,27 @@ import Footer from '../footer/footer'
 import Slider3D from '../slider/Slider3D'
 import TheSquadSlide from '../TheSquad/TheSquadSlide'
 import VirtualTour from '../VirtualTour/VirtualTour'
+import ScrolTop from '../ScrolTop/ScrolTop'
 
 function HomeContainer() {
     return (
         <>
+            <ScrolTop />
             <Navbar />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 {/* <img src='/circle-bg.svg' /> */}
                 <ProductVideo />
                 <WelcomePage />
                 <DivSliderParrent />
-                <Slider3D/>
+                <Slider3D />
                 <Record />
                 <Retouched />
                 <Integration />
-                <TheSquadSlide/>
+                <TheSquadSlide />
                 {/* <TheSquad /> */}
                 <BluePrint />
                 <IndustryTrends />
-                <VirtualTour/>
+                <VirtualTour />
                 <GetUpdate />
             </div>
             <Footer />
