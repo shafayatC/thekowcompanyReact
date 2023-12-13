@@ -17,7 +17,7 @@ const Container2D = () => {
     return (
         <>
         <Navbar2D/>
-        <div className="bg-[#DEE2E2]">
+        <div className="bg-[#DEE2E2] bgImage">
             <StartPage/>
             <Record2d/>
             <ImageSlider/>
