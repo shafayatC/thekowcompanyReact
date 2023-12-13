@@ -12,7 +12,7 @@ const Retouched = () => {
                 <div className=" justify-center items-center grid grid-cols-1 lg:grid-cols-[500px_auto] gap-28">
                     <div className=" h-[670px] relative z-50 mt-5 lg:mt-0 bg-white sm:ml-20 md:ml-28  ">
                         <div className="h-full overflow-hidden ">
-                            <ReactCompareImage
+                            <ReactCompareImage className="test"
                                 leftImage={model}
                                 rightImage={model2}
                             />

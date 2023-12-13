@@ -5,7 +5,7 @@ import logo4 from "../../assets/10+.png";
 
 const BottomPart = () => {
   return (
-    <div className="pt-4">
+    <div className="pt-20 md:pt-4">
       <div className="container mx-auto">
         <div className="grid gap-8 sm:grid-cols-2 sm:px-32 sm:gap-8 md:grid-cols-4 md:px-10 lg:px-20 xl:px-52 justify-items-center">
          
