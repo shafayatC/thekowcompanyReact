@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 const Blog2D = () => {
   const [visibleDivs, setVisibleDivs] = useState([
-    { id: 1, text: 'Photography Tips for Beginners', text2: "01 JAN, 2023", button: 'Read More', imageUrl: "/src/images/blog5.png" },
-    { id: 2, text: 'Top 8 Food Photography Tips For Beginners', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/src/images/blog4.png" },
-    { id: 3, text: 'Easy Product Photography Solutions for Small Business', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/src/images/blog6.png" },
+    { id: 1, text: 'Photography Tips for Beginners', text2: "01 JAN, 2023", button: 'Read More', imageUrl: "/img/blog5.png" },
+    { id: 2, text: 'Top 8 Food Photography Tips For Beginners', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/blog4.png" },
+    { id: 3, text: 'Easy Product Photography Solutions for Small Business', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/blog6.png" },
 
   ]);
 
