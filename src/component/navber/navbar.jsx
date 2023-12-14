@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[#DEE2E2] sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
-        <div className="container mx-auto px-4 py-1">
+        <div className="container mx-auto px-4 md:px-0 py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
               <img src={logo}
