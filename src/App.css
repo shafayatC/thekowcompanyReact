@@ -159,6 +159,6 @@ html,body{
 
 /*after before image */
 
-#eccId_id_1011,#eccId_id_10115  {height: 100% !important;}
-#eccId_id_1011 [data-testid="container"],#eccId_id_10115 [data-testid="container"] {height: 100% !important;}
+#eccId_id_1011,#eccId_id_10115, .imageCompareWrap  {height: 100% !important;}
+#eccId_id_1011 [data-testid="container"],#eccId_id_10115 [data-testid="container"],.imageCompareWrap [data-testid="container"]{height: 100% !important;}
 #id_1011 div,#id_10115 div {height: 100%;}
