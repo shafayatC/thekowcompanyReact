@@ -64,12 +64,13 @@ const TheSquad = () => {
           <h1 className="w-[350px] border-b border-[#7C9C30]"></h1>
         </div> */}
 
-
-<div className='flex justify-center gap-10 my-6'>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                        <h1 className=' text-[40px] -mb-4 text-center font-bold'>THE SQUAD</h1>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                    </div> 
+        <div className="flex justify-center gap-10 my-6">
+          <h1 className="w-[400px] border-b border-[#7C9C30]"></h1>
+          <h1 className=" text-[40px] -mb-4 text-center font-bold">
+            THE SQUAD
+          </h1>
+          <h1 className="w-[400px] border-b border-[#7C9C30]"></h1>
+        </div>
       </div>
     </div>
   );

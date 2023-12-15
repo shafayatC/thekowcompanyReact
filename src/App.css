@@ -162,3 +162,28 @@ html,body{
 #eccId_id_1011,#eccId_id_10115, .imageCompareWrap  {height: 100% !important;}
 #eccId_id_1011 [data-testid="container"],#eccId_id_10115 [data-testid="container"],.imageCompareWrap [data-testid="container"]{height: 100% !important;}
 #id_1011 div,#id_10115 div {height: 100%;}
+
+
+
+/* Blog Background Image */
+.blog-bg-img{
+  background-image: url("/public/img/Blog-Images/blog-bangladesh.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+}
+.cover-bg-1{
+  background-image: url("/public/img/Blog-Images/coverPhoto1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+  filter: blur(2px);
+}
+
+/* .circle-bg{
+  background-image: url("/public/img/Blog-Images/circle.png");
+  background-repeat: no-repeat;
+ background-size: 100px;
+ height: 50vh;
+ background-position: 0 0 ;
+} */
