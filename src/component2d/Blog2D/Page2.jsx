@@ -13,7 +13,6 @@ const Page2 = () => {
                         first impression. We empathize with the budget struggles you may face regarding this and are here to provide you with easy product photography solutions for your
                         small business that will both minimize costs and get you high quality product photos at the same time.</p>
                 </div>
-
             </div>
             <div className="relative h-[450px]">
                 <div className="flex justify-center h-full relative z-20">
