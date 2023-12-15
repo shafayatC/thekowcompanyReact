@@ -1,6 +1,6 @@
 import cover1 from "../../../public/img/Blog-Images/coverPhoto1.png"
 
-const Page1 = () => {
+const Page2 = () => {
     return (
         <div>
             <div className="container mx-auto">
@@ -24,4 +24,4 @@ small business that will both minimize costs and get you high quality product ph
     );
 };
 
-export default Page1;
+export default Page2;
