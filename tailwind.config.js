@@ -13,6 +13,7 @@ export default {
       },
       boxShadow: {
         'kow-shadow': '-3px 3px 7px gray',
+        'kow-shadow-sm': '5px 5px 5px #818181'
       },
       colors: {
         'kow-gray-light': '#dde1e1', 

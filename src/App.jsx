@@ -23,9 +23,6 @@ function App() {
         <Route path="/integrations" element={<Partnership />} />
         <Route path="/2d" element={<Container2D/>} />
         <Route path="/blog-details" element={<BlogDetails/>} />
-    
-        
-
       </Routes>
     </>
   )
