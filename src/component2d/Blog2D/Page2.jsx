@@ -3,7 +3,7 @@ import cover1 from "../../../public/img/Blog-Images/coverPhoto1.png"
 const Page2 = () => {
     return (
         <div className="bg-[#DEE2E2] pt-20">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4 md:px-0">
                 <div className="flex flex-col items-center gap-5 pb-8">
                     <p className="text-justify text-[15px]">Since you are considering starting your own small business, we can guess that you are a cheerful aspirant filled with passion and new ideas. While that is true, it is
                         also true that you have dreams that don’t fit into your small budget. You have considered how to source the best materials, how to create your perfect product, and

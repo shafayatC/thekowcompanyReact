@@ -8,7 +8,7 @@ const Page7 = () => {
   return (
     <div className="bg-[#DEE2E2] py-28 ">
       <div className="container mx-auto ">
-        <div className="flex justify-center items-center gap-20">
+        <div className="flex justify-center items-center gap-5 md:gap-20">
           <div className="w-20">
             <img src={icon1} />
           </div>
