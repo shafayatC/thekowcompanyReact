@@ -6,6 +6,9 @@ import About3D from '../About3D/About3D';
 import Services3D from '../Services3D/Services3D';
 import Visualization from '../Visualization/Visualization';
 import VisualizationSlider from '../Visualization/VisualizationSlider';
+import ProductVisualization from '../Product/ProductVisualization';
+import ProductVisualSlider from '../Product/ProductVisualSlider';
+import Model3D from '../Model3D/Model3D';
 
 const Container3D = () => {
     return (
@@ -16,6 +19,9 @@ const Container3D = () => {
             <Services3D/>
             <Visualization/>
             <VisualizationSlider/>
+            <ProductVisualization/>
+            <ProductVisualSlider/>
+            <Model3D/>
             <Footer />
         </div>
     );
