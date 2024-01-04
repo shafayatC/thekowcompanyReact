@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 const Contact3D = () => {
   return (
     <div>
-      <div className="py-36">
+      <div className="py-10">
         <Heading
           className="pt-12 pb-7"
           titleClassName="w-[1500px]"

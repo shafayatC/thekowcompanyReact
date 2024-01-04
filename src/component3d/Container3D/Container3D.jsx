@@ -26,9 +26,9 @@ const Container3D = () => {
             <ProductVisualization/>
             <ProductVisualSlider/>
             <Model3D/>
+            <Video3D/>
             <Trends3D/>
             <Contact3D/>
-            <Video3D/>
             <Footer3D/>
         </div>
     );
