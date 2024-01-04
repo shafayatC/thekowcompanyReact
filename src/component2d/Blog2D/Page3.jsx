@@ -4,7 +4,7 @@ const Page3 = () => {
     return (
         <div className="bg-[#DEE2E2] py-20">
             <div>
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-center">
                             <h1 className="font-bold mb-5">“To build a successful business, you must start small and dream big”</h1>

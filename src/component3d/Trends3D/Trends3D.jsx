@@ -3,11 +3,12 @@ import { useState } from 'react';
 
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { Link } from 'react-router-dom';
-const Blog2D = () => {
+import Heading from '../Heading/Heading';
+const Trends3D = () => {
   const [visibleDivs, setVisibleDivs] = useState([
-    { id: 1, text: 'Photography Tips for Beginners', text2: "01 JAN, 2023", button: 'Read More', imageUrl: "/img/blog5.png" },
-    { id: 2, text: 'Top 8 Food Photography Tips For Beginners', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/blog4.png" },
-    { id: 3, text: 'Easy Product Photography Solutions for Small Business', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/blog6.png" },
+    { id: 1, text: 'Photography Tips for Beginners', text2: "01 JAN, 2023", button: 'Read More', imageUrl: "/img/3d/3d-blog-1.png" },
+    { id: 2, text: 'Top 8 Food Photography Tips For Beginners', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/3d/3d-blog-2.png" },
+    { id: 3, text: 'Easy Product Photography Solutions for Small Business', button: 'Read More', text2: "01 JAN, 2023", imageUrl: "/img/3d/3d-blog-3.png" },
 
   ]);
 
@@ -39,18 +40,22 @@ const Blog2D = () => {
         <div className='flex justify-center items-center gap-5 '>
           <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl -mt-16' /></button>
           <div className='flex justify-center gap-2 w-[280px] sm:w-full'>
-            {getVisibleDivs() && getVisibleDivs().map((div) => (
+            {getVisibleDivs() && getVisibleDivs().map((div,index) => (
               <div className='flex-col items-center justify-center ' key={div.id}>
-                <div>
+                <div className='relative'>
                   <img className=' w-full' src={div.imageUrl} alt={div.text} />
+                 {index !== 1 &&  <div className='absolute top-0 left-0 w-full h-full bg-gray-600 opacity-50 z-10'></div>}
+
                 </div>
-                <div className='flex flex-col items-center gap-2 pt-5 pb-10'>
+                <div className='flex flex-col items-center gap-2 pt-5 pb-6'>
                   <div className='flex justify-center items-center gap-2 '>
                     <p className='text-[14px] font-semibold'>{div.text} |</p>
                     <p className='text-[9px]'>{div.text2}</p>
                   </div>
                   <Link to = "/blog-details">
-                  <button className='bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]'>{div.button}</button>
+                  <div className='flex justify-center'>
+                            <button className='bg-[url("/img/3d/button.png")] text-xs font-semibold justify-self-center py-2 px-6 bg-[length:100%_100%] bg-no-repeat'>Read More</button>
+                        </div>
                   </Link>
                 </div>
               </div>
@@ -59,17 +64,9 @@ const Blog2D = () => {
           <button onClick={handleNext}><MdArrowForwardIos className='text-3xl -mt-16' /></button>
         </div>
       </div>
-      <div className="pb-24 pt-7">
-        <div className="relative  border border-[#B1CC40]">
-          <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span className="bg-[#DEE2E2] px-12 py-1 text-3xl md:text-4xl text-kow-text-black text-center  font-bold">
-              {`2D TRENDS`}
-            </span>
-          </h2>
-        </div>
-      </div>
+     <Heading className="pt-5 pb-12 "  titleClassName="w-[500px]" title="3D TRENDS" />
     </div>
   );
 };
 
-export default Blog2D;
+export default Trends3D;

@@ -6,7 +6,7 @@ const Page5 = () => {
         <div className="bg-[#DEE2E2]">
         <div className="py-10">
 
-        <div className="container flex flex-col items-center mx-auto py-5">
+        <div className="container flex flex-col items-center mx-auto py-5 px-4 md:px-0">
                 <h1 className="font-bold text-xl mb-4">Rely on easier to find tools</h1>
                 <p className="text-justify text-[15px]">
                 Photo shoot require tools and equipment that you can’t escape from. Rather than focusing on getting professional and expensive tools,
