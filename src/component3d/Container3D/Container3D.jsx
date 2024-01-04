@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../component/footer/footer';
 import Navbar3D from '../Navbar3D/Navbar3D';
 import StartPage from '../StartPage/StartPage';
 import About3D from '../About3D/About3D';
@@ -11,6 +10,9 @@ import ProductVisualSlider from '../Product/ProductVisualSlider';
 import Model3D from '../Model3D/Model3D';
 import Trends3D from '../Trends3D/Trends3D';
 import Contact3D from '../Contact3D/Contact3D';
+import Footer3D from '../Footer3D/Footer3D';
+import Video3D from '../Video3D/Video3D';
+
 
 const Container3D = () => {
     return (
@@ -26,7 +28,8 @@ const Container3D = () => {
             <Model3D/>
             <Trends3D/>
             <Contact3D/>
-            <Footer />
+            <Video3D/>
+            <Footer3D/>
         </div>
     );
 };
