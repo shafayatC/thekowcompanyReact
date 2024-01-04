@@ -1,3 +1,4 @@
+import ScrolTop from "../../component/ScrolTop/ScrolTop";
 import Footer from "../../component/footer/footer";
 import Navbar from "../../component/navber/navbar";
 import Page2 from "./Page2";
@@ -10,6 +11,7 @@ import Page7 from "./Page7";
 const BlogDetails = () => {
   return (
     <>
+    <ScrolTop/>
       <Navbar />
       <div>
         <div className="pb-40 overflow-hidden bg-[#DEE2E2]">

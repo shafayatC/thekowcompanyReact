@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import { Link } from 'react-router-dom';
 const Blog2D = () => {
   const [visibleDivs, setVisibleDivs] = useState([
     { id: 1, text: 'Photography Tips for Beginners', text2: "01 JAN, 2023", button: 'Read More', imageUrl: "/img/blog5.png" },
@@ -48,7 +49,9 @@ const Blog2D = () => {
                     <p className='text-[14px] font-semibold'>{div.text} |</p>
                     <p className='text-[9px]'>{div.text2}</p>
                   </div>
+                  <Link to = "/blog-details">
                   <button className='bg-[#B1CC40] px-6 py-1 rounded-3xl font-semibold text-[10px]'>{div.button}</button>
+                  </Link>
                 </div>
               </div>
             ))}
