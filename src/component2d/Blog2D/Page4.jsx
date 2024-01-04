@@ -12,7 +12,7 @@ const Page4 = () => {
                         <img src={blogImg2}/>
                     </div>
                 </div>
-                <div className="container mx-auto py-5">
+                <div className="container mx-auto py-5 px-4 md:px-0">
                     <p className="text-justify text-[15px]">
                     Other than that, you can focus on lifestyle photography where you take photos with a relevant background and natural lighting. Also, pairing
 up your products and shooting them together can aid your business by reducing the need for props and result in duel sales. Try to pick

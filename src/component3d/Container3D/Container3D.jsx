@@ -8,8 +8,11 @@ import VisualizationSlider from '../Visualization/VisualizationSlider';
 import ProductVisualization from '../Product/ProductVisualization';
 import ProductVisualSlider from '../Product/ProductVisualSlider';
 import Model3D from '../Model3D/Model3D';
+import Trends3D from '../Trends3D/Trends3D';
+import Contact3D from '../Contact3D/Contact3D';
 import Footer3D from '../Footer3D/Footer3D';
 import Video3D from '../Video3D/Video3D';
+
 
 const Container3D = () => {
     return (
@@ -23,6 +26,8 @@ const Container3D = () => {
             <ProductVisualization/>
             <ProductVisualSlider/>
             <Model3D/>
+            <Trends3D/>
+            <Contact3D/>
             <Video3D/>
             <Footer3D/>
         </div>

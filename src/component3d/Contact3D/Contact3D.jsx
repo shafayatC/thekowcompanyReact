@@ -1,0 +1,30 @@
+import Heading from "../Heading/Heading";
+
+const Contact3D = () => {
+  return (
+    <div>
+      <div className="py-36">
+        <Heading
+          className="pt-12 pb-7"
+          titleClassName="w-[1500px]"
+          title="DISCUSS YOUR AMBITIONS WITH US"
+        />
+       <div className="container mx-auto">
+       <p className=" text-center text-sm">
+          Use our knowledge to get your organization ready for the future.
+        </p>
+        <p className=" text-center text-sm mb-6">
+          Contact our experts now for an introductory meeting.
+        </p>
+        <div className="flex justify-center">
+          <button className='bg-[url("/img/3d/button.png")] text-[25px] font-medium text-white justify-self-center py-6 px-[60px] bg-[length:100%_100%] bg-no-repeat'>
+          CONTACT US
+          </button>
+        </div>
+       </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact3D;
