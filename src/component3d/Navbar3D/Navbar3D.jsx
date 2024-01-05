@@ -46,7 +46,7 @@ const Navbar3D = () => {
     return (
         <>
             {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
-            <div ref={menuRef} className={`fixed w-full top-0 z-[999]  shadow-xl md:shadow-none bg-[length:100%_100%] ${showDiv && "bg-[#d6e1d1] h-[310px]"}`}>
+            <div ref={menuRef} className={`fixed w-full top-0 z-[999]  shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.jpg")] h-[310px]`}`}>
 
                 <div className="container mx-auto px-4 md:px-0 py-1">
 

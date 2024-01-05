@@ -61,7 +61,7 @@ const MegaMenu = () => {
     //   </div>
     // </div>
     <>
-      <div className="w-[350px] relative">
+      <div className="w-[350px] relative ">
         <div className="flex flex-col  pt-20 relative">
           <h1 className="w-[1px] h-[40px] bg-[#AF8E56] absolute top-[40px] left-[70px]"></h1>
           <h1 className="w-[350px] h-[1px] bg-[#AF8E56]"></h1>
