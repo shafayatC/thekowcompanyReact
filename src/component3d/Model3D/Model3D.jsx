@@ -3,7 +3,7 @@ import Heading from '../Heading/Heading';
 
 const Model3D = () => {
     return (
-        <div className='bg-[#f4f6f0] py-8'>
+        <div className=' py-8'>
             <div className='2xl:container 2xl:mx-auto'>
                 <div className='flex justify-center'>
                     <img className='w-[350px]' src='/img/3d/chair.png' />
