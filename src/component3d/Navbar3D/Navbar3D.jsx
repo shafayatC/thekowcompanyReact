@@ -6,11 +6,20 @@ import { useEffect, useRef, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { RiArrowDownSFill } from "react-icons/ri";
 import { IoMdArrowDropdown } from "react-icons/io";
+import MegaMenu from "../MegaMenu/MegaMenu";
 
 const Navbar3D = () => {
     const [getMenuBool, setMenuBool] = useState(false);
     const menuRef = useRef(null);
 
+
+
+
+    const [showDiv, setShowDiv] = useState(false);
+
+    const toggleDiv = () => {
+        setShowDiv(!showDiv);
+    };
 
     // useEffect(()=>{
 
@@ -25,7 +34,7 @@ const Navbar3D = () => {
     //             console.log("not scroll");
     //         }
     //       };
-      
+
     //       window.addEventListener('scroll', handleScroll);
 
     //       // Cleanup the event listener on component unmount
@@ -37,8 +46,10 @@ const Navbar3D = () => {
     return (
         <>
             {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
-            <div ref={menuRef} className="fixed w-full top-0 z-[999]  shadow-xl md:shadow-none bg-[length:100%_100%]">
+            <div ref={menuRef} className={`fixed w-full top-0 z-[999]  shadow-xl md:shadow-none bg-[length:100%_100%] ${showDiv && "bg-[#d6e1d1] h-[310px]"}`}>
+
                 <div className="container mx-auto px-4 md:px-0 py-1">
+
                     <div className="hidden md:flex items-center justify-between gap-3">
                         <Link to={"/"}>
                             <img src={logo}
@@ -48,12 +59,23 @@ const Navbar3D = () => {
                         </Link>
                         {/* --------------------------------------For Large Screen------------------------------------------ */}
                         {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
-                        <div className="flex gap-24 items-center">
+                        <div className="flex gap-24 items-center relative">
 
-                            <button  className="text-gray-800 text-xl lg:text-sm font-medium flex gap-1 items-center">SERVICES
-                            {/* <span><RiArrowDownSFill /></span> */}
-                            <span><IoMdArrowDropdown/></span>
+
+                            <button onClick={toggleDiv} className="relative text-gray-800 text-xl lg:text-sm font-medium flex gap-1 items-center">SERVICES
+                                {/* <span><RiArrowDownSFill /></span> */}
+                                <span><IoMdArrowDropdown /></span>
+                                {showDiv && <div
+                                    className="absolute w-full mt-4 -ml-1"
+                                >
+
+                                    <MegaMenu />
+
+                                </div>}
                             </button>
+
+
+
                             <HashLink to="/2d#apps" className="text-gray-800 text-xl lg:text-sm font-medium">3D TRENDS</HashLink>
                             <HashLink to="/2d#price" className="text-gray-800 text-xl lg:text-sm font-medium">CONTACT US</HashLink>
                             <HashLink to="/2d#2d-contact" className="text-gray-800 text-xl lg:text-sm font-medium">CONTACT US</HashLink>
