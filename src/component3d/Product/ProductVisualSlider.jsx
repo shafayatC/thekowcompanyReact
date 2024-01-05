@@ -39,7 +39,7 @@ const ProductVisualSlider = () => {
     ]
 
     return (
-        <div className='bg-[#f1f4ed] py-6' >
+        <div className=' py-6' >
             <div>
 
                 <div className='2xl:container 2xl:mx-auto '>

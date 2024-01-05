@@ -20,16 +20,19 @@ const Container3D = () => {
             <Navbar3D />
             <StartPage />
             <About3D />
-            <Services3D/>
-            <Visualization/>
-            <VisualizationSlider/>
-            <ProductVisualization/>
-            <ProductVisualSlider/>
-            <Model3D/>
-            <Video3D/>
-            <Trends3D/>
-            <Contact3D/>
-            <Footer3D/>
+            <Services3D />
+            <Visualization />
+            <VisualizationSlider />
+            <ProductVisualization />
+            <dov className="flex flex-col bg-[#f1f4ed] bgImage-2 ">
+                <ProductVisualSlider />
+                <Model3D />
+                <Video3D />
+                <Trends3D />
+                <Contact3D />
+            </dov>
+
+            <Footer3D />
         </div>
     );
 };
