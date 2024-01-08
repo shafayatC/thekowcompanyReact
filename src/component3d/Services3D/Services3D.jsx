@@ -25,7 +25,7 @@ const Services3D = () => {
         <div>
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-3'>
-                    <div className='grid grid-cols-3 items-center pt-8 pb-4'>
+                    <div className='grid sm:grid-cols-2  md:grid-cols-3 items-center pt-8 pb-4 gap-5'>
                         {serviceData.map((item, index) => (
                           index == 1 ? <ServiceList key={index} {...item} divider={true} /> : <ServiceList key={index} {...item} />
                         ))}
