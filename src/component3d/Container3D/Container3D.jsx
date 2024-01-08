@@ -12,11 +12,13 @@ import Trends3D from '../Trends3D/Trends3D';
 import Contact3D from '../Contact3D/Contact3D';
 import Footer3D from '../Footer3D/Footer3D';
 import Video3D from '../Video3D/Video3D';
+import ScrolTop from '../../component/ScrolTop/ScrolTop';
 
 
 const Container3D = () => {
     return (
         <div>
+            <ScrolTop/>
             <Navbar3D />
             <StartPage />
             <About3D />

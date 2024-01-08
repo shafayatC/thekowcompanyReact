@@ -16,8 +16,8 @@ const Footer3D = () => {
         <div>
             <div id="footer" className="bg-gradient-to-b to-[#8ebd8f] via-[#b3cda7] from-[#c7e0c0]">
                 <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
-                    <div className="text-left flex flex-col justify-center">
-                        <figure>
+                    <div className="text-center md:text-left flex flex-col justify-center">
+                        <figure className='flex justify-center md:justify-start'>
                             <img src="/img/logoBlack.png"
                                 width={120}
                                 alt="" />

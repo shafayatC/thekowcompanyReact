@@ -48,8 +48,8 @@ const Trends3D = () => {
 
                 </div>
                 <div className='flex flex-col items-center gap-2 pt-5 pb-6'>
-                  <div className='flex justify-center items-center gap-2 '>
-                    <p className='text-[14px] font-semibold'>{div.text} |</p>
+                  <div className='flex flex-col md:flex-row justify-center items-center gap-2 '>
+                    <p className='text-[14px] text-center md:text-start font-semibold flex gap-2'>{div.text} <span className='hidden md:block'> |</span></p>
                     <p className='text-[9px]'>{div.text2}</p>
                   </div>
                   <Link to = "/blog-details">
