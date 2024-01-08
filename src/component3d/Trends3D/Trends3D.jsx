@@ -44,7 +44,7 @@ const Trends3D = () => {
               <div className='flex-col items-center justify-center ' key={div.id}>
                 <div className='relative'>
                   <img className=' w-full' src={div.imageUrl} alt={div.text} />
-                 {index !== 1 &&  <div className='absolute top-0 left-0 w-full h-full bg-gray-600 opacity-50 z-10'></div>}
+                 {index !== 1 &&  <div className='absolute top-0 left-0 w-full h-full bg-gray-600 opacity-50 z-10 hidden lg:block'></div>}
 
                 </div>
                 <div className='flex flex-col items-center gap-2 pt-5 pb-6'>

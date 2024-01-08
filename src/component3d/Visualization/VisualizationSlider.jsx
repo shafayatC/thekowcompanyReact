@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 import Heading from '../Heading/Heading';
 const VisualizationSlider = () => {
+
+    const [getShadowWidth, setShadowWidth] = useState(null);
+
     const sliderList = [
         {
             "image": "/img/3d/slider/IV.jpg",
@@ -37,10 +40,30 @@ const VisualizationSlider = () => {
 
     ]
 
+    const setShadow = () => {
+        let children = document.getElementById('eccId_id_100');
+
+        if(children){
+            setShadowWidth(children.lastChild.offsetWidth);
+            console.log(children.lastChild.offsetWidth)
+            console.log("done : " + children);
+        }else {
+            setTimeout(setShadow, 1000); // Adjust the delay as needed
+            console.log("not done");
+        }
+    }
+
+    useState(() => {
+        setShadow();
+        // console.log(document.getElementById('eccId_id_100'))
+        // var children = document.getElementById('eccId_id_100').children;
+        // setShadowWidth(children[0].offsetWidth - 20);
+    },[])
+
     return (
         <div className='bg-[#f1f4ed] py-6' >
             <div>
-
+                {console.log(getShadowWidth)}
                 <div className='2xl:container 2xl:mx-auto '>
                     <div className='relative w-full '>
                         <Carousel uniqueId="id_100" delay={5000}
@@ -72,8 +95,8 @@ const VisualizationSlider = () => {
                                 </div>
                             ))}
                         </Carousel>
-                        <div className='z-20 absolute left-0 top-0 w-[441px] h-full bg-yellow-950 opacity-40'></div>
-                        <div className='z-20 absolute right-0 top-0 w-[441px] h-full bg-yellow-950 opacity-40'></div>
+                        <div className='z-20 absolute left-[7px] top-0 h-full bg-yellow-950 opacity-40 hidden lg:block' style={{width: getShadowWidth+'px'}}></div>
+                        <div className='z-20 absolute right-[7px] top-0 h-full bg-yellow-950 opacity-40 hidden lg:block'  style={{width: getShadowWidth+'px'}}></div>
 
                     </div>
                 </div>
