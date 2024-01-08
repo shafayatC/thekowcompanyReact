@@ -6,7 +6,7 @@ const ProductVisualization = () => {
         <div className='bg-[#f4f6f0] py-8'>
             <div className='2xl:container 2xl:mx-auto'>
                 <div className='flex justify-center'>
-                    <img className='w-[40%]' src='/img/3d/ppv.svg' />
+                    <img className='w-[80%] md:w-[40%]' src='/img/3d/ppv.svg' />
                 </div>
             </div>
             <Heading className="pt-12 pb-7" titleClassName="w-[1500px]" title="PRODUCT VISUALIZATION"/>
