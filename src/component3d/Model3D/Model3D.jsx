@@ -9,7 +9,7 @@ const Model3D = () => {
                     <img className='w-[350px]' src='/img/3d/chair.png' />
                 </div>
             </div>
-            <Heading className="pt-12 pb-7" titleClassName="w-[1500px]" title="3D MODEL"/>
+            <Heading className="pt-12 pb-7" titleClassName="w-[500px]" title="3D MODEL"/>
         </div>
     );
 };
