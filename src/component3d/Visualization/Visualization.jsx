@@ -9,7 +9,7 @@ const Visualization = () => {
                     <img className='w-[60%]' src='/img/3d/aav.svg' />
                 </div>
             </div>
-            <Heading className="pt-12 pb-7" titleClassName="w-[1500px]" title="ARCHITECTURAL VISUALIZATION"/>
+            <Heading className="pt-12 pb-7 " titleClassName="w-[1500px] " title="ARCHITECTURAL VISUALIZATION"/>
         </div>
     );
 };
