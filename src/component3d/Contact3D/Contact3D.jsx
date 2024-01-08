@@ -16,8 +16,8 @@ const Contact3D = () => {
         <p className=" text-center text-sm mb-6">
           Contact our experts now for an introductory meeting.
         </p>
-        <div className="flex justify-center">
-          <button className='bg-[url("/img/3d/button.png")] text-[25px] font-medium text-white justify-self-center py-6 px-[60px] bg-[length:100%_100%] bg-no-repeat'>
+        <div className="flex justify-center ">
+          <button className='bg-[url("/img/3d/button.png")] text-[14px] md:text-[25px] font-medium text-white justify-self-center md:py-6  px-10 py-4 md:px-[60px]   bg-[length:100%_100%] bg-no-repeat'>
           CONTACT US
           </button>
         </div>
