@@ -14,8 +14,8 @@ const Navbar3D = () => {
 
 
 
-
     const [showDiv, setShowDiv] = useState(false);
+    const [showDivSubMenu, setShowDivSubMenu] = useState(false);
 
     const toggleDiv = () => {
         setShowDiv(!showDiv);
@@ -102,13 +102,18 @@ const Navbar3D = () => {
                     getMenuBool && <div className="block md:hidden pt-2 ">
                         <div className="container mx-auto">
                             <div className="flex flex-col text-center gap-4">
-                                <HashLink onClick={() => setMenuBool(false)} to="/2d#services" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">SERVICES</HashLink>
+                                <button onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="flex flex-col gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><sapn className="flex self-baseline mx-auto items-center justify-between">SERVICES  <span><IoMdArrowDropdown /></span></sapn>
+                                    {showDivSubMenu && <ul className="flex flex-col font-normal">
+                                        <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">ARCHITECTURAL VISUALIZATION</a></li>
+                                        <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">PRODUCT VISUALIZATION</a></li>
+                                    </ul>
+                                    }
+                                </button>
                                 <HashLink onClick={() => setMenuBool(false)} to="/2d#apps" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">APPS</HashLink>
                                 <HashLink onClick={() => setMenuBool(false)} to="/2d#price" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">PRICE</HashLink>
                                 <HashLink onClick={() => setMenuBool(false)} to="/2d#order-guide" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">ORDER GUIDE</HashLink>
                                 <HashLink onClick={() => setMenuBool(false)} to="/2d#2d-trends" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">2D TRENDS</HashLink>
                                 <HashLink onClick={() => setMenuBool(false)} to="/2d#2d-contact" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">CONTACT US</HashLink>
-
                                 <a onClick={() => setMenuBool(false)} href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white" rel="noreferrer">SIGN UP</a>
                                 <Link onClick={() => setMenuBool(false)} to="/" className="transition-all duration-300 flex flex-col items-center text-gray-800 text-[32px] border-b-2 py-3 hover:bg-[#376f50] border-[#376f50] font-semibold hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><GoHomeFill /></Link>
                             </div>
