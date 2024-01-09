@@ -2,7 +2,7 @@ import Heading from "../Heading/Heading";
 
 const Contact3D = () => {
   return (
-    <div>
+    <div id="3d-contact">
       <div className="py-10">
         <Heading
           className="pt-12 pb-7"

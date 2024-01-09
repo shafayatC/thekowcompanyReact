@@ -29,8 +29,9 @@ const Container3D = () => {
             <dov className="flex flex-col bg-[#f1f4ed] bgImage-2 ">
                 <ProductVisualSlider />
                 <Model3D />
-                <Video3D />
                 <Trends3D />
+                <Video3D />
+
                 <Contact3D />
             </dov>
 
