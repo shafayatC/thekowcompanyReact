@@ -102,7 +102,8 @@ const Navbar3D = () => {
                     getMenuBool && <div className="block md:hidden pt-2 ">
                         <div className="container mx-auto">
                             <div className="flex flex-col text-center gap-4">
-                                <button onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold py-3 hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white"><sapn className="flex self-baseline mx-auto items-center justify-between">SERVICES  <span><IoMdArrowDropdown /></span></sapn>
+                                <button onClick={() => setShowDivSubMenu(!showDivSubMenu)} className="flex flex-col group gap-1 transition-all duration-300 text-gray-800 text-base border-b-2 border-[#376f50] font-semibold hover:bg-[#376f50] hover:border-b-2 hover:border-[#7C9C30] hover:text-white">
+                                    <sapn className=" py-3 flex self-baseline mx-auto items-center justify-between">SERVICES  <span><IoMdArrowDropdown /></span></sapn>
                                     {showDivSubMenu && <ul className="flex flex-col font-normal w-full group-hover:bg-[#2f6246]">
                                         <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">ARCHITECTURAL VISUALIZATION</a></li>
                                         <li className="flex flex-col"><a href="" className="py-3 hover:bg-[#244a35]">PRODUCT VISUALIZATION</a></li>
