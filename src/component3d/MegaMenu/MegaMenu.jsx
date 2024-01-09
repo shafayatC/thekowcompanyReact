@@ -80,7 +80,7 @@ const MegaMenu = () => {
 
                     <div className="flex flex-col gap-1 text-xs">
                       <Link>Visualization</Link>
-                      <Link>Exterior Visualization</Link>
+                      <Link to="/exterior-visualization">Exterior Visualization</Link>
                       <Link>VR Rendering</Link>
 
                     </div>
