@@ -35,7 +35,7 @@ const Trends3D = () => {
   };
 
   return (
-    <div id='2d-trends' className='pt-24'>
+    <div id='3d-trends' className='pt-24'>
       <div className='container mx-auto'>
         <div className='flex justify-center items-center gap-5 '>
           <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl -mt-16' /></button>
