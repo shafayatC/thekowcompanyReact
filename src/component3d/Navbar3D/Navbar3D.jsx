@@ -30,7 +30,8 @@ const Navbar3D = () => {
     //             menuRef.current.style.backgroundSize = '100% 100%';
     //             console.log("scrolled");
     //         } else {
-    //             menuRef.current.style.backgroundColor = 'green';
+    //             // menuRef.current.style.backgroundColor = 'green';
+    //             menuRef.current.style.backgroundImage = 'none';
     //             console.log("not scroll");
     //         }
     //       };
