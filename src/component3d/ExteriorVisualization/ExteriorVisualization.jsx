@@ -16,13 +16,10 @@ const ExteriorVisualization = () => {
         <div>
             <ScrolTop />
             <Navbar3D />
-
+            <StartPage/>
             <EVPage2/>
             <EVPage3/>
             <EVPage4/>
-
-            <StartPage/>
-
             <Contact3D />
             <Footer3D />
         </div>
