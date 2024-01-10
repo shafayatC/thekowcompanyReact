@@ -11,6 +11,7 @@ import BlogDetails from './component2d/Blog2D/BlogDetails'
 import Container3D from './component3d/Container3D/Container3D'
 import MegaMenu from './component3d/MegaMenu/MegaMenu'
 import ExteriorVisualization from './component3d/ExteriorVisualization/ExteriorVisualization'
+import InteriorVisualization from './component3d/InteriorVisualization/InteriorVisualization'
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/3d" element={<Container3D/>} />
         <Route path="/blog-details" element={<BlogDetails/>} />
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
+        <Route path="/interior-visualization" element={<InteriorVisualization/>} />
 
         
       </Routes>
