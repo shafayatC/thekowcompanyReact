@@ -10,7 +10,7 @@ const StartPage = () => {
                         <h3 className='text-5xl text-[50px] md:text-[60px] md:leading-[85px] pb-4 text-[#8abc8b] font-bold'>VISUALIZATION</h3>
                         <img className='absolute -top-[70px] md:-top-[50px] -right-[65px] w-[120px]' src='/img/3d/Green-Ball.png' />
                     </div>
-                    <img className='absolute left-0 -top-[150px] md:-top-[170px] xl:-top-[180px] 2xl:-top-[250px] h-[360px] md:h-auto w-[360px] md:w-[500px] xl:w-[600px] 2xl:w-[700px] z-9' src='/img/3d/EV.svg' />
+                    <img className='absolute left-0 -top-[150px] md:-top-[170px] xl:-top-[180px] 2xl:-top-[250px] h-[360px] md:h-auto w-[360px] md:w-[500px] xl:w-[600px] 2xl:w-[700px] z-9' src='/img/3d/EV.png' />
                 </div>
             </div>
         </div>
