@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ChairModel from './ChairModel';
 import ScrolTop from '../../../component/ScrolTop/ScrolTop';
 import Navbar3D from '../../Navbar3D/Navbar3D';
@@ -9,7 +9,9 @@ const Furniture = () => {
         <>
             <ScrolTop/>
             <Navbar3D/>
-            <ChairModel/>
+            <Suspense fallback={<p>...Loading</p>}>
+                <ChairModel/>
+            </Suspense>
             <Footer3D/>
         </>
     );
