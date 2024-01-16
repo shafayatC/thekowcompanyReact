@@ -77,10 +77,10 @@ const MegaMenu = () => {
                     <p className="text-[14px] w-[300px] mb-3 -mt-[4px] font-semibold">
                       ARCHITECTURAL VISUALIZATION
                     </p>
-
                     <div className="flex flex-col gap-1 text-xs">
                       <Link>Visualization</Link>
                       <Link to="/exterior-visualization">Exterior Visualization</Link>
+                      <Link to="/interior-visualization">Interior Visualization</Link>
                       <Link>VR Rendering</Link>
                     </div>
                   </div>
