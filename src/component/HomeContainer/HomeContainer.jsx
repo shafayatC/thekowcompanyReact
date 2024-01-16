@@ -17,15 +17,16 @@ import Slider3D from '../slider/Slider3D'
 // import TheSquadSlide from '../TheSquad/TheSquadSlide'
 import VirtualTour from '../VirtualTour/VirtualTour'
 import ScrolTop from '../ScrolTop/ScrolTop'
+import ProductVideoLatest from '../ProductVideo/ProductVideoLatest'
 
 function HomeContainer() {
     return (
         <>
             <ScrolTop />
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 {/* <img src='/circle-bg.svg' /> */}
-                <ProductVideo />
+                <ProductVideoLatest />
                 <WelcomePage />
                 <DivSliderParrent />
                 <Slider3D />
