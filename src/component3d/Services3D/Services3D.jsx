@@ -22,7 +22,7 @@ const Services3D = () => {
         }
     ]
     return (
-        <div>
+        <div id='3d-services'>
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-3'>
                     <div className='grid grid-cols-1 md:grid-cols-3 items-center pt-8 pb-4 gap-5' >
