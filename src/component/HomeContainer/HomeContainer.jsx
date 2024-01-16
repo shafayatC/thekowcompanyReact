@@ -23,7 +23,7 @@ function HomeContainer() {
     return (
         <>
             <ScrolTop />
-            {/* <Navbar /> */}
+            <Navbar />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 {/* <img src='/circle-bg.svg' /> */}
                 <ProductVideoLatest />
