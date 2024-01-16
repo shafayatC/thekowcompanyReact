@@ -13,6 +13,7 @@ import MegaMenu from './component3d/MegaMenu/MegaMenu'
 import ExteriorVisualization from './component3d/ExteriorVisualization/ExteriorVisualization'
 import InteriorVisualization from './component3d/InteriorVisualization/InteriorVisualization'
 import Furniture from './component3d/ProductVisualization3d/Furniture/Furniture'
+import MegaNavbar from './component/MegaNavbar/MegaNavbar'
 
 
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+
       <Routes>
         <Route path="/" element={<HomeContainer />} />
         <Route path="/industry-trends" element={<BlogPage />} />

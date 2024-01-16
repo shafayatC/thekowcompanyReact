@@ -4,6 +4,7 @@ import { CgMenuGridO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import MegaNavbar from "../../component/MegaNavbar/MegaNavbar";
 
 const Navbar2D = () => {
   const [getMenuBool, setMenuBool] = useState(false); 
@@ -11,6 +12,7 @@ const Navbar2D = () => {
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[#DEE2E2] sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
+        <MegaNavbar/>
         <div className="container mx-auto px-4 md:px-0 py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
