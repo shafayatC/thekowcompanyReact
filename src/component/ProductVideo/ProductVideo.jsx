@@ -15,13 +15,13 @@ const ProductVideo = () => {
     video.play();
   }
   return (
-    <div className="bg-[#DEE2E2] pt-3 pb-12">
-      <div className="container mx-auto">
+    <div className="bg-[#DEE2E2]  pb-12">
+      <div className="2xl:container mx-auto">
 
 
         <div className="hidden md:flex flex-col">
-          <div className="relative h-full md:h-auto w-full flex justify-center">
-            <div className="flex justify-center w-full md:w-[768px] absolute top-0 opacity-0 transition-all duration-300" style={{ opacity: playBool ? 1 : 0 }}>
+          <div className="relative h-full mb-48 w-full flex justify-center">
+            <div className="flex justify-center w-full   absolute top-0 opacity-0 transition-all duration-300" style={{ opacity: playBool ? 1 : 0 }}>
               <video id="productVideo" width="100%" height="auto" controls muted loop>
                 <source src={video} type="video/mp4" />
               </video>

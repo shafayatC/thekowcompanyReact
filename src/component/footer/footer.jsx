@@ -9,13 +9,15 @@ import {
     FaTwitter,
     FaYoutube,
 } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 const Footer = () => {
     return ( 
         <div>
             <div id="footer" className="bg-[#7C9C30]">
-                <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+                <footer className="footer container pt-10 pb-10 mx-auto lg:justify-items-center justify-items-center  text-[#003333] gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <div className="text-left flex flex-col justify-center">
                         <figure>
                             <img src={logoWhite}
@@ -62,17 +64,17 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col text-white lg:items-start md:-ml-16 md:items-start text-center md:text-start gap-1">
-                        <span className="text-lg font-semibold text-[white] mb-2 ">HOME</span>
-                        <a className="link link-hover text-xs">2D</a>
-                        <a className="link link-hover text-xs">3D</a>
-                        <a className="link link-hover text-xs">AI</a>
-                        <a className="link link-hover text-xs">Integrations</a>
-                        <a className="link link-hover text-xs">Blueprint</a>
-                        <a className="link link-hover text-xs">Industry Trends</a>
-                        <a className="link link-hover text-xs">Blog</a>
+                        <span className="text-xl font-semibold text-[white] mb-2 ">HOME</span>
+                        <HashLink to="/#images" className=" text-sm">Images</HashLink>
+                        <HashLink to="/#3d" className=" text-sm">3D</HashLink>
+                        <HashLink to="/#ai" className=" text-sm">AI</HashLink>
+                        <HashLink to="/#integration" className=" text-sm">Integrations</HashLink>
+                        <HashLink  className=" text-sm">Blueprint</HashLink>
+                        <HashLink to="/#trends" className=" text-sm">Industry Trends</HashLink>                  
+                        <HashLink to="/#virtual" className=" text-sm">Virtual Tour</HashLink>
 
                     </div>
-                    <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
+                    {/* <div className="flex lg:items-start text-white md:items-start flex-col md:-ml-16 text-center md:text-start  gap-1  lg:-ml-0">
                         <span className="text-lg font-semibold mb-2">Learn more</span>
                         <a className="link link-hover text-xs">Magic Brush</a>
                         <a className="link link-hover text-xs">Individuals</a>
@@ -80,25 +82,26 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Marketing</a>
                         <a className="link link-hover text-xs">Developers</a>
                         <a className="link link-hover text-xs">Ecommerce</a>
-                    </div>
+                    </div> */}
                     <div className="flex text-white lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
-                        <span className="text-lg font-semibold mb-2">Support</span>
-                        <a className="link link-hover text-xs">Help & FAQs</a>
+                        <span className="text-xl font-semibold mb-2">Support</span>
+                        {/* <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
-                        <a className="link link-hover text-xs">Platform Status</a>
-                        <a className="link link-hover text-xs">Privacy Policy</a>
-                        <a className="link link-hover text-xs">Terms & Conditions</a>
-                        <a className="link link-hover text-xs">Contact us</a>
-                        <a className="link link-hover text-xs">Sign up</a>
+                        <a className="link link-hover text-xs">Platform Status</a> */}
+                        <a className="link link-hover text-sm">Privacy Policy</a>
+                        <a className="link link-hover text-sm">Terms & Conditions</a>
+                        <a className="link link-hover text-sm">Contact us</a>
+                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-xs cursor-pointer' >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
-                        <span className="font-bold text-white text-lg w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
+                        <span className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
                             Our Address
                         </span>
                         <iframe
+                        className='rounded-md'
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10329.283883735325!2d90.39304891556642!3d23.749043274767246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1fb12dbea63beca!2sCutOutWiz!5e0!3m2!1sbn!2sbd!4v1639129804206!5m2!1sbn!2sbd"
-                            width="70%"
-                            height="70%"
+                            width="90%"
+                            height="80%"
                             style={{ border: "0" }}
                             allowFullScreen=""
                             loading="lazy"

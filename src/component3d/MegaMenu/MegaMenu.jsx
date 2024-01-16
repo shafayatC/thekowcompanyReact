@@ -69,20 +69,19 @@ const MegaMenu = () => {
             <div className="flex flex-col items-center w-full gap-2 absolute top-[80px] left-[-174px]">
               <h1 className="w-[1px] h-[40px] bg-[#AF8E56]"></h1>
               <div className="relative">
-                <div className="flex    gap-3 absolute top-[-3px] left-[-9px] ">
+                <div className="flex gap-3 absolute top-[-3px] left-[-9px] ">
                   <div className=" w-5 h-5 border flex justify-center items-center border-[#D3B270] rounded-full">
-                    <h1 className="w-[10px] h-[10px]  rounded-full bg-[#5BB55B]"></h1>
+                    <h1 className="w-[10px] h-[10px] rounded-full bg-[#5BB55B]"></h1>
                   </div>
                   <div className="text-left">
                     <p className="text-[14px] w-[300px] mb-3 -mt-[4px] font-semibold">
                       ARCHITECTURAL VISUALIZATION
                     </p>
-
                     <div className="flex flex-col gap-1 text-xs">
                       <Link>Visualization</Link>
                       <Link to="/exterior-visualization">Exterior Visualization</Link>
+                      <Link to="/interior-visualization">Interior Visualization</Link>
                       <Link>VR Rendering</Link>
-
                     </div>
                   </div>
                 </div>
@@ -101,7 +100,7 @@ const MegaMenu = () => {
                     </p>
 
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link>Furnitures</Link>
+                      <Link to={"/product-visualiztion-3d"}>Furnitures</Link>
                       <Link>Fashion Accessories</Link>
                       <Link>Cosmetics</Link>
                       <Link>Packaging</Link>
