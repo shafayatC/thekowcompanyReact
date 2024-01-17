@@ -8,34 +8,30 @@ const DivSliderParrent = () => {
 
     const sliderList = [
         {
-            "after": "/img/sl.png",
-            "before": "/img/sl.jpg",
-            "lebel": "Photo recolor"
-        },
-        {
-            "after": "/img/sl-2.png",
-            "before": "/img/sl-2.jpg",
+            "after": "/img/Image_Slider/Background Removal_raw.jpg",
+            "before": "/img/Image_Slider/Background Removal_output.jpg",
             "lebel": "Background removal"
         },
         {
-            "after": "/img/sl-3.png",
-            "before": "/img/sl-3.jpg",
-            "lebel": "Background removal"
+            "after": "/public/img/Image_Slider/Ghost Mannequin_raw.jpg",
+            "before": "/public/img/Image_Slider/Ghost Mannequin_output.jpg",
+            "lebel": "Ghost Mannequin"
+        },
+        {
+            "after": "/public/img/Image_Slider/Manipulation_raw.jpg",
+            "before": "/public/img/Image_Slider/Manipulation_output.jpg",
+            "lebel": "Manipulation"
         }, {
-            "after": "/img/sl.png",
-            "before": "/img/sl.jpg",
-            "lebel": "Photo recolor"
+            "after": "/public/img/Image_Slider/Photo Recolor_raw.jpg",
+            "before": "/public/img/Image_Slider/Photo Recolor_output.jpg",
+            "lebel": "Photo Recolor"
         },
         {
-            "after": "/img/sl-2.png",
-            "before": "/img/sl-2.jpg",
-            "lebel": "Background removal"
+            "after": "/public/img/Image_Slider/Retouching_output.jpg",
+            "before": "/public/img/Image_Slider/Retouching_raw.jpg",
+            "lebel": "Retouching"
         },
-        {
-            "after": "/img/sl-3.png",
-            "before": "/img/sl-3.jpg",
-            "lebel": "Background removal"
-        }
+       
     ]
     // Use slice to get the last two elements
     const lastOneItems = sliderList.slice(-1);
