@@ -3,7 +3,7 @@ import DivSlider from './divSlider';
 import ReactCompareImage from 'react-compare-image';
 import arrowImage from '../../images/arrow.png';
 
-const DivSliderParrent = () => {
+const DivSliderParrentOld = () => {
     const [currentPosition, setCurrentPosition] = useState(0);
 
     const sliderList = [
@@ -190,4 +190,4 @@ ucts radiate brilliance, whether on a website, social media, or in print.`}</p>
     );
 };
 
-export default DivSliderParrent;
+export default DivSliderParrentOld;
