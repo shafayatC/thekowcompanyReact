@@ -11,17 +11,24 @@ import arrow3 from "../../images/arrow3.png";
 const OrderGuide = () => {
   return (
     <div className="bg-white" id="order-guide">
+
+      {/* <div className="relative flex flex-col justify-center items-center h-screen">
+        <div className="flex justify-center w-full h-full">
+          <video className="object-cover" width="100%" height="auto" playsinline autoPlay muted loop>
+            <source src='/video/A4Tech_Headphone_Animation_3.mp4' type="video/mp4" />
+          </video>
+        </div>
+      </div> */}
+
       <div className="container mx-auto">
         <div className="flex justify-center w-full  transition-all duration-300">
           <video
             id="productVideo"
             width="100%"
             height="auto"
-            controls
-            muted
-            loop
+            playsinline autoPlay muted loop
           >
-            <source src={video} type="video/mp4" />
+            <source src="/video/A4Tech_Headphone_Animation_3.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -32,10 +39,10 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order1} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 1:
+                STEP 1:
               </h1>
               <h1 className="text-[10px] font-semibold">Sign In</h1>
-             
+
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <img className="w-full" src={arrow} />
               </div>
@@ -45,7 +52,7 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order2} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 2:
+                STEP 2:
               </h1>
               <h1 className="text-[10px] font-semibold">Choose your</h1>
               <h1 className="text-[10px] font-semibold">preffered subscription plan</h1>
@@ -58,7 +65,7 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order3} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 3:
+                STEP 3:
               </h1>
               <h1 className="text-[10px] font-semibold">Go to your</h1>
               <h1 className="text-[10px] font-semibold">account to place an order</h1>
@@ -71,7 +78,7 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order4} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 4:
+                STEP 4:
               </h1>
               <h1 className="text-[10px] font-semibold">Upload your</h1>
               <h1 className="text-[10px] font-semibold">images you want us to edit</h1>
@@ -84,7 +91,7 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order5} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 5:
+                STEP 5:
               </h1>
               <h1 className="text-[10px] font-semibold">The best photo editor</h1>
               <h1 className="text-[10px] font-semibold">process the photos for you</h1>
@@ -97,10 +104,10 @@ const OrderGuide = () => {
                 <img className="w-[30px] h-[30px]" src={order6} />
               </div>
               <h1 className="border-b-2 border-white w-16 pb-2 mb-1 text-white font-semibold text-[16px] pt-2">
-              STEP 6:
+                STEP 6:
               </h1>
               <h1 className="text-[10px] font-semibold">Download the edited photos</h1>
-             
+
               <div className="absolute -top-[15px] -left-[14px] w-[164px]">
                 <img className="w-full" src={arrow3} />
               </div>
