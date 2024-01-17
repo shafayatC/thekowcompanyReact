@@ -13,22 +13,22 @@ const DivSliderParrent = () => {
             "lebel": "Background removal"
         },
         {
-            "after": "/public/img/Image_Slider/Ghost Mannequin_raw.jpg",
-            "before": "/public/img/Image_Slider/Ghost Mannequin_output.jpg",
+            "after": "/img/Image_Slider/Ghost Mannequin_raw.jpg",
+            "before": "/img/Image_Slider/Ghost Mannequin_output.jpg",
             "lebel": "Ghost Mannequin"
         },
         {
-            "after": "/public/img/Image_Slider/Manipulation_raw.jpg",
-            "before": "/public/img/Image_Slider/Manipulation_output.jpg",
+            "after": "/img/Image_Slider/Manipulation_raw.jpg",
+            "before": "/img/Image_Slider/Manipulation_output.jpg",
             "lebel": "Manipulation"
         }, {
-            "after": "/public/img/Image_Slider/Photo Recolor_raw.jpg",
-            "before": "/public/img/Image_Slider/Photo Recolor_output.jpg",
+            "after": "/img/Image_Slider/Photo Recolor_raw.jpg",
+            "before": "/img/Image_Slider/Photo Recolor_output.jpg",
             "lebel": "Photo Recolor"
         },
         {
-            "after": "/public/img/Image_Slider/Retouching_output.jpg",
-            "before": "/public/img/Image_Slider/Retouching_raw.jpg",
+            "after": "/img/Image_Slider/Retouching_output.jpg",
+            "before": "/img/Image_Slider/Retouching_raw.jpg",
             "lebel": "Retouching"
         },
        
