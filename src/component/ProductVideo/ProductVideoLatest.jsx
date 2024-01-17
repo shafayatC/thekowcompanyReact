@@ -22,7 +22,7 @@ const ProductVideoLatest = () => {
                 <div className="relative flex flex-col justify-center items-center h-screen">
                     <div className="flex justify-center w-full h-full">
                         <video className="object-cover" width="100%" height="auto" playsinline autoPlay muted loop>
-                            <source src='/video/A4Tech_Headphone_Animation_3.mp4' type="video/mp4" />
+                            <source src='/video/The Kow Company_video.mp4' type="video/mp4" />
                         </video>
                     </div>
                     {/* tag line */}
