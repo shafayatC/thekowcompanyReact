@@ -27,8 +27,8 @@ const DivSliderParrent = () => {
             "lebel": "Photo Recolor"
         },
         {
-            "after": "/img/Image_Slider/Retouching_output.jpg",
-            "before": "/img/Image_Slider/Retouching_raw.jpg",
+            "after": "/img/Image_Slider/Retouching_raw.jpg",
+            "before": "/img/Image_Slider/Retouching_output.jpg",
             "lebel": "Retouching"
         },
        
@@ -64,7 +64,7 @@ const DivSliderParrent = () => {
     }, [])
     return (
         <div id='images' className='pt-10 pb-7'>
-            <div className='relative 2xl:container 2xl:mx-auto h-[350px] '>
+            <div className='relative 2xl:container 2xl:mx-auto h-[350px] 2xl:h-[500px] '>
                 <div className=''>
                     <button
                         disabled={currentPosition === 0}
