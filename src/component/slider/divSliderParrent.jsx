@@ -21,8 +21,7 @@ const DivSliderParrent = () => {
             "after": "/img/sl-3.png",
             "before": "/img/sl-3.jpg",
             "lebel": "Background removal"
-        }, 
-        {
+        }, {
             "after": "/img/sl.png",
             "before": "/img/sl.jpg",
             "lebel": "Photo recolor"
