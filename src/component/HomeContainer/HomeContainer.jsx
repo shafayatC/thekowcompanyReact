@@ -18,8 +18,12 @@ import Slider3D from '../slider/Slider3D'
 import VirtualTour from '../VirtualTour/VirtualTour'
 import ScrolTop from '../ScrolTop/ScrolTop'
 import ProductVideoLatest from '../ProductVideo/ProductVideoLatest'
+import ThreeDModelContainer from '../ThreeDModelContainer/ThreeDModelContainer'
 
 function HomeContainer() {
+
+
+
     return (
         <>
             <ScrolTop />
@@ -29,6 +33,7 @@ function HomeContainer() {
                 {/* <img src='/circle-bg.svg' /> */}
                 <ProductVideoLatest />
                 <WelcomePage />
+                <ThreeDModelContainer/>
                 <DivSliderParrent />
                 <Slider3D />
                 <Record />
