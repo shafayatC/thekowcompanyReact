@@ -19,7 +19,7 @@ const ProductVideoLatest = () => {
     return (
         <div id="videoElement" className="">
             <div className="">
-                <div className="relative flex flex-col justify-center items-center h-screen">
+                <div className="relative flex flex-col justify-center items-center h-auto md:h-screen">
                     <div className="flex justify-center w-full h-full">
                         <video className="object-cover" width="100%" height="auto" playsinline autoPlay muted loop>
                             <source src='/video/The Kow Company_video.mp4' type="video/mp4" />
@@ -34,7 +34,7 @@ const ProductVideoLatest = () => {
                             {/* <div className="flex justify-center font-tag-font"><h1 className="text-6xl font-bold uppercase text-white ">furniture</h1></div> */}
 
                             {tagList.map((item, index) => 
-                                <div className="flex justify-center font-tag-font opacity-60 "><h1 className="text-7xl font-bold uppercase text-white ">{item}</h1></div>
+                                <div className="flex justify-center font-tag-font opacity-60 "><h1 className="text-2xl md:text-7xl font-bold uppercase text-white ">{item}</h1></div>
                             )}
                         </Carousel>
                     </div>
