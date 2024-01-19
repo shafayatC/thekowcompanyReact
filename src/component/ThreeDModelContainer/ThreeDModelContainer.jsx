@@ -106,7 +106,7 @@ const ThreeDModelContainer = () => {
                             <h1 className='text-3xl font-bold text-white'>Lorem Ipsum is simply</h1>
                             <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
-                        <div className='h-[500px] w-[570px]'>
+                        <div className='h-[500px] w-full md:w-[570px]'>
                             <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>
                         </div>
                     </div>
