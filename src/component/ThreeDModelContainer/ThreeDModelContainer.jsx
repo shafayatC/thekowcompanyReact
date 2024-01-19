@@ -3,7 +3,7 @@ import ViewModel from '../ViewModel/ViewModel';
 
 const ThreeDModelContainer = () => {
 
-    const showImageList =[
+    const showImageList = [
         '/model_image/w-Camera_frame01 copy.png',
         '/model_image/w-Camera_frame02 copy.png',
         '/model_image/w-Camera_frame03 copy.png',
@@ -99,10 +99,19 @@ const ThreeDModelContainer = () => {
 
     return (
         <>
-            <div className='h-screen w-full bg-gray-500'>
-                    <div className='h-[500px] w-[570px]'>
-                        <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>
+            <div className='h-screen w-full bg-gray-500 flex items-center'>
+                <div className='container mx-auto'>
+                    <div className='flex lg:flex-row flex-col gap-1 items-center justify-center'>
+                        <div className='flex flex-col gap-5 w-80'>
+                            <h1 className='text-3xl font-bold text-white'>Lorem Ipsum is simply</h1>
+                            <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                        <div className='h-[500px] w-[570px]'>
+                            <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>
+                        </div>
                     </div>
+                </div>
+
             </div>
 
         </>

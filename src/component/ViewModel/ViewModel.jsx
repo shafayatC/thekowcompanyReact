@@ -27,18 +27,22 @@ const ViewModel = ({ imgSample, imageList = [] }) => {
                 {
                     imageList.length == 0 ?
                         <Suspense fallback={<div className='w-full h-full bg-slate-400 animate-pulse'></div>}>
-                            <img className='w-full h-full' src={imgSample} />
+                            <img className='absolute top-0 left-0 w-full h-full' src={imgSample} />
                         </Suspense> :
                         getViewSample == false &&
                         <Suspense fallback={<div className='w-full h-full bg-slate-900 animate-pulse'></div>}>
-                            <img className='w-full h-full' src={imgSample} />
+                            <img className='absolute top-0 left-0  w-full h-full' src={imgSample} />
                         </Suspense>
                 }
 
-                {getViewSample && imageList.length > 0 &&
+                {
+                // getViewSample && imageList.length > 0 &&
+                <div className={`${ getViewSample && imageList.length > 0 ? 'w-full h-full' : 'hidden'}`}>
                     <Suspense fallback={<ViewLoading imgSample={imgSample} />}>
                         <Image3DView imageList={imageList} />
                     </Suspense>
+                </div>
+
                 }
             </div>
 
