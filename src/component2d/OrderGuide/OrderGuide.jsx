@@ -32,8 +32,8 @@ const OrderGuide = () => {
           </video>
         </div>
 
-        <div className="pt-7 pb-10">
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 sm:px-16 sm:gap-12 lg:grid-cols-4 xl:grid-cols-6 lg:gap-8 lg:px-16 xl:px-4 justify-items-center">
+        <div className="pt-7 pb-10 ">
+          <div className="grid grid-cols-2 mr-5 gap-6 sm:grid-cols-3 sm:px-16 sm:gap-12 lg:grid-cols-4 xl:grid-cols-6 lg:gap-8 lg:px-16 xl:px-4 justify-items-center">
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
               <div className="">
                 <img className="w-[30px] h-[30px]" src={order1} />
