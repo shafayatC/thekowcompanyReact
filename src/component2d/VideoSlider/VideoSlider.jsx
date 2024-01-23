@@ -11,34 +11,25 @@ const VideoSlider = () => {
     const sliderList = [
         {
             "thumb": "/img/video_slider/video-slider-1.jpg",
-            "video": "/img/sl.jpg",
-            "label": "Photo recolor"
+            "video": "/video/video_2d/Audio_Editing_Service_1.mp4",
+            "label": "AUDIO ADDITION"
         },
         {
             "thumb": "/img/video_slider/video-slider-2.jpg",
-            "video": "/img/sl-2.jpg",
-            "label": "Background removal"
+            "video": "/public/video/video_2d/Subtitile_Addition_Service_1.mp4",
+            "label": "SUBTITLE ADDITION"
         },
         {
             "thumb": "/img/video_slider/video-slider-3.jpg",
-            "video": "/img/sl-3.jpg",
-            "label": "Background removal"
+            "video": "/public/video/video_2d/Title_Addition_Service_1.mp4",
+            "label": "TITLE EDITING"
         },
         {
             "thumb": "/img/video_slider/video-slider-1.jpg",
-            "video": "/img/sl.jpg",
-            "label": "Photo recolor"
-        },
-        {
-            "thumb": "/img/video_slider/video-slider-2.jpg",
-            "video": "/img/sl-2.jpg",
-            "label": "Background removal"
-        },
-        {
-            "thumb": "/img/video_slider/video-slider-3.jpg",
-            "video": "/img/sl-3.jpg",
-            "label": "Background removal"
+            "video": "/public/video/video_2d/Video_Cropping_Service_1.mp4",
+            "label": "VIDEO CROPPING"
         }
+      
     ]
 
 
@@ -62,7 +53,7 @@ const VideoSlider = () => {
                         ]}
                     >
                         {sliderList.map((item, index) => (
-                            <VideoWithThumb index={index} video={video} thumb={item.thumb} label={item.label} />
+                            <VideoWithThumb index={index} video={item.video} thumb={item.thumb} label={item.label} />
                         ))}
                     </Carousel>
                 </div>

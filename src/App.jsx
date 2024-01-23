@@ -14,6 +14,8 @@ import ExteriorVisualization from './component3d/ExteriorVisualization/ExteriorV
 import InteriorVisualization from './component3d/InteriorVisualization/InteriorVisualization'
 import Furniture from './component3d/ProductVisualization3d/Furniture/Furniture'
 import MegaNavbar from './component/MegaNavbar/MegaNavbar'
+import TermsCondition from './component/TermsCondition/TermsCondition'
+import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
 
 
 
@@ -34,6 +36,9 @@ function App() {
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
         <Route path="/interior-visualization" element={<InteriorVisualization/>} />
         <Route path="/product-visualiztion-3d" element={<Furniture/>} />
+        <Route path="/terms-condition" element={<TermsCondition/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        
       </Routes>
     </>
   )

@@ -6,9 +6,9 @@ import 'react-div-carousel/dist/index.css'
 const ImageSlider = () => {
     const sliderList = [
         {
-            "after": "/img/sl.png",
-            "before": "/img/sl.jpg",
-            "lebel": "Photo recolor"
+            "after": "/public/img/Image_Slide_2D/color correction-01.png",
+            "before": "/public/img/Image_Slide_2D/color correction-02.png",
+            "lebel": "Color Correction"
         },
         {
             "after": "/img/sl-2.png",
