@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 const Footer2D = () => {
@@ -78,8 +79,8 @@ const Footer2D = () => {
                     <div className="flex text-black lg:items-start md:items-start md:-ml-16 flex-col text-center md:text-left gap-1  lg:-ml-0">
                         <span className="text-xl font-semibold mb-2">Support</span>
                       
-                        <a className="link link-hover text-sm">Privacy Policy</a>
-                        <a className="link link-hover text-sm">Terms & Conditions</a>
+                        <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
+                        <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
                         <a className="link link-hover text-sm">Contact us</a>
                         <a className="text-sm cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >Sign Up</a>
                     </div>

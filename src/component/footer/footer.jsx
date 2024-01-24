@@ -88,8 +88,8 @@ const Footer = () => {
                         {/* <a className="link link-hover text-xs">Help & FAQs</a>
                         <a className="link link-hover text-xs">Refunds</a>
                         <a className="link link-hover text-xs">Platform Status</a> */}
-                        <a className="link link-hover text-sm">Privacy Policy</a>
-                        <a className="link link-hover text-sm">Terms & Conditions</a>
+                        <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
+                        <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
                         <a className="link link-hover text-sm">Contact us</a>
                         <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-xs cursor-pointer' >Sign Up</a>
                     </div>

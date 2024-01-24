@@ -1,39 +1,43 @@
-import { useEffect } from 'react'
+
 import ReactCompareImage from 'react-compare-image'
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 
 const ImageSlider = () => {
     const sliderList = [
+      
+        // {
+        //     "after": "/public/img/Image_Slide_2D/Color-Correction_A.jpg",
+        //     "before": "/public/img/Image_Slide_2D/Color-Correction_B.jpg",
+        //     "lebel": "Background removal"
+        // },
         {
-            "after": "/img/sl.png",
-            "before": "/img/sl.jpg",
-            "lebel": "Photo recolor"
+            "after": "/public/img/Image_Slide_2D/Ghost-Mannequin_B.jpg",
+            "before": "/public/img/Image_Slide_2D/Ghost-Mannequin_A.jpg",
+            "lebel": "Ghost Mannequin"
+        }, 
+        {
+            "after": "/public/img/Image_Slide_2D/Photo-Recolor_B.jpg",
+            "before": "/public/img/Image_Slide_2D/Photo-Recolor_A.jpg",
+            "lebel": "Photo Recolor"
         },
         {
-            "after": "/img/sl-2.png",
-            "before": "/img/sl-2.jpg",
-            "lebel": "Background removal"
+            "after": "/public/img/Image_Slide_2D/Hair-Masking_B.jpg",
+            "before": "/public/img/Image_Slide_2D/Hair-Masking_A.jpg",
+            "lebel": "Hair Masking"
         },
+       
         {
-            "after": "/img/sl-3.png",
-            "before": "/img/sl-3.jpg",
-            "lebel": "Background removal"
-        }, {
-            "after": "/img/sl.png",
-            "before": "/img/sl.jpg",
-            "lebel": "Photo recolor"
-        },
-        {
-            "after": "/img/sl-2.png",
-            "before": "/img/sl-2.jpg",
-            "lebel": "Background removal"
-        },
-        {
-            "after": "/img/sl-3.png",
-            "before": "/img/sl-3.jpg",
-            "lebel": "Background removal"
+            "after": "/public/img/Image_Slide_2D/Photo-Retouch_B.jpg",
+            "before": "/public/img/Image_Slide_2D/Photo-Retouch_A.jpg",
+            "lebel": "Photo Retouch"
         }
+        ,
+        {
+            "after": "/public/img/Image_Slide_2D/Color-Correction_B.jpg",
+            "before": "/public/img/Image_Slide_2D/Color-Correction_A.jpg",
+            "lebel": "Color Correction"
+        },
     ]
 
 
@@ -57,6 +61,7 @@ const ImageSlider = () => {
                         ]}
                     >
                         {sliderList.map((item, index) => (
+                            // eslint-disable-next-line react/jsx-key
                             <div className='flex flex-col mx-1 gap-2'>
 
                                 <div key={index} className='z-10 float-left relative h-full'>
