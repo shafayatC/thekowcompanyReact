@@ -16,17 +16,17 @@ const VideoSlider = () => {
         },
         {
             "thumb": "/img/video_slider/video-slider-2.jpg",
-            "video": "/public/video/video_2d/Subtitile_Addition_Service_1.mp4",
+            "video": "/video/video_2d/Subtitile_Addition_Service_1.mp4",
             "label": "SUBTITLE ADDITION"
         },
         {
             "thumb": "/img/video_slider/video-slider-3.jpg",
-            "video": "/public/video/video_2d/Title_Addition_Service_1.mp4",
+            "video": "/video/video_2d/Title_Addition_Service_1.mp4",
             "label": "TITLE EDITING"
         },
         {
             "thumb": "/img/video_slider/video-slider-1.jpg",
-            "video": "/public/video/video_2d/Video_Cropping_Service_1.mp4",
+            "video": "/video/video_2d/Video_Cropping_Service_1.mp4",
             "label": "VIDEO CROPPING"
         }
       
