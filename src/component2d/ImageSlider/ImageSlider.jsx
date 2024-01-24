@@ -12,30 +12,30 @@ const ImageSlider = () => {
         //     "lebel": "Background removal"
         // },
         {
-            "after": "/public/img/Image_Slide_2D/Ghost-Mannequin_B.jpg",
-            "before": "/public/img/Image_Slide_2D/Ghost-Mannequin_A.jpg",
+            "after": "/img/Image_Slide_2D/Ghost-Mannequin_B.jpg",
+            "before": "/img/Image_Slide_2D/Ghost-Mannequin_A.jpg",
             "lebel": "Ghost Mannequin"
         }, 
         {
-            "after": "/public/img/Image_Slide_2D/Photo-Recolor_B.jpg",
-            "before": "/public/img/Image_Slide_2D/Photo-Recolor_A.jpg",
+            "after": "/img/Image_Slide_2D/Photo-Recolor_B.jpg",
+            "before": "/img/Image_Slide_2D/Photo-Recolor_A.jpg",
             "lebel": "Photo Recolor"
         },
         {
-            "after": "/public/img/Image_Slide_2D/Hair-Masking_B.jpg",
-            "before": "/public/img/Image_Slide_2D/Hair-Masking_A.jpg",
+            "after": "/img/Image_Slide_2D/Hair-Masking_B.jpg",
+            "before": "/img/Image_Slide_2D/Hair-Masking_A.jpg",
             "lebel": "Hair Masking"
         },
        
         {
-            "after": "/public/img/Image_Slide_2D/Photo-Retouch_B.jpg",
-            "before": "/public/img/Image_Slide_2D/Photo-Retouch_A.jpg",
+            "after": "/img/Image_Slide_2D/Photo-Retouch_B.jpg",
+            "before": "/img/Image_Slide_2D/Photo-Retouch_A.jpg",
             "lebel": "Photo Retouch"
         }
         ,
         {
-            "after": "/public/img/Image_Slide_2D/Color-Correction_B.jpg",
-            "before": "/public/img/Image_Slide_2D/Color-Correction_A.jpg",
+            "after": "/img/Image_Slide_2D/Color-Correction_B.jpg",
+            "before": "/img/Image_Slide_2D/Color-Correction_A.jpg",
             "lebel": "Color Correction"
         },
     ]
