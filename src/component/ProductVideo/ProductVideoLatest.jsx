@@ -1,10 +1,14 @@
-import { Suspense, useState } from "react";
+import { Suspense, lazy, useState } from "react";
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
-const ProductVideoLatest = ({ video }) => {
+
+// const VideoPlay = lazy(() => import('./VideoPlay.jsx'));
+const VideoPlay = lazy(() => delayForDemo(import('./VideoPlay.jsx')));
+
+export default function  ProductVideoLatest ({ video }) {
 
     const [playBool, setPlayBool] = useState(false);
 
@@ -27,11 +31,12 @@ const ProductVideoLatest = ({ video }) => {
                             </video>
                         </div>
                     }>
-                        <div className="flex justify-center w-full h-full">
+                        {/* <div className="flex justify-center w-full h-full">
                             <video className="object-cover" width="100%" height="auto" playsinline autoPlay muted loop>
                                 <source src='/video/The Kow Company_video.mp4' type="video/mp4" />
                             </video>
-                        </div>
+                        </div> */}
+                        <VideoPlay/>
                     </Suspense>
                     {/* tag line */}
                     <div className="absolute top-1/2 -translate-y-1/2 w-full">
@@ -54,6 +59,11 @@ const ProductVideoLatest = ({ video }) => {
     );
 };
 
-export default ProductVideoLatest;
 
-
+// Add a fixed delay so you can see the loading state
+function delayForDemo(promise) {
+    return new Promise(resolve => {
+      setTimeout(resolve, 2000);
+    }).then(() => promise);
+  }
+  
