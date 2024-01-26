@@ -78,10 +78,10 @@ const MegaMenu = () => {
                       ARCHITECTURAL VISUALIZATION
                     </p>
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link>Visualization</Link>
-                      <Link to="/exterior-visualization">Exterior Visualization</Link>
-                      <Link to="/interior-visualization">Interior Visualization</Link>
-                      <Link>VR Rendering</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Visualization</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to="/exterior-visualization">Exterior Visualization</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to="/interior-visualization">Interior Visualization</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">VR Rendering</Link>
                     </div>
                   </div>
                 </div>
@@ -100,12 +100,12 @@ const MegaMenu = () => {
                     </p>
 
                     <div className="flex flex-col gap-1 text-xs">
-                      <Link to={"/product-visualiztion-3d"}>Furnitures</Link>
-                      <Link>Fashion Accessories</Link>
-                      <Link>Cosmetics</Link>
-                      <Link>Packaging</Link>
-                      <Link>Tech Equipments</Link>
-                      <Link>Tech Accessories</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/product-visualiztion-3d"}>Furnitures</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Fashion Accessories</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Cosmetics</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Packaging</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Tech Equipments</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline">Tech Accessories</Link>
                     </div>
                   </div>
                 </div>

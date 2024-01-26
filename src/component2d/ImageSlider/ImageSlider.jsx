@@ -6,11 +6,11 @@ import 'react-div-carousel/dist/index.css'
 const ImageSlider = () => {
     const sliderList = [
       
-        // {
-        //     "after": "/public/img/Image_Slide_2D/Color-Correction_A.jpg",
-        //     "before": "/public/img/Image_Slide_2D/Color-Correction_B.jpg",
-        //     "lebel": "Background removal"
-        // },
+        {
+            "after": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_B.jpg",
+            "before": "/img/Image_Slide_2D/Background-Removal-&-Shadow-Creation_A.jpg",
+            "lebel": "Background removal"
+        },
         {
             "after": "/img/Image_Slide_2D/Ghost-Mannequin_B.jpg",
             "before": "/img/Image_Slide_2D/Ghost-Mannequin_A.jpg",
