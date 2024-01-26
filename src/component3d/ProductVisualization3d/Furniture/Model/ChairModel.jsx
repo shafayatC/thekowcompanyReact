@@ -26,7 +26,7 @@ const ChairModel = () => {
             geometry={geometry}
             material={materials[material.name]}
             onPointerOver={(e) => (e.stopPropagation(), set(e.object.material.name), setCursorIs(true), console.log(color))}
-            onPointerOut={(e) => ( setCursorIs(false), e.intersections.length === 0 && set(null))}
+            onPointerOut={(e) => ( setCursorIs(false), console.log("checking"), e.intersections.length === 0 && set(null))}
             // onClick={(event) => (console.log(event), event.object.material.color.set(0xce2020))}
             // onClick={(event) => (console.log(event), renderColors(event))}
             onClick={(event) => (console.log(event), setModelObject(event))}
@@ -71,11 +71,14 @@ const ChairModel = () => {
       (document.body.style.cursor = `url('data:image/svg+xml;base64,${btoa(
         auto
       )}'), auto`);
+    }else {
+      document.body.style.cursor = `default`;
     }
-  }, [colors, hovered]);
+  }, [colors, hovered, cursorIs]);
 
   return (
     <div className='h-[600px] relative'>
+      {console.log("testing : " + cursorIs)}
       <Canvas className='bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400 '>
         <ambientLight intensity={Math.PI / 2} />
         {/* <pointLight position={[10, 10, 10]} /> */}
