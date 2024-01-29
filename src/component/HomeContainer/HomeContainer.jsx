@@ -19,6 +19,7 @@ import VirtualTour from '../VirtualTour/VirtualTour'
 import ScrolTop from '../ScrolTop/ScrolTop'
 import ProductVideoLatest from '../ProductVideo/ProductVideoLatest'
 import ThreeDModelContainer from '../ThreeDModelContainer/ThreeDModelContainer'
+import NavbarHome from '../navber/navbarHome'
 
 function HomeContainer() {
 
@@ -27,8 +28,8 @@ function HomeContainer() {
     return (
         <>
             <ScrolTop />
-            <Navbar />
-
+            {/* <Navbar /> */}
+            <NavbarHome/>
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 {/* <img src='/circle-bg.svg' /> */}
                 <ProductVideoLatest />

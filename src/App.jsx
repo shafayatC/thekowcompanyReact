@@ -16,6 +16,7 @@ import Furniture from './component3d/ProductVisualization3d/Furniture/Furniture'
 import MegaNavbar from './component/MegaNavbar/MegaNavbar'
 import TermsCondition from './component/TermsCondition/TermsCondition'
 import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
+import Contact from './component/ContactUs/ContactUs'
 
 
 
@@ -27,7 +28,8 @@ function App() {
     <>
 
       <Routes>
-        <Route path="/" element={<HomeContainer />} />
+      <Route path="/" element={<HomeContainer />} />
+      <Route path="/contact-us" element={<Contact />} />
         <Route path="/industry-trends" element={<BlogPage />} />
         <Route path="/integrations" element={<Partnership />} />
         <Route path="/2d" element={<Container2D/>} />
