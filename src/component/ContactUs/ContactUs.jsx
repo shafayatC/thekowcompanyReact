@@ -42,24 +42,24 @@ export default function Contact() {
         <>
             <ScrolTop />
             <Navbar />
-            <div className=" bg-slate-500 pt-12 pb-20">
+            <div className=" bg-slate-500 pt-4 pb-20">
                 {/* <Helmet>
         <style>{"body { background-color: #c5da9c; }"}</style>
       </Helmet> */}
 
                 <div className="container mx-auto">
                     <div className="">
-                        <div className="flex flex-col justify-center items-center gap-12">
-                            <div className="-flex flex-col gap-4 justify-center items-center text-center">
+                        <div className="flex flex-col justify-center items-center gap-4">
+                            <div className="flex flex-col py-4 gap-2 justify-center items-center text-center">
                                 <p className="text-3xl font-bold text-white">GET IN TOUCH WITH US</p>
-                                <p className="text-xl  text-white">Contact us</p>
+                                {/* <p className="text-xl  text-white">Contact us</p> */}
                             </div>
                             <form onSubmit={sendEmail} className="w-[450px] flex flex-col">
                                 <div className="flex flex-col gap-3">
                                     <div id="nameid" className="flex flex-col">
                                         <input
                                             type="text"
-                                            className="py-3 px-2 rounded-sm"
+                                            className="py-2 px-2 rounded-sm"
                                             placeholder="Name"
                                             name="name"
                                             required
@@ -67,7 +67,7 @@ export default function Contact() {
                                     </div>
                                     <div  className="flex flex-col">
                                         <select id="inputState" 
-                                            className="py-3 px-2 rounded-sm"
+                                            className="py-2 px-2 rounded-sm"
                                             name="option">
                                             <option selected> --Select Option-- </option>
                                             <option>Image Editing Service</option>
@@ -77,7 +77,7 @@ export default function Contact() {
                                     <div  className="flex flex-col">
                                         <input
                                             type="email"
-                                            className="py-3 px-2 rounded-sm"
+                                            className="py-2 px-2 rounded-sm"
                                             placeholder="Email"
                                             name="email"
                                             required
@@ -86,7 +86,7 @@ export default function Contact() {
                                     <div  className="flex flex-col">
                                         <input
                                             type="text"
-                                            className="py-3 px-2 rounded-sm"
+                                            className="py-2 px-2 rounded-sm"
                                             placeholder="Subject"
                                             name="subject"
                                             required
@@ -95,10 +95,10 @@ export default function Contact() {
 
                                     <div className="flex flex-col">
                                         <textarea
-                                            className="form-control py-3 px-2 rounded-sm"
+                                            className="form-control py-2 px-2 rounded-sm"
                                             id=""
-                                            cols="30"
-                                            rows="8"
+                                            cols="20"
+                                            rows="5"
                                             placeholder="Your message"
                                             name="message"
                                             required
@@ -121,7 +121,7 @@ export default function Contact() {
                                             <input
                                                 type="submit"
                                                 id="button-19"
-                                                className="bg-[#7c9c30] py-2 px-10 text-white font-bold rounded-md"
+                                                className="bg-[#7c9c30] py-2 px-10 text-white cursor-pointer font-bold rounded-md"
                                                 value="SUBMIT"
                                             ></input>
                                         </div>
