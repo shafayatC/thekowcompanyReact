@@ -1,6 +1,7 @@
 import { Suspense, lazy, useState } from "react";
 import { Carousel } from 'react-div-carousel'
 import 'react-div-carousel/dist/index.css'
+import VideoPlayer from "./VideoPlayer.jsx";
 // import video from "./video/production.mp4";
 // import video from './video/production.mp4';
 
@@ -35,7 +36,8 @@ export default function ProductVideoLatest({ video }) {
                             <img className="object-cover w-full" src="/video/loading-image.png" alt="loading" />
                         </div>
                     }>
-                        <VideoPlay />
+                        <VideoPlayer/>
+                        {/* <VideoPlay /> */}
                         {/* tag line */}
                         <div className="absolute top-1/2 -translate-y-1/2 w-full">
                             <Carousel uniqueId="id_1050" delay={3000}
