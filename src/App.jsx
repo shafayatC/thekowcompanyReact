@@ -17,6 +17,7 @@ import MegaNavbar from './component/MegaNavbar/MegaNavbar'
 import TermsCondition from './component/TermsCondition/TermsCondition'
 import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
 import Contact from './component/ContactUs/ContactUs'
+import Thankyou from './component/Thankyou/Thankyou'
 
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path="/product-visualiztion-3d" element={<Furniture/>} />
         <Route path="/terms-condition" element={<TermsCondition/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/thank-you/*" element={<Thankyou/>} />
         
       </Routes>
     </>
