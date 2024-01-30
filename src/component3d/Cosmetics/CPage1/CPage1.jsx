@@ -2,27 +2,27 @@ import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const EVPage2 = () => {
+const CPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([
     {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.jpg",
+      imageUrl: "/img/Cosmetics.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
     // {
     //   id: 2,
     //   text: "YOUR PROJECT TITLE",
     //   text2: "01 JAN, 2023",
-    //   imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
+    //   imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
     //   imageUrl2: "/img/3d/slider/view.png",
     // },
     // {
     //   id: 3,
     //   text: "YOUR PROJECT TITLE",
     //   text2: "01 JAN, 2023",
-    //   imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
+    //   imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
     //   imageUrl2: "/img/3d/slider/view.png",
     // },
  
@@ -61,7 +61,7 @@ const EVPage2 = () => {
   };
   return (
     <div>
-      <div className="2xl:container mx-auto mb-2">
+      <div className="2xl:container mx-auto my-1">
         {getVisibleDivs() &&
           getVisibleDivs().map((div) => (
             <div className="relative " key={div.id}>
@@ -107,4 +107,4 @@ const EVPage2 = () => {
   );
 };
 
-export default EVPage2;
+export default CPage1;

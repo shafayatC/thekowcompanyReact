@@ -23,6 +23,11 @@ const Slider3D = () => {
       "label": "Packaging",
       "link": "#"
     },
+    {
+      "image": "/img/Cosmetics.jpg",
+      "label": "Cosmetics",
+      "link": "#"
+    },
   
    
   ]
