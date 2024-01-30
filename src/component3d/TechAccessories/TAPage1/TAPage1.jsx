@@ -8,7 +8,7 @@ const TAPage1 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/public/img/Tech Accessories.jpg",
+      imageUrl: "/img/Tech Accessories.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
     // {

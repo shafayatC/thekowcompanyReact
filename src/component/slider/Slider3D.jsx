@@ -14,7 +14,7 @@ const Slider3D = () => {
       "link": "#"
     },
     {
-      "image": "/public/img/Tech Equipment (1).png",
+      "image": "/img/Tech Equipment (1).png",
       "label": "Tech Equipment",
       "link": "#"
     },
