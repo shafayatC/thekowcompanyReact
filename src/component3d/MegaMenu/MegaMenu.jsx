@@ -101,11 +101,11 @@ const MegaMenu = () => {
 
                     <div className="flex flex-col gap-1 text-xs">
                       <Link className="hover:text-[#AF8E56] hover:underline" to={"/product-visualiztion-3d"}>Furnitures</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline">Fashion Accessories</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/fashion-accessories"}>Fashion Accessories</Link>
                       <Link className="hover:text-[#AF8E56] hover:underline">Cosmetics</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline">Packaging</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline">Tech Equipments</Link>
-                      <Link className="hover:text-[#AF8E56] hover:underline">Tech Accessories</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/packaging"}>Packaging</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/tech-equipments"}>Tech Equipments</Link>
+                      <Link className="hover:text-[#AF8E56] hover:underline" to={"/tech-accessories"}>Tech Accessories</Link>
                     </div>
                   </div>
                 </div>

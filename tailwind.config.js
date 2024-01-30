@@ -8,6 +8,11 @@ export default {
     fontFamily: {
       'tag-font' : ['Rubik Doodle Shadow', 'system-ui']
     },
+    container: {
+      padding: {
+        '2xl': '20px'
+      },
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

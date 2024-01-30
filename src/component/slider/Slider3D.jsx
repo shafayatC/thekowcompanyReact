@@ -4,35 +4,27 @@ import 'react-div-carousel/dist/index.css'
 const Slider3D = () => {
   const sliderList = [
     {
-      "image": "/img/slider_img_3d/1.jpg",
-      "label": "Furniture",
+      "image": "/img/Fashion Accessories.jpg",
+      "label": "Fashion Accessories",
       "link": "#"
     },
     {
-      "image": "/img/slider_img_3d/2.jpg",
-      "label": "Bag",
+      "image": "/img/Tech Accessories.jpg",
+      "label": "Tech Accessories",
       "link": "#"
     },
     {
-      "image": "/img/slider_img_3d/3.jpg",
-      "label": "Shoes",
+      "image": "/public/img/Tech Equipment (1).png",
+      "label": "Tech Equipment",
       "link": "#"
     },
     {
-      "image": "/img/slider_img_3d/1.jpg",
-      "label": "Furniture",
+      "image": "/img/Packaging.jpg",
+      "label": "Packaging",
       "link": "#"
     },
-    {
-      "image": "/img/slider_img_3d/2.jpg",
-      "label": "Bag",
-      "link": "#"
-    },
-    {
-      "image": "/img/slider_img_3d/3.jpg",
-      "label": "Shoes",
-      "link": "#"
-    },
+  
+   
   ]
   return (
     <div id='3d' className='pb-10 pt-10'>

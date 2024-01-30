@@ -70,8 +70,10 @@ export default function Contact() {
                                             className="py-2 px-2 rounded-sm"
                                             name="option">
                                             <option selected> --Select Option-- </option>
-                                            <option>Image Editing Service</option>
-                                            <option>Video Editing Service</option>
+                                            <option>Image Editing Services</option>
+                                            <option>Video Editing Services</option>
+                                            <option>3D Services</option>
+                                            <option>Retouched.ai</option>
                                         </select>
                                     </div>
                                     <div  className="flex flex-col">

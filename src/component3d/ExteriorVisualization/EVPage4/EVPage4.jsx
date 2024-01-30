@@ -8,23 +8,26 @@ const EVPage4 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/EV-2.jpg",
+      
+      imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
     {
       id: 2,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/EV-1.jpg",
+      imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
+    
       imageUrl2: "/img/3d/slider/view.png",
     },
     {
       id: 3,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/EV-3.jpg",
+      imageUrl: "/public/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
+ 
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,7 +69,7 @@ const EVPage4 = () => {
             <div className="relative " key={div.id}>
               <div>
                 <img
-                  className=" w-full md:h-screen 2xl:h-[600px]"
+                  className=" w-full h-full 2xl:h-[800px]"
                   src={div.imageUrl}
                   alt={div.text}
                 />
@@ -83,7 +86,7 @@ const EVPage4 = () => {
                 </button>
                )}
               </div>
-              <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
+              {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
                
                 <div className="w-8 md:w-16">
                   <img src={div.imageUrl2} />
@@ -98,7 +101,7 @@ const EVPage4 = () => {
                 <div>
                   <p className="text-[9px] md:text-base text-black">{div.text2}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
       </div>
