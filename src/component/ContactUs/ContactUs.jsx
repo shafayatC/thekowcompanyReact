@@ -67,7 +67,7 @@ export default function Contact() {
                                     </div>
                                     <div  className="flex flex-col">
                                         <select id="inputState" 
-                                            className="py-2 px-2 rounded-sm"
+                                            className="py-2 px-2 rounded-sm cursor-pointer"
                                             name="option">
                                             <option selected> Select Option </option>
                                             <option>Image Editing Services</option>
