@@ -109,10 +109,10 @@ const ThreeDModelContainer = () => {
                                 <img className='w-[160px] h-[70px]' src='/img/Holosnap-Logo_H_Color.png'/>
                             </div>
                             <p className='text-black text-justify'>Holosnap is an advanced AI-powered 3D asset creation tool that seamlessly converts 2D images into intricate 3D point clouds. Utilizing cutting-edge artificial intelligence algorithms, it automates the transformation of 2D images into 3D Models. Holosnap excels at analyzing 2D images to extrapolate depth information, facilitating the reconstruction of highly detailed and accurate 3D point clouds by identifying key features, textures, and contours.</p>
+                            <div className='flex'>
 
-                            <div className='flex '>
                         <Link to="/contact-us">
-                            <button className='text-xs  md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Explore Holosnap</button>
+                            <button className='text-xs  md:text-sm font-semibold text-white px-6 py-2 bg-[#7C9C30] rounded-3xl'>Explore Holosnap</button>
                         </Link>
                     </div>
                         </div>
