@@ -101,7 +101,7 @@ const ThreeDModelContainer = () => {
 
     return (
         <>
-            <div className='h-screen w-full bg-gray-200 flex items-center'>
+            <div className='py-10 w-full bg-gray-200 flex items-center'>
                 <div className='container mx-auto'>
                     <div className='flex lg:flex-row flex-col gap-1 items-center justify-center'>
                         <div className='flex flex-col gap-5 w-[400px]'>
