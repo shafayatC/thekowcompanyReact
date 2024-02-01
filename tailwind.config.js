@@ -10,7 +10,7 @@ export default {
     },
     container: {
       padding: {
-        '2xl': '20px'
+        '2xl': '10px'
       },
     },
     extend: {

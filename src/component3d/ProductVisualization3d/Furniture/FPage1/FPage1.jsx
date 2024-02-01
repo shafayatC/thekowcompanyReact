@@ -1,32 +1,30 @@
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-
-const EVPage3 = () => {
+const FPage1 = () => {
   const [visibleDivs, setVisibleDivs] = useState([
     {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 4.jpg",
-      
+      imageUrl: "/img/Furniture.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
-    {
-      id: 2,
-      text: "YOUR PROJECT TITLE",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 2.jpg",
-      imageUrl2: "/img/3d/slider/view.png",
-    },
-    {
-      id: 3,
-      text: "YOUR PROJECT TITLE",
-      text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/exterior archviz 1.jpg",
-     
-      imageUrl2: "/img/3d/slider/view.png",
-    },
+    // {
+    //   id: 2,
+    //   text: "YOUR PROJECT TITLE",
+    //   text2: "01 JAN, 2023",
+    //   imageUrl: "/public/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
+    //   imageUrl2: "/img/3d/slider/view.png",
+    // },
+    // {
+    //   id: 3,
+    //   text: "YOUR PROJECT TITLE",
+    //   text2: "01 JAN, 2023",
+    //   imageUrl: "/public/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
+    //   imageUrl2: "/img/3d/slider/view.png",
+    // },
  
   ]);
 
@@ -69,22 +67,22 @@ const EVPage3 = () => {
             <div className="relative " key={div.id}>
               <div>
                 <img
-                  className=" w-full h-full 2xl:h-[800px]"
+                  className=" w-full  h-full 2xl:h-[800px] "
                   src={div.imageUrl}
                   alt={div.text}
                 />
               </div>
               <div className="flex justify-between ">
-              {!isPrevDisabled && (
-                <button onClick={handlePrev} >
-                  <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
-                </button>
-              )}
-               {!isNextDisabled && (
-                <button onClick={handleNext} >
-                  <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
-                </button>
-               )}
+                {!isPrevDisabled && (
+                  <button onClick={handlePrev}>
+                    <MdArrowBackIosNew className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute left-[10%] top-[50%]" />
+                  </button>
+                )}
+                {!isNextDisabled && (
+                  <button onClick={handleNext}>
+                    <MdArrowForwardIos className="text-4xl text-white bg-[#574F45] rounded-full p-1 absolute right-[10%] top-[50%]" />
+                  </button>
+                )}
               </div>
               {/* <div className="flex justify-center items-center gap-3 absolute bottom-0 md:bottom-8 left-[15%]">
                
@@ -92,14 +90,14 @@ const EVPage3 = () => {
                   <img src={div.imageUrl2} />
                 </div>
                 <div>
-                  <p className="font-semibold text-base md:text-2xl text-black">
+                  <p className="font-semibold text-base md:text-2xl text-white">
                     {div.text}{" "}
                     <span className="text-green-500 font-light">|</span>
                   </p>
                 </div>
 
                 <div>
-                  <p className="text-[9px] md:text-base text-black">{div.text2}</p>
+                  <p className="text-[9px] md:text-base text-white">{div.text2}</p>
                 </div>
               </div> */}
             </div>
@@ -109,4 +107,4 @@ const EVPage3 = () => {
   );
 };
 
-export default EVPage3;
+export default FPage1;

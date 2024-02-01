@@ -13,11 +13,7 @@ const Slider3D = () => {
       "label": "Tech Accessories",
       "link": "#"
     },
-    {
-      "image": "/img/Tech Equipment.jpg",
-      "label": "Tech Equipment",
-      "link": "#"
-    },
+   
     {
       "image": "/img/Packaging.jpg",
       "label": "Packaging",
@@ -26,6 +22,16 @@ const Slider3D = () => {
     {
       "image": "/img/Cosmetics.jpg",
       "label": "Cosmetics",
+      "link": "#"
+    },
+    {
+      "image": "/img/Furniture.jpg",
+      "label": "Furniture",
+      "link": "#"
+    },
+    {
+      "image": "/img/Tech Equipment.jpg",
+      "label": "Tech Equipment",
       "link": "#"
     },
   

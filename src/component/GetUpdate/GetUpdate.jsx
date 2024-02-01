@@ -18,7 +18,10 @@ const GetUpdate = () => {
                             className="border-none pl-4 focus:outline-none text-sm text-black  w-48"
 
                             placeholder="Enter your mail" />
-                        <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">Subscribe</button>
+                            <a className="cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >
+                            <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">Subscribe</button>
+                            </a>
+                        
 
                     </div>
                 </div>

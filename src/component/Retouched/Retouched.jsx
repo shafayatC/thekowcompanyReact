@@ -2,6 +2,7 @@
 import ReactCompareImage from "react-compare-image";
 import model from "../../images/model.png"
 import model2 from "../../images/model-BR.png"
+import { Link } from "react-router-dom";
 
 
 const Retouched = () => {
@@ -38,7 +39,9 @@ const Retouched = () => {
 
 
                         <div className='flex justify-center lg:justify-start pt-7 '>
+                            <a className="cursor-pointer" href="http://retouched.ai/" target="_blank" rel="noreferrer">
                             <button className='text-xs  font-semibold text-white px-8 py-2 bg-[#7C9C30] rounded-3xl'> Remove Image Background with AI</button>
+                            </a>
                         </div>
                     </div>
                 </div>

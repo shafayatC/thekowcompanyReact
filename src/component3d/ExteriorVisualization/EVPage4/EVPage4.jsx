@@ -8,23 +8,22 @@ const EVPage4 = () => {
       id: 1,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      
-      imageUrl: "/img/3d/slider/THE MINIMALIST WARM SUNSET LUXRIOUS.jpg",
+      imageUrl: "/img/3d/slider/exterior archviz 2.jpg"
+      ,
       imageUrl2: "/img/3d/slider/view.png",
     },
     {
       id: 2,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/PERSIAN BLUE COOL SUNRISE COMPACT ECOMMERCE .jpg",
-    
+      imageUrl: "/img/3d/slider/exterior archviz 1.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
     {
       id: 3,
       text: "YOUR PROJECT TITLE",
       text2: "01 JAN, 2023",
-      imageUrl: "/img/3d/slider/INDUSTRIAL BLACK LUXURIOUS.jpg",
+      imageUrl: "/img/3d/slider/exterior archviz 4.jpg",
       imageUrl2: "/img/3d/slider/view.png",
     },
  
