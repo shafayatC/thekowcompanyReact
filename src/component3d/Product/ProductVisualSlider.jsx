@@ -6,35 +6,36 @@ import Heading from '../Heading/Heading';
 const ProductVisualSlider = () => {
     const sliderList = [
         {
-            "image": "/img/3d/slider/IV.jpg",
-            "label": "INTERIOR VISUALIZATION",
+            "image": "/img/Fashion Accessories.jpg",
+            "label": "Fashion Accessories",
             "link": "#"
-        },
-        {
-            "image": "/img/3d/slider/EV.jpg",
-            "label": "EXTERIOR VISUALIZATION",
+          },
+          {
+            "image": "/img/Tech Accessories.jpg",
+            "label": "Tech Accessories",
             "link": "#"
-        },
-        {
-            "image": "/img/3d/slider/VR.jpg",
-            "label": "VR RENDERING",
+          },
+         
+          {
+            "image": "/img/Packaging.jpg",
+            "label": "Packaging",
             "link": "#"
-        },
-        {
-            "image": "/img/3d/slider/IV.jpg",
-            "label": "INTERIOR VISUALIZATION",
+          },
+          {
+            "image": "/img/Cosmetics.jpg",
+            "label": "Cosmetics",
             "link": "#"
-        },
-        {
-            "image": "/img/3d/slider/EV.jpg",
-            "label": "EXTERIOR VISUALIZATION",
+          },
+          {
+            "image": "/img/Furniture.jpg",
+            "label": "Furniture",
             "link": "#"
-        },
-        {
-            "image": "/img/3d/slider/VR.jpg",
-            "label": "VR RENDERING",
+          },
+          {
+            "image": "/img/Tech Equipment.jpg",
+            "label": "Tech Equipment",
             "link": "#"
-        }
+          },
 
     ]
 
@@ -45,7 +46,7 @@ const ProductVisualSlider = () => {
                 <div className='2xl:container 2xl:mx-auto '>
                     <div className='relative w-full '>
                         <Carousel uniqueId="id_125" delay={5000}
-                            item={2}
+                            item={3}
                             indicators={false}
                             responsive={[
                                 {

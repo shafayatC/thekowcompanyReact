@@ -7,8 +7,13 @@ import trends2 from "../../images/3d.png"
 const IndustryTrends = () => {
     return (
         <div id="trends">
+             <div className='flex justify-center gap-10 mb-5'>
+                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
+                        <h1 className='text-[40px] -mb-4 text-center font-bold'>INDUSTRY TRENDS</h1>
+                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
+                    </div>
             <div className='container mx-auto'>
-                <div className='flex flex-col md:flex-row items-center justify-center gap-3 pt-20 pb-20'>
+                <div className='flex flex-col md:flex-row items-center justify-center gap-3 pt-20 '>
                     <div className='relative'>
                         <img src={trends1}
                         width={500}
@@ -16,7 +21,7 @@ const IndustryTrends = () => {
                         />
                          <div className='flex flex-col justify-items-center pt-5 gap-3'>
                             <div className="flex justify-center items-center gap-3 ">
-                                <h1>Easy Product Photography Solutions for Small Business |</h1>
+                                <h1 className="text-sm md:text-base">Easy Product Photography Solutions for Small Business |</h1>
                                 <h1 className="text-xs">01 JAN, 2023</h1>
                             </div>
                             <div className="flex justify-center items-center"><Link to="/industry-trends" className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</Link></div>
@@ -40,7 +45,7 @@ const IndustryTrends = () => {
                         {/* <MdOutlineArrowForwardIos className='absolute right-0 font-semibold bottom-20 text-white text-2xl' /> */}
                         <div className='flex flex-col justify-items-center pt-5 gap-3'>
                             <div className="flex justify-center items-center gap-3 ">
-                                <h1>Photography Tips for Beginners |</h1>
+                                <h1 className="text-sm md:text-base">Photography Tips for Beginners |</h1>
                                 <h1 className="text-xs">01 JAN, 2023</h1>
                             </div>
                             <div className="flex justify-center items-center"><Link to="/industry-trends" className='text-xs font-medium text-white px-12 py-1 bg-[#7C9C30] rounded-3xl'>See More</Link></div>
@@ -49,11 +54,7 @@ const IndustryTrends = () => {
                     
                 </div>
 
-                <div className='flex justify-center gap-10 mb-40'>
-                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
-                        <h1 className='text-[40px] -mb-4 text-center font-bold'>INDUSTRY TRENDS</h1>
-                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
-                    </div>
+               
 
             </div>
         </div>

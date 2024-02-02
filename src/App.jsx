@@ -18,6 +18,11 @@ import TermsCondition from './component/TermsCondition/TermsCondition'
 import PrivacyPolicy from './component/PrivacyPolicy/PrivacyPolicy'
 import Contact from './component/ContactUs/ContactUs'
 import Thankyou from './component/Thankyou/Thankyou'
+import Packaging from './component3d/Packaging/Packaging'
+import FashionAccessories from './component3d/FashionAccessories/FashionAccessories'
+import TechAccessories from './component3d/TechAccessories/TechAccessories'
+import TechEquipments from './component3d/TechEquipments/TechEquipments'
+import Cosmetics from './component3d/Cosmetics/Cosmetics'
 
 
 
@@ -39,6 +44,11 @@ function App() {
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
         <Route path="/interior-visualization" element={<InteriorVisualization/>} />
         <Route path="/product-visualiztion-3d" element={<Furniture/>} />
+        <Route path="/packaging" element={<Packaging/>} />
+        <Route path="/fashion-accessories" element={<FashionAccessories/>} />
+        <Route path="/tech-accessories" element={<TechAccessories/>} />
+        <Route path="/tech-equipments" element={<TechEquipments/>} />
+        <Route path="/cosmetics" element={<Cosmetics/>} />
         <Route path="/terms-condition" element={<TermsCondition/>} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         <Route path="/thank-you/*" element={<Thankyou/>} />

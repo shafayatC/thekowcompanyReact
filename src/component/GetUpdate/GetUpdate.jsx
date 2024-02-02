@@ -4,7 +4,7 @@ const GetUpdate = () => {
     return (
         <div id="subscribe">
             <div className="container mx-auto"> 
-                <div className="py-36">
+                <div className="pb-32 pt-10">
                     <div className='flex justify-center gap-10 my-6'>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                         <h1 className=' text-[40px] -mb-4 text-center font-bold'>GET UPDATES</h1>
@@ -18,7 +18,10 @@ const GetUpdate = () => {
                             className="border-none pl-4 focus:outline-none text-sm text-black  w-48"
 
                             placeholder="Enter your mail" />
-                        <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">Subscribe</button>
+                            <a className="cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >
+                            <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">Subscribe</button>
+                            </a>
+                        
 
                     </div>
                 </div>
