@@ -20,6 +20,7 @@ import ScrolTop from '../ScrolTop/ScrolTop'
 import ProductVideoLatest from '../ProductVideo/ProductVideoLatest'
 import ThreeDModelContainer from '../ThreeDModelContainer/ThreeDModelContainer'
 import NavbarHome from '../navber/navbarHome'
+import ProductVisualSlider from '../../component3d/Product/ProductVisualSlider'
 
 function HomeContainer() {
 
@@ -37,6 +38,7 @@ function HomeContainer() {
                 <ThreeDModelContainer/>
                 <DivSliderParrent />
                 <Slider3D />
+                {/* <ProductVisualSlider/> */}
                 <Record />
                 <Retouched />
                 <Integration />
@@ -44,7 +46,7 @@ function HomeContainer() {
                 {/* <TheSquad /> */}
                 <BluePrint />
                 <IndustryTrends />
-                <VirtualTour />
+                {/* <VirtualTour /> */}
                 <GetUpdate />
             </div>
             <Footer />

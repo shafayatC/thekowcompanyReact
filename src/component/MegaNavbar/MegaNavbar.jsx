@@ -11,7 +11,7 @@ const MegaNavbar = () => {
     <>
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[black]  sticky w-full top-0 z-[999]  shadow-xl md:shadow-none">
-        <div className="container mx-auto px-4 md:px-0 py-1">
+        <div className="container mx-auto py-1">
           <div className="flex items-center  gap-16">
             <Link to={"/"}>
               <img src={logo}

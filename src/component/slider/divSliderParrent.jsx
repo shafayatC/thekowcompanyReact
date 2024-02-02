@@ -62,8 +62,13 @@ const DivSliderParrent = () => {
         }, 100);
     }, [])
     return (
-        <div id='images' className='pt-10 pb-7'>
-            <div className='relative 2xl:container 2xl:mx-auto h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
+        <div id='images' className='pt-5 pb-7'>
+             <div className='flex justify-center gap-10 my-10'>
+                    <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                    <h1 className='text-[40px]  mb-0 lg:-mb-4 font-bold'>IMAGES</h1>
+                    <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                </div>
+            <div className='relative 2xl:container 2xl:mx-auto 2xl:px-0 h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
                 <div className=''>
                     <button
                         disabled={currentPosition === 0}
@@ -166,16 +171,10 @@ const DivSliderParrent = () => {
                 </div>
 
             </div>
-            <div className='container mx-auto'>
-                <div className='flex justify-center gap-10 my-10'>
-                    <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                    <h1 className='text-[40px]  mb-0 lg:-mb-4 font-bold'>IMAGES</h1>
-                    <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                </div>
-                <p className='text-xs md:text-sm px-[54px] text-center'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordi-
-nary, transforming each product shot into a magnetic narrative that accentuates every exceptional detail.`}</p>
-                <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your prod-
-ucts radiate brilliance, whether on a website, social media, or in print.`}</p>
+            <div className='container mx-auto mt-10'>
+               
+                <p className='text-xs md:text-sm px-[54px] text-center'>{`The KOW Company's unparalleled post-production services serve as a dynamic catalyst for global retailers. Picture a visual journey where Image Retouching transcends the ordinary, transforming each product shot into a magnetic narrative that accentuates every exceptional detail.`}</p>
+                <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p>
 
                 <div className='flex justify-center '>
                     <button className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</button>

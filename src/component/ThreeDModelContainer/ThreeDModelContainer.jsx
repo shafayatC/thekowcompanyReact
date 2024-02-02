@@ -1,5 +1,7 @@
 import React from 'react';
 import ViewModel from '../ViewModel/ViewModel';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const ThreeDModelContainer = () => {
 
@@ -99,12 +101,20 @@ const ThreeDModelContainer = () => {
 
     return (
         <>
-            <div className='h-screen w-full bg-gray-500 flex items-center'>
+            <div className='py-10 w-full bg-gray-200 flex items-center'>
                 <div className='container mx-auto'>
                     <div className='flex lg:flex-row flex-col gap-1 items-center justify-center'>
-                        <div className='flex flex-col gap-5 w-80'>
-                            <h1 className='text-3xl font-bold text-white'>Lorem Ipsum is simply</h1>
-                            <p className='text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <div className='flex flex-col gap-5 w-[400px]'>
+                            <div>
+                                <img className='w-[160px] h-[70px]' src='/img/Holosnap-Logo_H_Color.png'/>
+                            </div>
+                            <p className='text-black text-justify'>Holosnap is an advanced AI-powered 3D asset creation tool that seamlessly converts 2D images into intricate 3D point clouds. Utilizing cutting-edge artificial intelligence algorithms, it automates the transformation of 2D images into 3D Models. Holosnap excels at analyzing 2D images to extrapolate depth information, facilitating the reconstruction of highly detailed and accurate 3D point clouds by identifying key features, textures, and contours.</p>
+                            <div className='flex'>
+
+                        <Link to="/contact-us">
+                            <button className='text-xs  md:text-sm font-semibold text-white px-6 py-2 bg-[#7C9C30] rounded-3xl'>Explore Holosnap</button>
+                        </Link>
+                    </div>
                         </div>
                         <div className='h-[500px] w-full md:w-[570px]'>
                             <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>

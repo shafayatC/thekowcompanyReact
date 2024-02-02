@@ -27,26 +27,26 @@ const Footer = () => {
                         <p className="w-40 text-white text-[11px] p-1 border-b-2  border-white  mb-4">
                             <b>The KOW Company</b> is one of the
                             leading image and video editing
-                            company for businesses all over
+                            companies for businesses all over
                             the world.
                         </p>
                         <div className="flex text-[#003333] justify-center gap-1 mb-2">
-                            <a href="https://www.facebook.com/cutoutwiz" target="_blank" rel="noreferrer">
+                            <a href="https://www.facebook.com/KOWCompany" target="_blank" rel="noreferrer">
                                 <FaFacebook className="h-4 w-4 mr-2 text-white cursor-pointer"></FaFacebook>
                             </a>
                             <a
-                                href="https://www.youtube.com/channel/UClIkCcEBksZigP56p593fDQ"
+                                href="https://www.youtube.com/channel/UCCXAA-Q_f0uuvG8RqW0HRYQ"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaYoutube className="h-4 w-4 mr-2 text-white cursor-pointer"></FaYoutube>
                             </a>
                             <a
-                                href="https://www.linkedin.com/company/cutoutwiz-ltd/"
+                                href="https://www.linkedin.com/company/the-kow-company/"
                                 target="_blank" rel="noreferrer"
                             >
                                 <FaLinkedinIn className="h-4 w-4 mr-2 text-white cursor-pointer"></FaLinkedinIn>
                             </a>
-                            <a href="https://twitter.com/cut_wiz?s=09" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/the_kow_company" target="_blank" rel="noreferrer">
                                 <FaTwitter className="h-4 w-4 mr-2 text-white cursor-pointer"></FaTwitter>
                             </a>
                             <a
@@ -90,8 +90,8 @@ const Footer = () => {
                         <a className="link link-hover text-xs">Platform Status</a> */}
                         <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
                         <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
-                        <a className="link link-hover text-sm">Contact us</a>
-                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-xs cursor-pointer' >Sign Up</a>
+                        <Link to="/contact-us" className="link link-hover text-sm">Contact us</Link>
+                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" className='text-sm cursor-pointer' >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
                         <span className="font-bold text-white text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">

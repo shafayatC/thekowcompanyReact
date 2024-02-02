@@ -55,7 +55,7 @@ const OrderGuide = () => {
                 STEP 2:
               </h1>
               <h1 className="text-[10px] font-semibold">Choose your</h1>
-              <h1 className="text-[10px] font-semibold">preffered subscription plan</h1>
+              <h1 className="text-[10px] font-semibold">preferred subscription plan</h1>
               <div className="absolute -top-[15px] -left-[14px] w-[190px]">
                 <img className="w-full" src={arrow} />
               </div>

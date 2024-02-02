@@ -27,7 +27,7 @@ const Footer2D = () => {
                         <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
                             <b>The KOW Company</b> is one of the
                             leading image and video editing
-                            company for businesses all over
+                            companies for businesses all over
                             the world.
                         </p>
                         <div className="flex text-[#003333] justify-center gap-1 mb-2">
@@ -81,7 +81,7 @@ const Footer2D = () => {
                       
                         <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
                         <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
-                        <a className="link link-hover text-sm">Contact us</a>
+                        <Link to="/contact-us" className="link link-hover text-sm">Contact us</Link>
                         <a className="text-sm cursor-pointer" href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" rel="noreferrer" >Sign Up</a>
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
