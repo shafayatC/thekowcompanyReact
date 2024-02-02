@@ -46,7 +46,7 @@ function HomeContainer() {
                 {/* <TheSquad /> */}
                 <BluePrint />
                 <IndustryTrends />
-                <VirtualTour />
+                {/* <VirtualTour /> */}
                 <GetUpdate />
             </div>
             <Footer />

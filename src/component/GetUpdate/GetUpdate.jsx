@@ -4,7 +4,7 @@ const GetUpdate = () => {
     return (
         <div id="subscribe">
             <div className="container mx-auto"> 
-                <div className="py-36">
+                <div className="pb-32 pt-10">
                     <div className='flex justify-center gap-10 my-6'>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                         <h1 className=' text-[40px] -mb-4 text-center font-bold'>GET UPDATES</h1>

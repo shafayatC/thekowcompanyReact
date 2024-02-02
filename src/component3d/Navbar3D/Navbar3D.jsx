@@ -54,9 +54,8 @@ const Navbar3D = () => {
 
                     <div className="hidden md:flex items-center justify-between gap-3">
                         <Link to={"/"}>
-                            <img src={logo}
-                                width={80}
-                                height={40}
+                            <img className="w-[80px] h-[45px]" src={logo}
+                               
                                 alt="logo" />
                         </Link>
                         {/* --------------------------------------For Large Screen------------------------------------------ */}

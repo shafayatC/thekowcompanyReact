@@ -7,8 +7,13 @@ import trends2 from "../../images/3d.png"
 const IndustryTrends = () => {
     return (
         <div id="trends">
+             <div className='flex justify-center gap-10 mb-5'>
+                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
+                        <h1 className='text-[40px] -mb-4 text-center font-bold'>INDUSTRY TRENDS</h1>
+                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
+                    </div>
             <div className='container mx-auto'>
-                <div className='flex flex-col md:flex-row items-center justify-center gap-3 pt-20 pb-20'>
+                <div className='flex flex-col md:flex-row items-center justify-center gap-3 pt-20 '>
                     <div className='relative'>
                         <img src={trends1}
                         width={500}
@@ -49,11 +54,7 @@ const IndustryTrends = () => {
                     
                 </div>
 
-                <div className='flex justify-center gap-10 mb-40'>
-                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
-                        <h1 className='text-[40px] -mb-4 text-center font-bold'>INDUSTRY TRENDS</h1>
-                        <h1 className='w-[350px] border-b border-[#7C9C30]'></h1>
-                    </div>
+               
 
             </div>
         </div>
