@@ -27,7 +27,7 @@ const Footer2D = () => {
                         <p className="w-40 text-black text-[11px] p-1 border-b-2  border-black  mb-4">
                             <b>The KOW Company</b> is one of the
                             leading image and video editing
-                            company for businesses all over
+                            companies for businesses all over
                             the world.
                         </p>
                         <div className="flex text-[#003333] justify-center gap-1 mb-2">
