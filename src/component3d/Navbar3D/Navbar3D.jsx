@@ -50,7 +50,7 @@ const Navbar3D = () => {
             {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
             <div ref={menuRef} className={`absolute left-0 w-full top-0 z-[999]  shadow-xl md:shadow-none  bg-[length:100%_100%] ${showDiv && `bg-[url("/img/3d/bg_3.jpg")] h-[310px]`}  ${getMenuBool && `bg-[url("/img/3d/bg_3.jpg")]`}`}>
                 <MegaNavbar/>
-                <div className="container mx-auto px-4 md:px-0 py-1">
+                <div className="container mx-auto py-1">
 
                     <div className="hidden md:flex items-center justify-between gap-3">
                         <Link to={"/"}>

@@ -51,7 +51,7 @@ const NavbarHome = () => {
       {
       screenLeft &&  <MegaNavbar />
       } 
-        <div className="container mx-auto px-4 md:px-0 py-1">
+        <div className="container mx-auto py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
               <img src={screenLeft ? logo: logoWhite}

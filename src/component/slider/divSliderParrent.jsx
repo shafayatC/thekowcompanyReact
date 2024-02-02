@@ -68,7 +68,7 @@ const DivSliderParrent = () => {
                     <h1 className='text-[40px]  mb-0 lg:-mb-4 font-bold'>IMAGES</h1>
                     <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                 </div>
-            <div className='relative 2xl:container 2xl:mx-auto h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
+            <div className='relative 2xl:container 2xl:mx-auto 2xl:px-0 h-[400px] lg:h-[337px] xl:h-[423px] 2xl:h-[508px] '>
                 <div className=''>
                     <button
                         disabled={currentPosition === 0}
