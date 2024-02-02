@@ -8,7 +8,8 @@ export default {
     fontFamily: {
       'tag-font' : ['Rubik Doodle Shadow', 'system-ui']
     },
-  
+    container: {
+      
     },
     extend: {
       backgroundImage: {
