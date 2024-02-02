@@ -9,6 +9,7 @@ export default {
       'tag-font' : ['Rubik Doodle Shadow', 'system-ui']
     },
     container: {
+
       padding: {
         DEFAULT: '10px',
         sm: '10px',
@@ -16,6 +17,7 @@ export default {
         xl: '20px',
         '2xl': '20px',
       },
+
     },
     extend: {
       backgroundImage: {
