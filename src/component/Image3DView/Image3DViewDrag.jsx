@@ -15,20 +15,7 @@ const Image3DViewDrag = ({ imageList = [] }) => {
 
     const mouseUpFunction = (e) => {
 
-        // const slideWrap = viewSliderRef.current;
-        // const sldChild = slideWrap.getElementsByClassName("sl3d");
-
-
-        // const totalWidth = slideWrap.offsetWidth;
-        // const mousePoint = e.nativeEvent.offsetX;
-        // const mousePosResult = mouseEnterPoint - mousePoint;
-        // const mousePercentage = (100 / totalWidth) * mousePosResult;
-        // const imagePercentage = Math.floor(mousePercentage);
-        // const imageIndexCall = imagePercentage > -1 ? imagePercentage : 100 + imagePercentage;
-
-
         setTakeLastPersentise(lastPersentise);
-
 
     }
     const scrollSlide = (e) => {
@@ -64,27 +51,55 @@ const Image3DViewDrag = ({ imageList = [] }) => {
 
     };
 
-    const leaveFromSld = () => {
-        const slideWrap = viewSliderRef.current;
-        const sldChild = slideWrap.getElementsByClassName("sl3d");
-        for (let i = 0; i < sldChild.length; i++) {
-            sldChild[i].style.opacity = '0'
+
+    const handleTouchMove = (e) => {
+        // Extract touch information from the touch event
+        const touch = e.touches[0];
+        console.log(touch.clientX)
+        // Use the touch position to update the slider
+        if (touch) {
+                console.log(mouseEnterPoint)
+    
+                const slideWrap = viewSliderRef.current;
+                const sldChild = slideWrap.getElementsByClassName("sl3d");
+    
+                const totalWidth = slideWrap.offsetWidth;
+                const mousePoint = touch.clientX;
+                const mousePosResult = mouseEnterPoint - mousePoint;
+                const mousePercentage = (100 / totalWidth) * mousePosResult;
+                const imagePercentage = Math.floor(mousePercentage);
+                let imageIndexCall = takeLastPersentise !== null ?
+                    takeLastPersentise + imagePercentage :
+                    imagePercentage > -1 ? imagePercentage : 100 + imagePercentage;
+    
+                imageIndexCall = imageIndexCall > 100 ?
+                    imageIndexCall - 100 : imageIndexCall < 0 ? 100 + imageIndexCall : imageIndexCall;
+                setLastPersentise(() => imageIndexCall);
+    
+                if (imageIndexCall > -1 && imageIndexCall < sldChild.length) {
+                    // slideWrap.style.backgroundImage = `url('${imageList[imageIndexCall]}')`;
+                    for (let i = 0; i < sldChild.length; i++) {
+                        sldChild[i].style.opacity = '0'
+                    }
+                    sldChild[imageIndexCall].style.opacity = '1'
+                }
+    
+                console.log('mousePoint ' + mousePoint + " imagePercentage : " + imagePercentage + " imageIndexCall : " + imageIndexCall);
         }
-        sldChild[0].style.opacity = '1'
+    };
+    const touchEnterFunction = (e) => {
+        const touch = e.touches[0];
+        // console.log(touch.clientX)
+        setMouseEnterPoint(() => touch.clientX);
+        setIsMouseDown(true);
     }
-
-    const handleTouchMove = (event) => {
-        event.preventDefault();
-        const mTouch = event.target.getBoundingClientRect()
-        const offsetX = (event.touches[0].clientX - window.pageXOffset - mTouch.left)
-
-
-    }
-
     return (
         <>
             {console.log("takeLastPersentise : " + takeLastPersentise)}
-            <div ref={viewSliderRef} onTouchMove={handleTouchMove}
+            <div ref={viewSliderRef}
+                onTouchStart={touchEnterFunction}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={mouseUpFunction}
                 onMouseDown={mouseEnterFunction}
                 onMouseUp={(e) => { setIsMouseDown(false); mouseUpFunction(e) }}
                 onMouseMove={scrollSlide}

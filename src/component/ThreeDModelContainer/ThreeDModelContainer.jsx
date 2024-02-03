@@ -104,7 +104,7 @@ const ThreeDModelContainer = () => {
             <div className='py-10 w-full bg-gray-200 flex items-center'>
                 <div className='container mx-auto'>
                     <div className='flex lg:flex-row flex-col gap-1 items-center justify-center'>
-                        <div className='flex flex-col gap-5 w-[400px]'>
+                        <div className='flex flex-col gap-5 w-full md:w-[400px]'>
                             <div>
                                 <img className='w-[160px] h-[70px]' src='/img/Holosnap-Logo_H_Color.png'/>
                             </div>
@@ -116,7 +116,7 @@ const ThreeDModelContainer = () => {
                         </Link>
                     </div>
                         </div>
-                        <div className='h-[500px] w-full md:w-[570px]'>
+                        <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
                             <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>
                         </div>
                     </div>
