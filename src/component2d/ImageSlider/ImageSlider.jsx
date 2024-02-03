@@ -42,7 +42,16 @@ const ImageSlider = () => {
 
 
     return (
-        <div className='py-20' id='services'>
+        <div className='pb-0 pt-20' id='services'>
+            <div className="pt-10 pb-10">
+                    <div className="relative  border border-[#B1CC40]">
+                        <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-3xl md:text-4xl  font-bold text-center">
+                                {`IMAGES`}
+                            </span>
+                        </h2>
+                    </div>
+                </div>
             <div className='2xl:container 2xl:mx-auto '>
                 <div className='relative w-full h-[400px]'>
                     <Carousel uniqueId="id_1011"
@@ -76,15 +85,7 @@ const ImageSlider = () => {
                     </Carousel>
                 </div>
             </div>
-            <div className="pt-10">
-                    <div className="relative  border border-[#B1CC40]">
-                        <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-3xl md:text-4xl  font-bold text-center">
-                                {`IMAGES`}
-                            </span>
-                        </h2>
-                    </div>
-                </div>
+            
         </div>
     )
 }
