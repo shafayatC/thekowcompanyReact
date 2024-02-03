@@ -51,7 +51,7 @@ const NavbarHome = () => {
       {
       screenLeft &&  <MegaNavbar />
       } 
-        <div className="container mx-auto py-1">
+        <div className="container mx-auto bg-[#DEE2E2] md:bg-transparent py-1">
           <div className="hidden md:flex items-center justify-between gap-3">
             <Link to={"/"}>
               <img src={screenLeft ? logo: logoWhite}
@@ -85,7 +85,7 @@ const NavbarHome = () => {
         {/* -----------------------------------For Mobile--------------------------------------- */}
         {
           getMenuBool && <div className="block md:hidden bg-[#DEE2E2] pt-2 ">
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
               <div className="flex flex-col text-center gap-4">
                 <HashLink onClick={() => setMenuBool(false)} to="/2d" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">IMAGES</HashLink>
                 <HashLink onClick={() => setMenuBool(false)} to="/3d" className="transition-all duration-300 text-gray-800 text-base border-b-2 border-[#DEE2E2] font-semibold py-3 hover:bg-[#cfd6d6] hover:border-b-2 hover:border-[#7C9C30]">3D</HashLink>
