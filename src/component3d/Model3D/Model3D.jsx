@@ -103,7 +103,7 @@ const Model3D = () => {
                 </div> */}
 
         <div className="flex justify-center">
-          <div className="h-[500px] w-full md:w-[570px]">
+        <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
             <ViewModel
               imgSample={"/model_image/w-Camera_frame01 copy.png"}
               imageList={showImageList}
