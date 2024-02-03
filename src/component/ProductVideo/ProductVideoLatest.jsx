@@ -21,8 +21,8 @@ export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] 
 
     return (
         <div id="videoElement" className="">
-            <div className="">
-                <div className="relative flex flex-col justify-center items-center h-auto md:h-screen">
+            <div className="pt-[54px] md:pt-0">
+                <div className="relative  flex flex-col justify-center items-center h-auto md:h-screen">
                     <Suspense fallback={
                         <div className="flex justify-center w-full h-full">
                             <div className="absolute top-1/2 -translate-y-1/2">
