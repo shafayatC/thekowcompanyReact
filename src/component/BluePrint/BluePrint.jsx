@@ -4,12 +4,12 @@ import tree from "../../images/tree.png"
 const BluePrint = () => {
     return (
         <div>
-            <div className='flex justify-center gap-10 mb-5 '>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                        <h1 className='text-[40px] -mb-4 font-bold'>BLUE PRINT</h1>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+            <div className='flex justify-center gap-7 mb-5 '>
+                        <h1 className='w-[80px] md:w-[400px] border-b border-[#7C9C30]'></h1>
+                        <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>BLUE PRINT</h1>
+                        <h1 className='w-[80px] md:w-[400px] border-b border-[#7C9C30]'></h1>
                     </div>
-              <div className='container mx-auto pt-10 pb-20'>
+              <div className='container mx-auto pt-10 pb-10 md:pb-20'>
                 <div className='flex  justify-center items-center  '>
                     <div>
                         <img src={tree} 

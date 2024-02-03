@@ -7,9 +7,9 @@ import integration3 from "../../images/integration3.png"
 const Integration = () => {
     return (
         <div id="integration" className="pb-16">
-             <div className='flex justify-center gap-10 my-16'>
+             <div className='flex justify-center gap-10 mt-6 mb-16 md:my-16'>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                        <h1 className='text-[40px] -mb-4 font-bold'>INTEGRATION</h1>
+                        <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>INTEGRATION</h1>
                         <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
                     </div>
             <div className='container mx-auto'>

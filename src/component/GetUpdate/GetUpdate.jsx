@@ -5,10 +5,10 @@ const GetUpdate = () => {
         <div id="subscribe">
             <div className="container mx-auto"> 
                 <div className="pb-32 pt-10">
-                    <div className='flex justify-center gap-10 my-6'>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-                        <h1 className=' text-[40px] -mb-4 text-center font-bold'>GET UPDATES</h1>
-                        <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
+                    <div className='flex justify-center gap-7 my-6'>
+                        <h1 className='w-[70px] md:w-[400px] border-b border-[#7C9C30]'></h1>
+                        <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 text-center font-bold'>GET UPDATES</h1>
+                        <h1 className='w-[70px] md:w-[400px] border-b border-[#7C9C30]'></h1>
                     </div> 
                     <p className=" text-center text-sm">Sign up for our mailing list and we will let you know when we </p>
                     <p className=" text-center text-sm mb-6">release new features or updates.</p>

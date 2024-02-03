@@ -7,7 +7,7 @@ const WelcomePage = () => {
         <div className=''>
             <div className='bg-[#7C9C30] relative '>
                 <div className="container mx-auto ">
-                    <div className="flex flex-col lg:flex-row items-center py-9 lg:py-0">
+                    <div className="flex flex-col lg:flex-row items-center py-5 lg:py-0">
 
                         <div className="hidden lg:block absolute bottom-0 left-0 ">
                             <div className="relative w-[250px] lg:w-[320px] xl:w-[360px]">
@@ -30,7 +30,7 @@ const WelcomePage = () => {
                         </div>
                         <div className="block lg:hidden">
                             <img
-                                className="w-[200px] pb-8"
+                                className="w-[120px] pb-5"
                                 src={logowhite}
                                 alt="logo"
                             />
