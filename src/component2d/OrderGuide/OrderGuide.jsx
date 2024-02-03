@@ -20,8 +20,9 @@ const OrderGuide = () => {
         </div>
       </div> */}
 
+      <div >
       <div className="container mx-auto">
-        <div className="flex justify-center w-full  transition-all duration-300">
+      <div className="flex justify-center w-full  transition-all duration-300">
           <video
             id="productVideo"
             width="100%"
@@ -31,7 +32,20 @@ const OrderGuide = () => {
             <source src="/video/A4Tech_Headphone_Animation_3.mp4" type="video/mp4" />
           </video>
         </div>
+      </div>
 
+
+        <div className="pt-20 pb-12">
+        <div className="relative  border border-[#B1CC40]">
+          <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span className="bg-white px-12 py-1 text-3xl md:text-4xl text-center text-kow-text-black font-bold">
+              {`ORDER GUIDE`}
+            </span>
+          </h2>
+        </div>
+      </div>
+
+        <div className="container mx-auto">
         <div className="pt-7 pb-10 ">
           <div className="grid grid-cols-2 mr-5 gap-6 sm:grid-cols-3 sm:px-16 sm:gap-12 lg:grid-cols-4 xl:grid-cols-6 lg:gap-8 lg:px-16 xl:px-4 justify-items-center">
             <div className="bg-[#B1CC40] w-[140px] h-[130px] p-3 rounded-md border-2 border-white shadow-lg relative">
@@ -114,16 +128,9 @@ const OrderGuide = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="pt-12 pb-12">
-        <div className="relative  border border-[#B1CC40]">
-          <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span className="bg-white px-12 py-1 text-3xl md:text-4xl text-center text-kow-text-black font-bold">
-              {`ORDER GUIDE`}
-            </span>
-          </h2>
         </div>
       </div>
+     
     </div>
   );
 };

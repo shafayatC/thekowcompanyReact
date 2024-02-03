@@ -35,6 +35,15 @@ const VideoSlider = () => {
 
     return (
         <div className='py-20'>
+             <div className="pt-16 pb-10">
+                <div className="relative  border border-[#B1CC40]">
+                    <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-3xl md:text-4xl  font-bold text-center">
+                            {`VIDEOS`}
+                        </span>
+                    </h2>
+                </div>
+            </div>
             <div className='2xl:container 2xl:mx-auto '>
                 <div className='relative w-full h-[400px]'>
                     <Carousel uniqueId="id_10115"
@@ -58,15 +67,7 @@ const VideoSlider = () => {
                     </Carousel>
                 </div>
             </div>
-            <div className="pt-16">
-                <div className="relative  border border-[#B1CC40]">
-                    <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <span className="bg-[#dee2e2] text-kow-text-black px-12 py-1 text-3xl md:text-4xl  font-bold text-center">
-                            {`VIDEOS`}
-                        </span>
-                    </h2>
-                </div>
-            </div>
+           
         </div>
     )
 }

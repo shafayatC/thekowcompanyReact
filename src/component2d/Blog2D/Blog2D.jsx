@@ -34,7 +34,16 @@ const Blog2D = () => {
   };
 
   return (
-    <div id='2d-trends' className='pt-24'>
+    <div id='2d-trends' className='pt-16'>
+       <div className="pb-16 pt-7">
+        <div className="relative  border border-[#B1CC40]">
+          <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span className="bg-[#DEE2E2] px-12 py-1 text-3xl md:text-4xl text-kow-text-black text-center  font-bold">
+              {`2D TRENDS`}
+            </span>
+          </h2>
+        </div>
+      </div>
       <div className='container mx-auto'>
         <div className='flex justify-center items-center gap-5 '>
           <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl -mt-16' /></button>
@@ -46,7 +55,7 @@ const Blog2D = () => {
                 </div>
                 <div className='flex flex-col items-center gap-2 pt-5 pb-10'>
                   <div className='flex justify-center items-center gap-2 '>
-                    <p className='text-[14px] font-semibold'>{div.text} |</p>
+                    <p className='text-[12px] font-semibold'>{div.text} |</p>
                     <p className='text-[9px]'>{div.text2}</p>
                   </div>
                   <Link to = "/blog-details">
@@ -59,15 +68,7 @@ const Blog2D = () => {
           <button onClick={handleNext}><MdArrowForwardIos className='text-3xl -mt-16' /></button>
         </div>
       </div>
-      <div className="pb-24 pt-7">
-        <div className="relative  border border-[#B1CC40]">
-          <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span className="bg-[#DEE2E2] px-12 py-1 text-3xl md:text-4xl text-kow-text-black text-center  font-bold">
-              {`2D TRENDS`}
-            </span>
-          </h2>
-        </div>
-      </div>
+     
     </div>
   );
 };
