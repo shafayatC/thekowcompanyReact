@@ -14,12 +14,13 @@ const Record = () => {
                             <CircleStyle count="9.2K" title="Video Assets" />
                             <CircleStyle count="54K" title="Backgrounds Removed" />
                         </div>
-                        <div className='grid md:grid-cols-[100px_auto_100px] lg:grid-cols-3 justify-center gap-10 my-10'>
-                            <h1 className='border-b border-[#7C9C30]'></h1>
-                            <h1 className='text-[40px] text-center -mb-4 font-bold'>SUCCESS RECORD</h1>
-                            <h1 className='border-b border-[#7C9C30]'></h1>
-                        </div>
+                       
                     </div>
+                </div>
+                <div className='flex justify-center gap-7 pt-20 pb-10'>
+                    <h1 className='w-[50px] md:w-[400px] border-b border-[#7C9C30]'></h1>
+                    <h1 className='text-[28px] md:text-[40px]  -mb-2 lg:-mb-4 font-bold'>SUCCESS RECORD</h1>
+                    <h1 className='w-[50px] md:w-[400px] border-b border-[#7C9C30]'></h1>
                 </div>
             </div>
         </div>
