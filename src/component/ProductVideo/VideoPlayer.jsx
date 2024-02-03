@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const VideoPlayer = () => {
+const VideoPlayer = ({videoUrl, loadingImg}) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const handleLoadStart = () => {
@@ -21,7 +21,7 @@ const VideoPlayer = () => {
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
                     </div>
-                    <img className="object-cover w-full" src="/video/loading-image.png" alt="loading" />
+                    <img className="object-cover w-full" src={loadingImg} alt="loading image" />
                 </div>
             }
 
@@ -35,7 +35,7 @@ const VideoPlayer = () => {
                     muted
                     loop
                 >
-                    <source src="/video/The Kow Company_video.mp4" type="video/mp4" />
+                    <source src={videoUrl} type="video/mp4" />
                 </video>
             </div>
         </>
