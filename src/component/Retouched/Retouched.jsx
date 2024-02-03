@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 const Retouched = () => {
     return (
         <div id="ai">
-            <div className="container mx-auto py-20">
+            <div className="container mx-auto py-4 md:py-20">
                 {/* md:w-[450px] sm:w-[450px] lg:w-[600px] xl:w-[500px] */}
-                <div className=" justify-center items-center grid grid-cols-1 lg:grid-cols-[500px_auto] gap-28">
+                <div className=" justify-center items-center grid grid-cols-1 lg:grid-cols-[500px_auto] gap-6 md:gap-28">
                     <div className=" h-[670px] relative z-50 mt-5 lg:mt-0 bg-white sm:ml-20 md:ml-28  ">
                         <div className="h-full overflow-hidden ">
                             <div className="imageCompareWrap">
@@ -23,7 +23,7 @@ const Retouched = () => {
                     </div>
 
                     <div className="px-3 lg:px-0 text-center lg:text-left ">
-                        <h1 className="text-[44px]  font-bold border-b-2 leading-[50px] border-[#7C9C30]">retouched.ai</h1>
+                        <h1 className="text-[28px] md:text-[44px]  font-bold border-b-2 leading-[50px] border-[#7C9C30]">retouched.ai</h1>
                         <div className="">
                             <p className="text-sm  text-center lg:text-justify pt-7"> Your go-to AI tool for seamlessly removing backgrounds from
                                 images. Our cutting-edge solution combines the power of artificial

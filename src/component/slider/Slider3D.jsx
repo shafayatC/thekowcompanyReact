@@ -38,10 +38,10 @@ const Slider3D = () => {
    
   ]
   return (
-    <div id='3d' className='pb-10 pt-10'>
-<div className='flex justify-center gap-10 my-10'>
+    <div id='3d' className='pb-10 pt-0 md:pt-10'>
+<div className='flex justify-center gap-7 my-10'>
           <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
-          <h1 className='text-[40px] -mb-4 font-bold'>3D</h1>
+          <h1 className='text-[28px] md:text-[40px] -mb-2 md:-mb-4 font-bold'>3D</h1>
           <h1 className='w-[400px] border-b border-[#7C9C30]'></h1>
         </div>
       <div className='2xl:container 2xl:mx-auto '>
