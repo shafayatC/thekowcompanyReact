@@ -24,18 +24,23 @@ import ProductVisualSlider from '../../component3d/Product/ProductVisualSlider'
 
 function HomeContainer() {
 
+    const tagList = ["Retouching", "Recoloring", "Editing", "3D Modeling", "Texture Creation"];
 
 
     return (
         <>
             <ScrolTop />
             {/* <Navbar /> */}
-            <NavbarHome/>
+            <NavbarHome />
             <div className="bg-[#DEE2E2] bgImage pb-3 flex flex-col relative">
                 {/* <img src='/circle-bg.svg' /> */}
-                <ProductVideoLatest />
+                <ProductVideoLatest
+                    videoUrl="/video/The Kow Company_video.mp4"
+                    loadingImg="/video/loading-image.png"
+                    tagList={tagList} />
+
                 <WelcomePage />
-                <ThreeDModelContainer/>
+                <ThreeDModelContainer />
                 <DivSliderParrent />
                 <Slider3D />
                 {/* <ProductVisualSlider/> */}

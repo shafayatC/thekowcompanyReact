@@ -3,6 +3,15 @@ const ChoosePlan = () => {
     <div id="price">
       <div className="pb-20">
         <div>
+        <div className="pt-28">
+            <div className="relative  border border-[#B1CC40]">
+              <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span className="bg-[#DEE2E2] px-12 py-1 text-3xl md:text-4xl  text-center text-kow-text-black font-bold">
+                  CHOOSE YOUR PLAN
+                </span>
+              </h2>
+            </div>
+          </div>
           <div className="container mx-auto pt-20">
             <div className="flex flex-col justify-center md:flex-row  gap-12 items-center ">
               <div className=" h-[400px] w-[260px] bg-white shadow-lg border border--gradient-to-t from-white via-slate-300 to-white rounded-md ">
@@ -105,15 +114,7 @@ const ChoosePlan = () => {
               </div>
             </div>
           </div>
-          <div className="  pt-20">
-            <div className="relative  border border-[#B1CC40]">
-              <h2 className="absolute flex -top-[12px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <span className="bg-[#DEE2E2] px-12 py-1 text-3xl md:text-4xl  text-center text-kow-text-black font-bold">
-                  CHOOSE YOUR PLAN
-                </span>
-              </h2>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

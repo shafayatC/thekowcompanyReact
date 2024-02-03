@@ -13,14 +13,19 @@ import Contact3D from '../Contact3D/Contact3D';
 import Footer3D from '../Footer3D/Footer3D';
 import Video3D from '../Video3D/Video3D';
 import ScrolTop from '../../component/ScrolTop/ScrolTop';
+import ProductVideoLatest from '../../component/ProductVideo/ProductVideoLatest';
 
 
 const Container3D = () => {
     return (
         <div>
-            <ScrolTop/>
+            <ScrolTop />
             <Navbar3D />
-            <StartPage />
+            <ProductVideoLatest
+                videoUrl="/video/3dVideoPresentation.mp4"
+                loadingImg="/video/3dvideo_loading.png" />
+
+            {/* <StartPage /> */}
             <About3D />
             <Services3D />
             <Visualization />

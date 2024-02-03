@@ -8,7 +8,7 @@ import VideoPlayer from "./VideoPlayer.jsx";
 // const VideoPlay = lazy(() => import('./VideoPlay.jsx'));
 const VideoPlay = lazy(() => import('./VideoPlay.jsx'));
 
-export default function ProductVideoLatest({ video }) {
+export default function ProductVideoLatest({ videoUrl, loadingImg, tagList = [] }) {
 
     const [playBool, setPlayBool] = useState(false);
 
@@ -18,12 +18,11 @@ export default function ProductVideoLatest({ video }) {
         video.play();
     }
 
-    const tagList = ["Retouching", "Recoloring", "Editing", "3D Modeling", "Texture Creation"];
 
     return (
         <div id="videoElement" className="">
-            <div className="">
-                <div className="relative flex flex-col justify-center items-center h-auto md:h-screen">
+            <div className="pt-[54px] md:pt-0">
+                <div className="relative  flex flex-col justify-center items-center h-auto md:h-screen">
                     <Suspense fallback={
                         <div className="flex justify-center w-full h-full">
                             <div className="absolute top-1/2 -translate-y-1/2">
@@ -33,22 +32,26 @@ export default function ProductVideoLatest({ video }) {
                                 </svg>
                             </div>
 
-                            <img className="object-cover w-full" src="/video/loading-image.png" alt="loading" />
+                            <img className="object-cover w-full" src={loadingImg} alt="loading" />
                         </div>
                     }>
-                        <VideoPlayer/>
+                        <VideoPlayer loadingImg={loadingImg} videoUrl={videoUrl} />
                         {/* <VideoPlay /> */}
                         {/* tag line */}
-                        <div className="absolute top-1/2 -translate-y-1/2 w-full">
-                            <Carousel uniqueId="id_1050" delay={3000}
-                                item={1}
-                                indicators={false}
-                            >
-                                {tagList.map((item, index) =>
-                                    <div className="flex justify-center font-tag-font opacity-60 "><h1 className="text-2xl md:text-7xl font-bold uppercase text-white ">{item}</h1></div>
-                                )}
-                            </Carousel>
-                        </div>
+                        {
+                            tagList.length > 0 &&
+                            <div className="absolute top-1/2 -translate-y-1/2 w-full">
+                                <Carousel uniqueId="id_1050" delay={3000}
+                                    item={1}
+                                    indicators={false}
+                                >
+                                    {tagList.map((item, index) =>
+                                        <div className="flex justify-center font-tag-font opacity-60 "><h1 className="text-2xl md:text-7xl font-bold uppercase text-white ">{item}</h1></div>
+                                    )}
+                                </Carousel>
+                            </div>
+                        }
+
                     </Suspense>
 
                     {/* <h2 className="text-3xl font-bold uppercase text-kow-text-black pt-7">HERE IS YOUR TAGLINE</h2> */}
